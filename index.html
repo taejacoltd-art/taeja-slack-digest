@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAEJA JT</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:#1d1d1f;height:100vh;overflow:hidden;-webkit-font-smoothing:antialiased}
+
+/* Layout */
+.app{display:grid;grid-template-columns:240px 1fr 340px;height:100vh}
+
+/* Sidebar */
+.sidebar{background:#ffffff;border-right:1px solid #e5e5e7;display:flex;flex-direction:column;overflow:hidden}
+.sidebar-header{padding:20px 16px 12px;border-bottom:1px solid #e5e5e7}
+.sidebar-header h2{font-size:15px;font-weight:700;color:#1d1d1f;letter-spacing:-0.3px}
+.sidebar-header .team{font-size:11px;color:#86868b;margin-top:2px}
+.channel-list{flex:1;overflow-y:auto;padding:8px}
+.channel-list::-webkit-scrollbar{width:4px}
+.channel-list::-webkit-scrollbar-thumb{background:#d1d1d6;border-radius:4px}
+.ch-group-label{font-size:10px;font-weight:700;color:#aeaeb2;letter-spacing:1.2px;text-transform:uppercase;padding:12px 8px 4px}
+.ch-item{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:8px;cursor:pointer;font-size:13px;color:#424245;transition:background .15s}
+.ch-item:hover{background:#f0f0f2}
+.ch-item.active{background:#e8e8ed;font-weight:600;color:#1d1d1f}
+.ch-item .hash{color:#aeaeb2;font-size:12px;flex-shrink:0}
+.ch-item .dot{width:6px;height:6px;border-radius:50%;background:#34c759;margin-left:auto;flex-shrink:0;display:none}
+.ch-item.has-new .dot{display:block}
+
+/* Main */
+.main{display:flex;flex-direction:column;overflow:hidden}
+
+/* Calendar Bar */
+.cal-bar{background:#ffffff;border-bottom:1px solid #e5e5e7;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.cal-nav{display:flex;align-items:center;gap:8px}
+.cal-nav button{width:32px;height:32px;border:1px solid #e5e5e7;border-radius:8px;background:#fff;cursor:pointer;font-size:16px;color:#6e6e73;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.cal-nav button:hover{background:#f0f0f2;border-color:#d1d1d6}
+.cal-month{font-size:15px;font-weight:700;min-width:120px;text-align:center}
+.cal-grid{display:flex;gap:4px;flex:1;justify-content:center}
+.cal-day{width:36px;height:36px;border-radius:8px;border:none;background:transparent;cursor:pointer;font-size:13px;font-weight:500;color:#6e6e73;display:flex;align-items:center;justify-content:center;transition:all .15s;position:relative}
+.cal-day:hover{background:#f0f0f2}
+.cal-day.today{color:#1d1d1f;font-weight:700}
+.cal-day.selected{background:#1d1d1f;color:#ffffff}
+.cal-day.has-data::after{content:'';position:absolute;bottom:3px;width:4px;height:4px;border-radius:50%;background:#34c759}
+.cal-day.selected.has-data::after{background:#ffffff}
+.cal-day.other-month{color:#d1d1d6}
+.cal-today-btn{padding:6px 12px;border:1px solid #e5e5e7;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:#6e6e73;transition:all .15s}
+.cal-today-btn:hover{background:#f0f0f2}
+
+/* Content */
+.content{flex:1;overflow-y:auto;padding:24px}
+.content::-webkit-scrollbar{width:6px}
+.content::-webkit-scrollbar-thumb{background:#d1d1d6;border-radius:4px}
+.content-header{margin-bottom:20px}
+.content-header h1{font-size:20px;font-weight:700;letter-spacing:-0.3px}
+.content-header .sub{font-size:13px;color:#86868b;margin-top:4px}
+
+.msg-group{margin-bottom:20px}
+.msg-group-title{font-size:12px;font-weight:600;color:#86868b;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.msg-group-title .time{font-weight:400;color:#aeaeb2}
+
+.msg-card{background:#ffffff;border:1px solid #e5e5e7;border-radius:12px;padding:14px 18px;margin-bottom:6px;transition:box-shadow .2s}
+.msg-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.msg-sender{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.msg-avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0}
+.msg-name{font-size:13px;font-weight:700;color:#1d1d1f}
+.msg-time{font-size:11px;color:#aeaeb2;margin-left:auto}
+.msg-text{font-size:14px;color:#424245;line-height:1.7;padding-left:36px}
+.msg-text .highlight{background:#fef3c7;padding:1px 4px;border-radius:3px;font-weight:500}
+
+/* Avatar colors */
+.av-건희{background:#6366f1}.av-규민{background:#8b5cf6}.av-준태{background:#3b82f6}
+.av-윤하{background:#ec4899}.av-지수{background:#f43f5e}.av-유민{background:#f59e0b}
+.av-성민{background:#10b981}.av-수혁{background:#14b8a6}
+
+/* Empty */
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:300px;color:#aeaeb2}
+.empty-state .icon{font-size:48px;margin-bottom:12px;opacity:.5}
+.empty-state .text{font-size:14px}
+
+/* Right Panel - Todo */
+.todo-panel{background:#ffffff;border-left:1px solid #e5e5e7;display:flex;flex-direction:column;overflow:hidden}
+.todo-header{padding:20px 16px 12px;border-bottom:1px solid #e5e5e7}
+.todo-header h2{font-size:15px;font-weight:700}
+.todo-header .count{font-size:12px;color:#86868b;margin-top:2px}
+
+/* Person Filter */
+.person-filter{padding:8px 12px;border-bottom:1px solid #e5e5e7;display:flex;flex-wrap:wrap;gap:4px}
+.person-chip{padding:4px 10px;border-radius:14px;border:1px solid #e5e5e7;background:#fff;font-size:11px;font-weight:500;color:#6e6e73;cursor:pointer;transition:all .15s}
+.person-chip:hover{border-color:#d1d1d6;background:#f0f0f2}
+.person-chip.active{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+
+/* Todo Items */
+.todo-list{flex:1;overflow-y:auto;padding:8px 12px}
+.todo-list::-webkit-scrollbar{width:4px}
+.todo-list::-webkit-scrollbar-thumb{background:#d1d1d6;border-radius:4px}
+.todo-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:10px;margin-bottom:4px;transition:all .3s;cursor:pointer;border:1px solid transparent}
+.todo-item:hover{background:#f9f9fb;border-color:#e5e5e7}
+.todo-item.done{opacity:.4;text-decoration:line-through}
+.todo-item.hiding{opacity:0;height:0;padding:0;margin:0;overflow:hidden}
+.todo-check{width:22px;height:22px;min-width:22px;border:2px solid #d1d1d6;border-radius:6px;flex-shrink:0;margin-top:0;transition:all .2s;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative}
+.todo-check::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px}
+.todo-item:hover .todo-check{border-color:#86868b}
+.todo-item.done .todo-check{background:#34c759;border-color:#34c759}
+.todo-item.done .todo-check::after{content:'✓';color:#fff;font-size:11px;font-weight:700}
+.todo-content{flex:1;min-width:0}
+.todo-channel{font-size:10px;font-weight:600;color:#86868b;letter-spacing:.3px}
+.todo-project{font-size:10px;color:#aeaeb2;margin-left:4px}
+.todo-text{font-size:13px;color:#1d1d1f;font-weight:500;margin-top:2px;line-height:1.5}
+.todo-assignee{font-size:11px;color:#86868b;margin-top:3px}
+.todo-assignee .name{font-weight:600}
+
+/* Edit Modal */
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:100;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+.modal-overlay.show{opacity:1;pointer-events:all}
+.modal{background:#fff;border-radius:16px;padding:24px;width:420px;max-width:90vw;box-shadow:0 20px 60px rgba(0,0,0,.2);transform:scale(.95);transition:transform .2s}
+.modal-overlay.show .modal{transform:scale(1)}
+.modal h3{font-size:16px;font-weight:700;margin-bottom:16px}
+.modal-field{margin-bottom:12px}
+.modal-field label{display:block;font-size:11px;font-weight:600;color:#86868b;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+.modal-field input,.modal-field select,.modal-field textarea{width:100%;padding:8px 12px;border:1px solid #e5e5e7;border-radius:8px;font-size:13px;font-family:inherit;outline:none;transition:border .15s}
+.modal-field input:focus,.modal-field select:focus,.modal-field textarea:focus{border-color:#3b82f6}
+.modal-field textarea{resize:vertical;min-height:60px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
+.modal-actions button{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .15s}
+.btn-cancel{background:#f0f0f2;color:#6e6e73}.btn-cancel:hover{background:#e5e5e7}
+.btn-save{background:#3b82f6;color:#fff}.btn-save:hover{background:#2563eb}
+.btn-delete{background:#fee2e2;color:#dc2626}.btn-delete:hover{background:#fecaca}
+.btn-add{padding:8px 14px;border:1px dashed #d1d1d6;border-radius:8px;background:transparent;font-size:12px;font-weight:500;color:#86868b;cursor:pointer;width:100%;margin-top:4px;transition:all .15s}
+.btn-add:hover{border-color:#86868b;color:#1d1d1f;background:#f9f9fb}
+
+/* Assignee chips in modal */
+.assignee-chips{display:flex;flex-wrap:wrap;gap:4px}
+.assignee-chip{padding:5px 12px;border-radius:14px;border:1px solid #e5e5e7;background:#fff;font-size:12px;font-weight:500;color:#6e6e73;cursor:pointer;transition:all .15s;user-select:none}
+.assignee-chip:hover{border-color:#d1d1d6;background:#f0f0f2}
+.assignee-chip.selected{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+
+/* Multi assignee display */
+.todo-assignees{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
+.todo-assignee-tag{font-size:10px;font-weight:600;color:#fff;padding:1px 6px;border-radius:8px;display:inline-block}
+
+/* View toggle */
+.view-toggle{display:flex;padding:6px 12px;gap:4px;border-bottom:1px solid #e5e5e7}
+.view-btn{flex:1;padding:6px 0;border:none;background:transparent;font-size:11px;font-weight:600;color:#aeaeb2;cursor:pointer;border-radius:6px;transition:all .15s}
+.view-btn:hover{color:#6e6e73}
+.view-btn.active{background:#1d1d1f;color:#fff}
+
+/* Date group in all-view */
+.todo-date-group{margin-top:10px;margin-bottom:4px;padding:0 4px}
+.todo-date-label{font-size:10px;font-weight:700;color:#aeaeb2;letter-spacing:.8px;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid #f0f0f2}
+
+/* Todo edit button */
+.todo-edit{width:24px;height:24px;border:none;background:transparent;cursor:pointer;border-radius:6px;font-size:12px;color:#aeaeb2;display:flex;align-items:center;justify-content:center;flex-shrink:0;opacity:0;transition:all .15s}
+.todo-item:hover .todo-edit{opacity:1}
+.todo-edit:hover{background:#f0f0f2;color:#1d1d1f}
+
+/* Done evidence */
+.todo-evidence{font-size:10px;color:#34c759;margin-top:2px;font-style:italic}
+
+/* Content tabs */
+.content-tabs{display:flex;gap:4px;margin-top:12px}
+.content-tab{padding:6px 14px;border:1px solid #e5e5e7;border-radius:8px;background:#fff;font-size:12px;font-weight:600;color:#86868b;cursor:pointer;transition:all .15s}
+.content-tab:hover{background:#f0f0f2}
+.content-tab.active{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+
+/* All channel view */
+.all-channel-summary .channel-block{margin-bottom:20px}
+.all-channel-summary .channel-block-title{font-size:14px;font-weight:700;color:#1d1d1f;margin-bottom:8px;display:flex;align-items:center;gap:6px;padding-bottom:6px;border-bottom:1px solid #f0f0f2}
+.all-channel-summary .channel-block-title .hash{color:#aeaeb2;font-weight:400}
+.all-channel-summary .summary-text{font-size:14px;color:#424245;line-height:1.8;padding:0 0 0 4px}
+.all-channel-summary .summary-text .person{font-weight:600;color:#1d1d1f}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>TAEJA JT</h2>
+      <div class="team">Slack Dashboard</div>
+    </div>
+    <div class="channel-list" id="channelList">
+      <div class="ch-item active" data-channel="all">
+        <span class="hash">*</span> 전체 요약
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="cal-bar">
+      <div class="cal-nav">
+        <button id="prevMonth">&#8249;</button>
+        <div class="cal-month" id="calMonth"></div>
+        <button id="nextMonth">&#8250;</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <button class="cal-today-btn" id="todayBtn">오늘</button>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+
+  <!-- Todo Panel -->
+  <div class="todo-panel">
+    <div class="todo-header">
+      <h2>할일</h2>
+      <div class="count" id="todoCount">0건</div>
+    </div>
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="date">날짜별</button>
+      <button class="view-btn" data-view="all">전체 미완료</button>
+      <button class="view-btn" data-view="done">전체 완료</button>
+    </div>
+    <div class="person-filter" id="personFilter"></div>
+    <div class="todo-list" id="todoList"></div>
+  </div>
+
+</div>
+
+<!-- Edit Modal -->
+<div class="modal-overlay" id="editModal">
+  <div class="modal">
+    <h3 id="modalTitle">할일 수정</h3>
+    <div class="modal-field">
+      <label>담당자 (복수 선택 가능)</label>
+      <div class="assignee-chips" id="editAssigneeChips"></div>
+    </div>
+    <div class="modal-field">
+      <label>채널</label>
+      <input type="text" id="editChannel">
+    </div>
+    <div class="modal-field">
+      <label>프로젝트</label>
+      <input type="text" id="editProject">
+    </div>
+    <div class="modal-field">
+      <label>내용</label>
+      <textarea id="editText"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-delete" id="editDelete">삭제</button>
+      <div style="flex:1"></div>
+      <button class="btn-cancel" id="editCancel">취소</button>
+      <button class="btn-save" id="editSave">저장</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Firebase ──
+const firebaseConfig = {
+  apiKey: "AIzaSyAvQLjMaVcWUSYIMTUACqLXjZKHwdDRctk",
+  authDomain: "daily-digest-8b058.firebaseapp.com",
+  databaseURL: "https://daily-digest-8b058-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "daily-digest-8b058",
+  storageBucket: "daily-digest-8b058.firebasestorage.app",
+  messagingSenderId: "664716717544",
+  appId: "1:664716717544:web:0813944daad3420a76885d"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// ── Data ──
+const MEMBERS = [
+  { name: '이건희', short: '건희', key: '건희', role: '대표' },
+  { name: '조규민', short: '규민', key: '규민', role: '매니저' },
+  { name: '윤준태', short: '준태', key: '준태', role: '운영MD' },
+  { name: '임윤하', short: '윤하', key: '윤하', role: '디자인' },
+  { name: '김지수', short: '지수', key: '지수', role: '디자인' },
+  { name: '이유민', short: '유민', key: '유민', role: '디자인' },
+  { name: '김성민', short: '성민', key: '성민', role: '개발' },
+  { name: '오수혁', short: '수혁', key: '수혁', role: '개발' },
+];
+
+const CHANNELS = [
+  { id: 'C0AJ38GC9HB', name: '00-announcement', group: '공통' },
+  { id: 'C0AJ0DKH22F', name: 'onf_주간회의', group: '공통' },
+  { id: 'C0ARZGQTPFZ', name: '08-주간회의history', group: '공통' },
+  { id: 'C0AJ087F3B5', name: 'onf_uiux', group: '공통' },
+  { id: 'C0AK0V0C7BJ', name: 'onf_dev-ai', group: '공통' },
+  { id: 'C0ALD61LV18', name: 'onf_legal', group: '공통' },
+  { id: 'C0AHRGP7CVD', name: 'onf_archiving', group: '공통' },
+  { id: 'C0AMC45RJ3U', name: '06-자사몰project', group: '공통' },
+  { id: 'C0APK7RF82J', name: '07-발주-임가공', group: '공통' },
+  { id: 'C0AM3GBFPGU', name: '01-pb_마성의팍스', group: '프로젝트' },
+  { id: 'C0AM3GKNCN8', name: '04-최고심_5월pb', group: '프로젝트' },
+  { id: 'C0ALWFZQMTP', name: '02-카카오엔터_삼성', group: '프로젝트' },
+  { id: 'C0ALWG29TB7', name: '03-카카오엔터_웹툰_쫀냐미_고라니', group: '프로젝트' },
+  { id: 'C0ALY0XQ40N', name: '05-잠재_기타', group: '프로젝트' },
+  { id: 'C0AJ4HXRD5L', name: 'onf_00_product', group: '콘텐츠' },
+  { id: 'C0AQ0V3H4JV', name: 'onf_01_태자llm', group: '콘텐츠' },
+  { id: 'C0AQ0VDEC4R', name: 'onf_02_태자감정엔진', group: '콘텐츠' },
+  { id: 'C0AJ6NYLKT4', name: 'contents_2_차세린', group: '콘텐츠' },
+  { id: 'C0AJU22MXMJ', name: 'contents_민수달', group: '콘텐츠' },
+  { id: 'C0ALJEPNQ6B', name: '물리-상품', group: '기타' },
+  { id: 'C0ALZU1NDMG', name: 'team1-팬덤상품', group: '기타' },
+];
+
+// Data loaded from JSON files
+let SAMPLE_DATA = {};
+let availableDates = [];
+
+// ── State ──
+let currentDate = new Date(2026, 3, 15); // 2026-04-15
+let selectedDate = new Date(2026, 3, 15);
+let viewMonth = new Date(2026, 3, 1);
+let selectedChannel = 'all';
+let selectedPerson = 'all';
+let todoView = 'date'; // 'date' or 'all'
+let todosState = {}; // synced with Firebase
+let fbReady = false;
+let appReady = false;
+
+// Firebase real-time sync
+let fbEdits = {}, fbAdded = {}, fbDeleted = {};
+
+db.ref('todos_state').on('value', snap => {
+  todosState = snap.val() || {};
+  fbReady = true;
+  if (appReady) renderTodos();
+});
+db.ref('todos_edits').on('value', snap => {
+  fbEdits = snap.val() || {};
+  applyFbEdits();
+  if (appReady) renderTodos();
+});
+db.ref('todos_added').on('value', snap => {
+  fbAdded = snap.val() || {};
+  applyFbAdded();
+  if (appReady) renderTodos();
+});
+db.ref('todos_deleted').on('value', snap => {
+  fbDeleted = snap.val() || {};
+  applyFbDeleted();
+  if (appReady) renderTodos();
+});
+
+function applyFbEdits() {
+  for (const [id, edit] of Object.entries(fbEdits)) {
+    const dateKey = edit.dateKey;
+    const data = SAMPLE_DATA[dateKey];
+    if (!data?.todos) continue;
+    const todo = data.todos.find(t => t.id === parseInt(id));
+    if (todo) {
+      todo.assignee = edit.assignee;
+      todo.channel = edit.channel;
+      todo.project = edit.project;
+      todo.text = edit.text;
+    }
+  }
+}
+
+function applyFbAdded() {
+  for (const [dateKey, items] of Object.entries(fbAdded)) {
+    if (!SAMPLE_DATA[dateKey]) SAMPLE_DATA[dateKey] = { channels: {}, todos: [] };
+    const data = SAMPLE_DATA[dateKey];
+    if (!data.todos) data.todos = [];
+    for (const [id, todo] of Object.entries(items)) {
+      if (!data.todos.find(t => t.id === todo.id)) {
+        data.todos.push(todo);
+      }
+    }
+  }
+}
+
+function applyFbDeleted() {
+  for (const id of Object.keys(fbDeleted)) {
+    for (const data of Object.values(SAMPLE_DATA)) {
+      if (data.todos) {
+        data.todos = data.todos.filter(t => t.id !== parseInt(id));
+      }
+    }
+  }
+}
+// ── Data Loading ──
+const DATA_BASE = window.location.hostname === 'localhost' || window.location.protocol === 'file:'
+  ? './data/'
+  : 'https://taejacoltd-art.github.io/taeja-slack-digest/data/';
+
+async function loadIndex() {
+  try {
+    const res = await fetch(DATA_BASE + 'index.json');
+    availableDates = await res.json();
+  } catch(e) {
+    console.warn('index.json load failed:', e);
+    availableDates = [];
+  }
+}
+
+async function loadDateData(dateStr) {
+  if (SAMPLE_DATA[dateStr]) return SAMPLE_DATA[dateStr];
+  if (!availableDates.includes(dateStr)) return null;
+  try {
+    const res = await fetch(DATA_BASE + dateStr + '.json');
+    if (!res.ok) return null;
+    const data = await res.json();
+    SAMPLE_DATA[dateStr] = data;
+    // Apply Firebase overrides
+    applyFbEdits();
+    applyFbAdded();
+    applyFbDeleted();
+    return data;
+  } catch(e) {
+    console.warn('Failed to load ' + dateStr + ':', e);
+    return null;
+  }
+}
+
+// ── Init ──
+async function init() {
+  await loadIndex();
+  renderChannelList();
+  renderCalendar();
+  await renderContent();
+  renderPersonFilter();
+  await renderTodos();
+
+  // View toggle
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      todoView = btn.dataset.view;
+      renderTodos();
+    };
+  });
+
+  document.getElementById('prevMonth').onclick = () => { viewMonth.setMonth(viewMonth.getMonth() - 1); renderCalendar(); };
+  document.getElementById('nextMonth').onclick = () => { viewMonth.setMonth(viewMonth.getMonth() + 1); renderCalendar(); };
+  document.getElementById('todayBtn').onclick = () => {
+    selectedDate = new Date(currentDate);
+    viewMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+    renderCalendar();
+    renderContent();
+    renderTodos();
+  };
+
+  appReady = true;
+}
+
+// ── Channel List ──
+function renderChannelList() {
+  const list = document.getElementById('channelList');
+  let html = '<div class="ch-item active" data-channel="all"><span class="hash">*</span> 전체 요약</div>';
+
+  const groups = {};
+  CHANNELS.forEach(ch => {
+    if (!groups[ch.group]) groups[ch.group] = [];
+    groups[ch.group].push(ch);
+  });
+
+  for (const [group, channels] of Object.entries(groups)) {
+    html += `<div class="ch-group-label">${group}</div>`;
+    channels.forEach(ch => {
+      const data = getDateData();
+      const hasNew = data?.channels?.[ch.id]?.hasNew;
+      html += `<div class="ch-item${hasNew ? ' has-new' : ''}" data-channel="${ch.id}">
+        <span class="hash">#</span>${ch.name}<span class="dot"></span>
+      </div>`;
+    });
+  }
+
+  list.innerHTML = html;
+  list.querySelectorAll('.ch-item').forEach(el => {
+    el.onclick = () => {
+      list.querySelectorAll('.ch-item').forEach(e => e.classList.remove('active'));
+      el.classList.add('active');
+      selectedChannel = el.dataset.channel;
+      renderContent();
+    };
+  });
+}
+
+// ── Calendar ──
+function renderCalendar() {
+  const grid = document.getElementById('calGrid');
+  const label = document.getElementById('calMonth');
+  const year = viewMonth.getFullYear();
+  const month = viewMonth.getMonth();
+
+  label.textContent = `${year}년 ${month + 1}월`;
+
+  // Get days to show (current week context around selected date, or full month days for that month)
+  const firstDay = new Date(year, month, 1).getDay();
+  const lastDate = new Date(year, month + 1, 0).getDate();
+
+  let html = '';
+
+  // Day headers
+  ['일','월','화','수','목','금','토'].forEach(d => {
+    html += `<div class="cal-day" style="font-size:10px;color:#aeaeb2;cursor:default;font-weight:600">${d}</div>`;
+  });
+
+  // Leading blanks
+  for (let i = 0; i < firstDay; i++) {
+    const prevDate = new Date(year, month, -firstDay + i + 1);
+    html += `<div class="cal-day other-month">${prevDate.getDate()}</div>`;
+  }
+
+  // Days
+  for (let d = 1; d <= lastDate; d++) {
+    const date = new Date(year, month, d);
+    const dateStr = formatDate(date);
+    const isToday = dateStr === formatDate(currentDate);
+    const isSelected = dateStr === formatDate(selectedDate);
+    const hasData = availableDates.includes(dateStr) || SAMPLE_DATA[dateStr];
+
+    let cls = 'cal-day';
+    if (isToday) cls += ' today';
+    if (isSelected) cls += ' selected';
+    if (hasData) cls += ' has-data';
+
+    html += `<div class="${cls}" data-date="${dateStr}">${d}</div>`;
+  }
+
+  grid.innerHTML = html;
+  grid.style.display = 'grid';
+  grid.style.gridTemplateColumns = 'repeat(7, 36px)';
+  grid.style.gap = '2px';
+
+  grid.querySelectorAll('.cal-day[data-date]').forEach(el => {
+    el.onclick = () => {
+      selectedDate = new Date(el.dataset.date + 'T00:00:00');
+      renderCalendar();
+      renderContent();
+      renderChannelList();
+      renderTodos();
+    };
+  });
+}
+
+// ── Content ──
+async function renderContent() {
+  const container = document.getElementById('content');
+  const dateStr = formatDateKR(selectedDate);
+  const dateKey = formatDate(selectedDate);
+
+  // Show loading
+  container.innerHTML = '<div class="empty-state"><div class="text">로딩 중...</div></div>';
+
+  const data = await loadDateData(dateKey);
+
+  if (!data) {
+    container.innerHTML = `
+      <div class="content-header">
+        <h1>${dateStr}</h1>
+        <div class="sub">데이터 없음</div>
+      </div>
+      <div class="empty-state">
+        <div class="icon">📭</div>
+        <div class="text">이 날짜의 슬랙 리포트가 없습니다</div>
+      </div>`;
+    return;
+  }
+
+  if (selectedChannel === 'all') {
+    renderAllChannels(container, data, dateStr);
+  } else {
+    renderSingleChannel(container, data, dateStr);
+  }
+}
+
+function renderAllChannels(container, data, dateStr) {
+  const activeChannels = CHANNELS.filter(ch => data.channels[ch.id]);
+  const count = activeChannels.length;
+
+  let html = `
+    <div class="content-header">
+      <h1>${dateStr}</h1>
+      <div class="sub">${count}개 채널에 새 메시지</div>
+    </div>
+    <div class="all-channel-summary">`;
+
+  activeChannels.forEach(ch => {
+    const chData = data.channels[ch.id];
+    html += `
+      <div class="channel-block">
+        <div class="channel-block-title">
+          <span class="hash">#</span>${ch.name}
+        </div>
+        <div class="summary-text">${chData.summary}</div>
+      </div>`;
+  });
+
+  if (count === 0) {
+    html += '<div class="empty-state"><div class="icon">✨</div><div class="text">오늘은 새 메시지가 없습니다</div></div>';
+  }
+
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function renderSingleChannel(container, data, dateStr) {
+  const ch = CHANNELS.find(c => c.id === selectedChannel);
+  const chData = data.channels[selectedChannel];
+
+  if (!chData) {
+    container.innerHTML = `
+      <div class="content-header">
+        <h1>#${ch?.name || ''}</h1>
+        <div class="sub">${dateStr}</div>
+      </div>
+      <div class="empty-state">
+        <div class="icon">💤</div>
+        <div class="text">이 채널에 새 메시지 없음</div>
+      </div>`;
+    return;
+  }
+
+  const hasFullLog = chData.fullLog && chData.fullLog.length > 0;
+  let html = `
+    <div class="content-header">
+      <h1>#${ch.name}</h1>
+      <div class="sub">${dateStr} &middot; ${chData.messages.length}건의 메시지${hasFullLog ? ' &middot; 전체 로그 ' + chData.fullLog.length + '건' : ''}</div>
+      <div class="content-tabs">
+        <div class="content-tab active" data-ctab="summary">요약</div>
+        <div class="content-tab" data-ctab="messages">대화</div>
+        ${hasFullLog ? '<div class="content-tab" data-ctab="fulllog">전체 로그</div>' : ''}
+      </div>
+    </div>
+    <div id="ctab-summary">
+    <div class="msg-group">
+      <div class="msg-group-title">요약</div>
+      <div class="msg-card">
+        <div class="msg-text" style="padding-left:0;line-height:1.8">${chData.summary}</div>
+      </div>
+    </div>
+    <div class="msg-group">
+      <div class="msg-group-title">대화</div>`;
+
+  chData.messages.forEach(msg => {
+    const member = MEMBERS.find(m => m.short === msg.sender || m.key === msg.sender);
+    const avClass = member ? `av-${member.key}` : '';
+    const initial = msg.sender.charAt(0);
+
+    html += `
+      <div class="msg-card">
+        <div class="msg-sender">
+          <div class="msg-avatar ${avClass}">${initial}</div>
+          <div class="msg-name">${member ? member.name : msg.sender}</div>
+          <div class="msg-time">${msg.time}</div>
+        </div>
+        <div class="msg-text">${msg.text}</div>
+      </div>`;
+  });
+
+  html += '</div></div>'; // close msg-group + ctab-summary
+
+  // Full log section (hidden by default)
+  if (hasFullLog) {
+    html += '<div id="ctab-fulllog" style="display:none"><div class="msg-group"><div class="msg-group-title">전체 대화 로그</div>';
+    chData.fullLog.forEach(msg => {
+      const member = MEMBERS.find(m => m.short === msg.sender || m.key === msg.sender);
+      const avClass = member ? `av-${member.key}` : '';
+      const initial = msg.sender.charAt(0);
+      html += `
+        <div class="msg-card">
+          <div class="msg-sender">
+            <div class="msg-avatar ${avClass}">${initial}</div>
+            <div class="msg-name">${member ? member.name : msg.sender}</div>
+            <div class="msg-time">${msg.time}</div>
+          </div>
+          <div class="msg-text">${msg.text}</div>
+        </div>`;
+    });
+    html += '</div></div>';
+  }
+
+  container.innerHTML = html;
+
+  // Tab switching
+  container.querySelectorAll('.content-tab').forEach(tab => {
+    tab.onclick = () => {
+      container.querySelectorAll('.content-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const view = tab.dataset.ctab;
+      const summary = document.getElementById('ctab-summary');
+      const fulllog = document.getElementById('ctab-fulllog');
+      if (view === 'summary' || view === 'messages') {
+        if (summary) summary.style.display = '';
+        if (fulllog) fulllog.style.display = 'none';
+      } else if (view === 'fulllog') {
+        if (summary) summary.style.display = 'none';
+        if (fulllog) fulllog.style.display = '';
+      }
+    };
+  });
+}
+
+// ── Person Filter ──
+function renderPersonFilter() {
+  const filter = document.getElementById('personFilter');
+  let html = `<div class="person-chip active" data-person="all">전체</div>`;
+  MEMBERS.forEach(m => {
+    html += `<div class="person-chip" data-person="${m.key}">${m.short}</div>`;
+  });
+  filter.innerHTML = html;
+
+  filter.querySelectorAll('.person-chip').forEach(el => {
+    el.onclick = () => {
+      filter.querySelectorAll('.person-chip').forEach(e => e.classList.remove('active'));
+      el.classList.add('active');
+      selectedPerson = el.dataset.person;
+      renderTodos();
+    };
+  });
+}
+
+// ── Todos ──
+async function renderTodos() {
+  if (todoView === 'all') {
+    await renderAllTodos();
+  } else if (todoView === 'done') {
+    await renderDoneTodos();
+  } else {
+    await renderDateTodos();
+  }
+}
+
+async function renderDateTodos() {
+  const list = document.getElementById('todoList');
+  const countEl = document.getElementById('todoCount');
+  const dateKey = formatDate(selectedDate);
+  const data = await loadDateData(dateKey);
+
+  if (!data || !data.todos) {
+    list.innerHTML = '<div class="empty-state" style="height:150px"><div class="text">할일 없음</div></div>';
+    countEl.textContent = '0건';
+    return;
+  }
+
+  let todos = data.todos;
+  if (selectedPerson !== 'all') {
+    todos = todos.filter(t => {
+      const a = Array.isArray(t.assignee) ? t.assignee : [t.assignee];
+      return a.includes(selectedPerson);
+    });
+  }
+
+  if (!todosState[dateKey]) todosState[dateKey] = {};
+
+  todos = todos.map(t => ({
+    ...t,
+    done: todosState[dateKey][t.id] !== undefined ? todosState[dateKey][t.id] : t.done
+  }));
+
+  const pending = todos.filter(t => !t.done);
+  const done = todos.filter(t => t.done);
+  countEl.textContent = `${pending.length}건 남음`;
+
+  let html = '';
+  pending.forEach(t => { html += todoItemHTML(t); });
+  done.forEach(t => { html += todoItemHTML(t); });
+  html += `<button class="btn-add" id="addTodoBtn">+ 할일 추가</button>`;
+
+  list.innerHTML = html;
+  bindTodoEvents(dateKey);
+}
+
+async function renderAllTodos() {
+  const list = document.getElementById('todoList');
+  const countEl = document.getElementById('todoCount');
+
+  // Load all dates
+  list.innerHTML = '<div class="empty-state" style="height:150px"><div class="text">로딩 중...</div></div>';
+  await Promise.all(availableDates.map(d => loadDateData(d)));
+
+  // Collect all pending todos across all dates
+  const allPending = [];
+  const sortedDates = Object.keys(SAMPLE_DATA).sort().reverse();
+
+  sortedDates.forEach(dateKey => {
+    const data = SAMPLE_DATA[dateKey];
+    if (!data?.todos) return;
+    if (!todosState[dateKey]) todosState[dateKey] = {};
+
+    data.todos.forEach(t => {
+      const isDone = todosState[dateKey][t.id] !== undefined ? todosState[dateKey][t.id] : t.done;
+      if (!isDone) {
+        const a = Array.isArray(t.assignee) ? t.assignee : [t.assignee];
+        if (selectedPerson === 'all' || a.includes(selectedPerson)) {
+          allPending.push({ ...t, _dateKey: dateKey });
+        }
+      }
+    });
+  });
+
+  countEl.textContent = `전체 ${allPending.length}건 미완료`;
+
+  if (allPending.length === 0) {
+    list.innerHTML = '<div class="empty-state" style="height:150px"><div class="text">미완료 할일 없음</div></div>';
+    return;
+  }
+
+  // Group by date
+  const grouped = {};
+  allPending.forEach(t => {
+    if (!grouped[t._dateKey]) grouped[t._dateKey] = [];
+    grouped[t._dateKey].push(t);
+  });
+
+  let html = '';
+  Object.keys(grouped).sort().reverse().forEach(dateKey => {
+    const d = new Date(dateKey + 'T00:00:00');
+    const label = `${d.getMonth()+1}/${d.getDate()}(${['일','월','화','수','목','금','토'][d.getDay()]})`;
+    html += `<div class="todo-date-group"><div class="todo-date-label">${label}</div></div>`;
+    grouped[dateKey].forEach(t => {
+      html += todoItemHTML(t);
+    });
+  });
+
+  list.innerHTML = html;
+
+  list.querySelectorAll('.todo-check').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const item = el.closest('.todo-item');
+      const id = parseInt(item.dataset.id);
+      const dateKey = findTodoDate(id);
+      if (!dateKey) return;
+      fbSetDone(dateKey, id, true);
+      item.classList.add('done');
+      setTimeout(() => {
+        item.classList.add('hiding');
+        setTimeout(() => renderTodos(), 300);
+      }, 400);
+    };
+  });
+
+  list.querySelectorAll('.todo-edit').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const id = parseInt(el.dataset.edit);
+      const dateKey = findTodoDate(id);
+      if (dateKey) {
+        selectedDate = new Date(dateKey + 'T00:00:00');
+        openEditModal(id);
+      }
+    };
+  });
+}
+
+async function renderDoneTodos() {
+  const list = document.getElementById('todoList');
+  const countEl = document.getElementById('todoCount');
+
+  // Load all dates
+  list.innerHTML = '<div class="empty-state" style="height:150px"><div class="text">로딩 중...</div></div>';
+  await Promise.all(availableDates.map(d => loadDateData(d)));
+
+  const allDone = [];
+  const sortedDates = Object.keys(SAMPLE_DATA).sort().reverse();
+
+  sortedDates.forEach(dateKey => {
+    const data = SAMPLE_DATA[dateKey];
+    if (!data?.todos) return;
+    if (!todosState[dateKey]) todosState[dateKey] = {};
+
+    data.todos.forEach(t => {
+      const isDone = todosState[dateKey][t.id] !== undefined ? todosState[dateKey][t.id] : t.done;
+      if (isDone) {
+        const a = Array.isArray(t.assignee) ? t.assignee : [t.assignee];
+        if (selectedPerson === 'all' || a.includes(selectedPerson)) {
+          allDone.push({ ...t, _dateKey: dateKey, done: true });
+        }
+      }
+    });
+  });
+
+  countEl.textContent = `전체 ${allDone.length}건 완료`;
+
+  if (allDone.length === 0) {
+    list.innerHTML = '<div class="empty-state" style="height:150px"><div class="text">완료된 할일 없음</div></div>';
+    return;
+  }
+
+  const grouped = {};
+  allDone.forEach(t => {
+    if (!grouped[t._dateKey]) grouped[t._dateKey] = [];
+    grouped[t._dateKey].push(t);
+  });
+
+  let html = '';
+  Object.keys(grouped).sort().reverse().forEach(dateKey => {
+    const d = new Date(dateKey + 'T00:00:00');
+    const label = `${d.getMonth()+1}/${d.getDate()}(${['일','월','화','수','목','금','토'][d.getDay()]})`;
+    html += `<div class="todo-date-group"><div class="todo-date-label">${label}</div></div>`;
+    grouped[dateKey].forEach(t => {
+      html += todoItemHTML(t);
+    });
+  });
+
+  list.innerHTML = html;
+
+  // Uncheck (restore) click
+  list.querySelectorAll('.todo-check').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const item = el.closest('.todo-item');
+      const id = parseInt(item.dataset.id);
+      const dateKey = findTodoDate(id);
+      if (!dateKey) return;
+      fbSetDone(dateKey, id, false);
+      item.classList.add('hiding');
+      setTimeout(() => renderTodos(), 300);
+    };
+  });
+
+  list.querySelectorAll('.todo-edit').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const id = parseInt(el.dataset.edit);
+      const dateKey = findTodoDate(id);
+      if (dateKey) {
+        selectedDate = new Date(dateKey + 'T00:00:00');
+        openEditModal(id);
+      }
+    };
+  });
+}
+
+function findTodoDate(id) {
+  for (const [dateKey, data] of Object.entries(SAMPLE_DATA)) {
+    if (data.todos?.some(t => t.id === id)) return dateKey;
+  }
+  return null;
+}
+
+function fbSetDone(dateKey, id, val) {
+  db.ref(`todos_state/${dateKey}/${id}`).set(val);
+  if (!todosState[dateKey]) todosState[dateKey] = {};
+  todosState[dateKey][id] = val;
+}
+
+function bindTodoEvents(dateKey) {
+  const list = document.getElementById('todoList');
+
+  list.querySelectorAll('.todo-check').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      const item = el.closest('.todo-item');
+      const id = parseInt(item.dataset.id);
+      const newVal = !(todosState[dateKey]?.[id]);
+      fbSetDone(dateKey, id, newVal);
+
+      if (newVal) {
+        item.classList.add('done');
+        setTimeout(() => {
+          item.classList.add('hiding');
+          setTimeout(() => renderTodos(), 300);
+        }, 400);
+      } else {
+        renderTodos();
+      }
+    };
+  });
+
+  list.querySelectorAll('.todo-edit').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      openEditModal(parseInt(el.dataset.edit));
+    };
+  });
+
+  const addBtn = document.getElementById('addTodoBtn');
+  if (addBtn) addBtn.onclick = () => openEditModal(null);
+}
+
+function todoItemHTML(t) {
+  const assignees = Array.isArray(t.assignee) ? t.assignee : [t.assignee];
+  const tags = assignees.map(a => {
+    const m = MEMBERS.find(m => m.key === a);
+    const cls = m ? `av-${m.key}` : '';
+    return `<span class="todo-assignee-tag ${cls}">${m ? m.short : a}</span>`;
+  }).join('');
+  const evidence = t.evidence ? `<div class="todo-evidence">${t.evidence}</div>` : '';
+  return `
+    <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}">
+      <div class="todo-check"></div>
+      <div class="todo-content">
+        <div>
+          <span class="todo-channel">#${t.channel}</span>
+          <span class="todo-project">/ ${t.project}</span>
+        </div>
+        <div class="todo-text">${t.text}</div>
+        <div class="todo-assignees">${tags}</div>
+        ${evidence}
+      </div>
+      <button class="todo-edit" data-edit="${t.id}" title="수정">&#9998;</button>
+    </div>`;
+}
+
+// ── Helpers ──
+function formatDate(d) {
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function formatDateKR(d) {
+  const days = ['일','월','화','수','목','금','토'];
+  return `${d.getMonth()+1}/${d.getDate()}(${days[d.getDay()]})`;
+}
+function getDateData() {
+  return SAMPLE_DATA[formatDate(selectedDate)] || null;
+}
+
+// ── Edit Modal ──
+let editingId = null;
+
+let modalSelectedAssignees = [];
+
+function renderAssigneeChips() {
+  const container = document.getElementById('editAssigneeChips');
+  container.innerHTML = MEMBERS.map(m =>
+    `<div class="assignee-chip${modalSelectedAssignees.includes(m.key) ? ' selected' : ''}" data-key="${m.key}">${m.short}</div>`
+  ).join('');
+  container.querySelectorAll('.assignee-chip').forEach(el => {
+    el.onclick = () => {
+      const key = el.dataset.key;
+      if (modalSelectedAssignees.includes(key)) {
+        modalSelectedAssignees = modalSelectedAssignees.filter(k => k !== key);
+      } else {
+        modalSelectedAssignees.push(key);
+      }
+      renderAssigneeChips();
+    };
+  });
+}
+
+function openEditModal(id) {
+  const modal = document.getElementById('editModal');
+  const data = getDateData();
+
+  if (id !== null && data?.todos) {
+    const todo = data.todos.find(t => t.id === id);
+    if (!todo) return;
+    editingId = id;
+    document.getElementById('modalTitle').textContent = '할일 수정';
+    modalSelectedAssignees = Array.isArray(todo.assignee) ? [...todo.assignee] : [todo.assignee];
+    document.getElementById('editChannel').value = todo.channel;
+    document.getElementById('editProject').value = todo.project;
+    document.getElementById('editText').value = todo.text;
+    document.getElementById('editDelete').style.display = '';
+  } else {
+    editingId = null;
+    document.getElementById('modalTitle').textContent = '할일 추가';
+    modalSelectedAssignees = ['준태'];
+    document.getElementById('editChannel').value = '';
+    document.getElementById('editProject').value = '';
+    document.getElementById('editText').value = '';
+    document.getElementById('editDelete').style.display = 'none';
+  }
+
+  renderAssigneeChips();
+  modal.classList.add('show');
+}
+
+function closeEditModal() {
+  document.getElementById('editModal').classList.remove('show');
+  editingId = null;
+}
+
+document.getElementById('editCancel').onclick = closeEditModal;
+document.getElementById('editModal').onclick = (e) => {
+  if (e.target === document.getElementById('editModal')) closeEditModal();
+};
+
+document.getElementById('editSave').onclick = () => {
+  const dateKey = formatDate(selectedDate);
+  const data = getDateData();
+  if (!data) return;
+  if (!data.todos) data.todos = [];
+
+  const values = {
+    assignee: modalSelectedAssignees.length === 1 ? modalSelectedAssignees[0] : [...modalSelectedAssignees],
+    channel: document.getElementById('editChannel').value,
+    project: document.getElementById('editProject').value,
+    text: document.getElementById('editText').value,
+    done: false
+  };
+
+  if (editingId !== null) {
+    const todo = data.todos.find(t => t.id === editingId);
+    if (todo) Object.assign(todo, values);
+    db.ref(`todos_edits/${editingId}`).set({ ...values, dateKey });
+  } else {
+    const maxId = Math.max(0, ...Object.values(SAMPLE_DATA).flatMap(d => (d.todos||[]).map(t => t.id)));
+    const newId = maxId + 1;
+    const newTodo = { id: newId, ...values };
+    data.todos.push(newTodo);
+    db.ref(`todos_added/${dateKey}/${newId}`).set(newTodo);
+  }
+
+  closeEditModal();
+  renderTodos();
+};
+
+document.getElementById('editDelete').onclick = () => {
+  if (editingId === null) return;
+  const dateKey = formatDate(selectedDate);
+  const data = getDateData();
+  if (data?.todos) {
+    data.todos = data.todos.filter(t => t.id !== editingId);
+  }
+  db.ref(`todos_deleted/${editingId}`).set(true);
+  closeEditModal();
+  renderTodos();
+};
+
+init();
+</script>
+</body>
+</html>

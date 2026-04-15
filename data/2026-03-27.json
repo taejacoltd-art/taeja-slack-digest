@@ -1,0 +1,112 @@
+{
+  "channels": {
+    "C0AK0V0C7BJ": {
+      "summary": "<span class=\"person\">성민</span>/<span class=\"person\">수혁</span> — DB 스키마 설계 계속. 테이블 구조 확정",
+      "messages": [
+        {
+          "sender": "성민",
+          "time": "10:00",
+          "text": "DB 테이블 구조 확정합니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "10:30",
+          "text": "네 확인했습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "수혁",
+          "time": "10:29",
+          "text": " [파일: ONF_System Layer_오수혁(안)_오늘 디스커션 내용.pptx] [👀 2명]"
+        },
+        {
+          "sender": "건희",
+          "time": "13:20",
+          "text": "금일 14시 회의자료 [파일: 0330 GTMT(GO TO MARKET TAEJA.pptx]"
+        },
+        {
+          "sender": "건희",
+          "time": "13:22",
+          "text": "윤하 지수 유민 14시 회의 GTMT(이건희 발표)만 참가 부탁드립니다\n&lt;회의 순서&gt;\n참가인원: 전체인원\n1. 이건희\n2. 오수혁\n3. 김성민\n4. 기타 논의 [✅ 4명]"
+        },
+        {
+          "sender": "성민",
+          "time": "14:00",
+          "text": " [파일: voice-emotion-labeling.md] [파일: voice-emotion-data.md]"
+        }
+      ]
+    },
+    "C0AJU22MXMJ": {
+      "summary": "<span class=\"person\">준태</span> — 민수달 유튜브채널 운영 통합관리 구글시트 공유",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "11:00",
+          "text": "유튜브채널 운영 통합관리 구글시트 공유합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "18:49",
+          "text": "유투브채널 차주 월요일 회의 후 생성 준태 [✅ 1명]"
+        },
+        {
+          "sender": "준태",
+          "time": "18:59",
+          "text": "금일 \"20260327-유튜브채널운영-통합관리-V1\" 관련한 파일 제작하여 전달드립니다!\n\nhttps://docs.google.com/spreadsheets/d/1m1NJPW4g_mSqnCkp1OYyIO_BWpKWiI0pIfXUFbHAjv0/edit?usp=sharing [파일: 20260327-유튜브채널운영-통합관리-V1] [쓰레드 3개]"
+        }
+      ]
+    },
+    "C0ALWFZQMTP": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "17:25",
+          "text": "임가공업체 작업요청서 공유드립니다. 39박스 보냈고 월요일 100박스 더 보내겠습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "17:25",
+          "text": "건희\n\n대표님 임가공업체에 전달할 작업요청서 작성하여 공유드립니다 !\n\n박스는 오늘 39박스 보냈고,\n월요일 퀵으로 물류사에서 100박스 더 보내놓겠습니다! [파일: 20260327_KE삼성_3차작업요청서-V1.xlsx] [쓰레드 3개]"
+        }
+      ]
+    },
+    "C0AJ6NYLKT4": {
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "19:11",
+          "text": "금주 업데이트 프롬프트 전달 드립니다 성민 [👀 1명]"
+        }
+      ]
+    },
+    "C0AHRGP7CVD": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:54",
+          "text": "Adobe -2 Lic / PW: 각 담당자 개인DM\n1. zeesu.kim@taejaworks.com\n2. yumin.lee@taejaworks.com"
+        }
+      ]
+    }
+  },
+  "todos": [
+    {
+      "id": 107,
+      "assignee": "준태",
+      "channel": "contents_민수달",
+      "project": "민수달",
+      "text": "유튜브채널 운영 통합관리 구글시트 작성",
+      "done": true,
+      "evidence": "3/27 준태 구글시트 링크 공유 완료"
+    }
+  ]
+}

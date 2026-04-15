@@ -1,0 +1,70 @@
+{
+  "channels": {
+    "C0AK0V0C7BJ": {
+      "summary": "<span class=\"person\">건희 대표</span> — DB 스키마 설계 논의 시작. <span class=\"person\">성민</span>/<span class=\"person\">수혁</span> 참여",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "10:00",
+          "text": "DB 스키마 설계 논의합시다"
+        },
+        {
+          "sender": "성민",
+          "time": "10:30",
+          "text": "기본 스키마 초안 공유합니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "11:00",
+          "text": "인덱싱 전략 의견입니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "수혁",
+          "time": "10:13",
+          "text": "온더팬덤 As-is와 Midterm관점 공유들비니다 향후 Longterm 아직 생각중 입니다 [파일: ONF_System Layer_오수혁(안).pptx] [✅ 2명]"
+        },
+        {
+          "sender": "건희",
+          "time": "10:42",
+          "text": "@here"
+        },
+        {
+          "sender": "건희",
+          "time": "10:42",
+          "text": "Short+midterm\nDB 스키마 ㅡ 팀장님 아키텍쳐 기반/ 파인튜닝, 각 디비별 매칭 중심으로 아이디어 설계했습니다\n-MVP때부터 적용 필\n• 유저\n• 캐릭터\n• 실시간브로드캐스팅 [파일: IMG_7456.jpg] [파일: IMG_7455.jpg] [👀 2명]"
+        }
+      ]
+    },
+    "C0ALWFZQMTP": {
+      "summary": "<span class=\"person\">준태</span> — 임가공 작업요청서 추가 공유",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "14:00",
+          "text": "임가공 작업요청서 추가 공유합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "14:00",
+          "text": "임가공 작업요청서 추가 공유합니다"
+        }
+      ]
+    },
+    "C0AJ4HXRD5L": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "14:53",
+          "text": " [파일: IMG_7463.png]"
+        }
+      ]
+    }
+  },
+  "todos": []
+}

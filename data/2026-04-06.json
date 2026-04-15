@@ -1,0 +1,243 @@
+{
+  "channels": {
+    "C0AJ6NYLKT4": {
+      "summary": "<span class=\"person\">규민</span> — 5주차 피드백 공유<br><span class=\"person\">건희 대표</span> — 영상데이터 전처리 프로세스 업데이트: 구글드라이브(세린) → NAS(준태, 매주 월) → RAG(규민)",
+      "messages": [
+        {
+          "sender": "규민",
+          "time": "10:00",
+          "text": "5주차 피드백입니다"
+        },
+        {
+          "sender": "건희",
+          "time": "11:00",
+          "text": "영상데이터 전처리 프로세스: 구글드라이브(세린) → NAS(준태, 매주 월) → RAG(규민)"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "10:06",
+          "text": "※ 중요\n\n[차세린 영상데이터 - 음성데이터 전처리] Process 업데이트\n\n1. 방송 후 구글드라이브 업로드 - 차세린\nㄴ 새로운 구글드라이브 링크 각 담당자들에게 전달\n 2.  매주 월요일 NAS 드라이브에 이동 - 준태\nㄴ IP사업부 - 영상부분\n 3. 해당 데이터 RAG에 맞추어 전처리 - 규민 [✅ 1명] [쓰레드 1개]"
+        },
+        {
+          "sender": "건희",
+          "time": "11:18",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        },
+        {
+          "sender": "규민",
+          "time": "12:29",
+          "text": "5주차 피드백입니다 [파일: 차세린 5주차 피드백.pdf] [✅ 1명]"
+        }
+      ]
+    },
+    "C0AM3GBFPGU": {
+      "summary": "<span class=\"person\">지수</span> — 모니터 피규어 진행상황 공유. 3D작업 → 렌더링 → 샘플 순서",
+      "messages": [
+        {
+          "sender": "지수",
+          "time": "13:00",
+          "text": "모니터 피규어 진행상황입니다. 3D작업 → 렌더링 → 샘플 순서로 진행합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "지수",
+          "time": "11:31",
+          "text": "마성의 팍스 모니터 피규어 진행 상황 공유드립니다.\n\n업체: 디자인 실리콘\n\n4/6: 3D 작업 파일 전달\n4/8: 랜더링 작업 완료 예정 (영업일 기준 2일 소요)\n*랜더링 확인 후 샘플 진행\n\n샘플 리드타임: 2주\n양산 리드타임: 4주 반\n\n건희 윤하 [✅ 3명] [쓰레드 3개]"
+        }
+      ]
+    },
+    "C0AM3GKNCN8": {
+      "summary": "<span class=\"person\">유민</span> — 가정의달 티셔츠/굿즈 회의 결과 정리",
+      "messages": [
+        {
+          "sender": "유민",
+          "time": "14:00",
+          "text": "가정의달 티셔츠/굿즈 회의 결과 정리입니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "유민",
+          "time": "14:00",
+          "text": "가정의달 티셔츠/굿즈 회의 결과 정리입니다"
+        }
+      ]
+    },
+    "C0AJ38GC9HB": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "09:00",
+          "text": "[공지] 이메일이 Gmail로 전환되었습니다!\n로그인 주소: workspace.google.com\n아이디: 본인 @taejaworks.com 이메일(기존 동일)\n임시 비밀번호: Dlsrks123!\n접속 후 비밀번호 꼭 변경해주세요!"
+        },
+        {
+          "sender": "준태",
+          "time": "11:35",
+          "text": "지난 메일도 백업 된 것 확인했습니다!"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "09:00",
+          "text": ":e-mail: [공지] 이메일이 Gmail로 전환되었습니다!\n:white_check_mark: 로그인 주소: workspace.google.com\n:white_check_mark: 아이디: 본인 @taejaworks.com 이메일(기존 동일)\n:white_check_mark: 임시 비밀번호: Dlsrks123!\n접속 후 비밀번호 꼭 변경해주세요!\n기존 아웃룩 메일은 Gmail 받은편지함에 이미 이전되어 있습니다.\n문의사항은 DM 연락주세요 [✅ 4명] [쓰레드 2개]"
+        },
+        {
+          "sender": "준태",
+          "time": "11:35",
+          "text": "지난 메일도 백업 된 것 확인했습니다!"
+        }
+      ]
+    },
+    "C0APK7RF82J": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "18:33",
+          "text": "마왕 키캡세트 - 임가공 필요"
+        },
+        {
+          "sender": "준태",
+          "time": "19:21",
+          "text": "통뚱이 피규어 - 증지부착"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "18:33",
+          "text": "마왕 키캡세트 - 임가공 필요 [✅ 1명] [쓰레드 2개]"
+        },
+        {
+          "sender": "준태",
+          "time": "19:21",
+          "text": "통깡이 피규어 - 증지부착 [쓰레드 1개]"
+        }
+      ]
+    },
+    "C0ALWFZQMTP": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "13:14",
+          "text": "스트레스볼 패키지 부족 67개\n야구공인형키링 1개 불량 1개 부족\n머리띤 17개 부족 (오는 중)\n유니폼 인형 키링 2개 불량"
+        },
+        {
+          "sender": "준태",
+          "time": "16:08",
+          "text": "[이미지]"
+        },
+        {
+          "sender": "건희",
+          "time": "16:41",
+          "text": "[이미지]"
+        },
+        {
+          "sender": "건희",
+          "time": "16:42",
+          "text": "@윤하 @지수 @성민 @준태 논쟁건 업데이트드립니다"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:30",
+          "text": "짐색 기진행 샘플 및 로고 타겟원단 명일 사무실 도착 예정입니다."
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "13:14",
+          "text": "스트레스볼 패키지 부족 67개\n야구공인형키링 1개 불량 1개 부족\n머리띠 17개 부족 (오는 중)\n유니폼 인형 키링 2개 불량 [✅ 1명]"
+        },
+        {
+          "sender": "준태",
+          "time": "16:08",
+          "text": " [파일: (수정)Packing_List_TJW-KE_3차_20260407-V2.xlsx] [쓰레드 16개]"
+        },
+        {
+          "sender": "건희",
+          "time": "16:41",
+          "text": " [파일: IMG_7594.jpg] [✅ 2명]"
+        },
+        {
+          "sender": "건희",
+          "time": "16:42",
+          "text": "윤하 지수 성민 준태 \n\n아까 공유드린 논쟁건 업데이트드립니다 [✅ 3명] [쓰레드 2개]"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:30",
+          "text": "짐색 기진행 샘플 및 로고 타겟원단 명일 사무실 도착 예정입니다."
+        }
+      ]
+    },
+    "C0AJU22MXMJ": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "12:09",
+          "text": "안녕하세요 유민님, 콘텐츠사업 업무요청 드립니다.\n베너: 2048x1152px / 썸네일: 800x800px / 워터마크: 150x150px"
+        },
+        {
+          "sender": "준태",
+          "time": "12:10",
+          "text": "[이미지]"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "12:09",
+          "text": "안녕하세요 유민님,\n콘텐츠사업 업무요청 드립니다.\n• 베너 : 2048x1152px\n• 썸네일 : 800x800px\n• 워터마크 : 150x150px\n내용 : 민수달 유튜브 채널 프로필 및 베너 제작\n\n기한 : 이번주 수요일 이내\n\n유민\n\n<예시 - 차세린 유튜브 채널>\nhttps://www.youtube.com/@Nitroglyserin\n\n<작업해야 할 페이퍼 - 민수달 유튜브 채널>\nhttps://www.youtube.com/@otter_minsudal\n\n<업무참고 구글시트>\nhttps://docs.google.com/spreadsheets/d/1m1NJPW4g_mSqnCkp1OYyIO_BWpKWiI0pIfXUFbHAjv0/edit?usp=sharing [파일: 20260327-유튜브채널운영-통합관리-V1] [✅ 1명] [쓰레드 1개]"
+        },
+        {
+          "sender": "준태",
+          "time": "12:10",
+          "text": " [파일: 민수달.zip] [✅ 1명]"
+        }
+      ]
+    },
+    "C0ALY0XQ40N": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "11:25",
+          "text": "@윤하 @지수\n위챗 내 product dev에 남긴 배터리 품목F/W + 이외 상품개발해볼만한 품목 패러블/카엔터웹툰팀에 제안할 용도로 정리 부탁드리겠습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:25",
+          "text": "윤하 지수\n위챗 내 product dev에 남긴 배터리 품목F/W  + 이외 상품개발해볼만한 품목 패러블/카엔터웹툰팀에 제안할 용도로 정리 부탁드리겠습니다 :slightly_smiling_face:\n(쫀냐미는 먹는 컨셉으로 유민님 자리에서 봤던 품목 참 괜찮은듯 해요!)\n-금일 카엔터웹툰 소통방 만들게요 [✅ 3명] [쓰레드 9개]"
+        }
+      ]
+    },
+    "C0AJ4HXRD5L": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "10:49",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        }
+      ]
+    }
+  },
+  "todos": []
+}

@@ -1,0 +1,123 @@
+{
+  "channels": {
+    "C0AJU22MXMJ": {
+      "summary": "<span class=\"person\">준태</span> — 민수달 유튜브 첫 영상 게시 완료",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "15:00",
+          "text": "민수달 유튜브 첫 영상 게시 완료했습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "18:22",
+          "text": "https://www.youtube.com/@otter_minsudal\n\n@channel\n\n민수달 유튜브채널 첫 영상 개시 되었습니다\n\n좋아요 구독 부탁드립니다... :+1:"
+        }
+      ]
+    },
+    "C0ALWFZQMTP": {
+      "summary": "<span class=\"person\">건희 대표</span> — 스트레스볼 잔여 라온파크 입고 → 카엔터 알림 요청 (준태)",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "11:00",
+          "text": "스트레스볼 잔여 라온파크 입고됩니다. 준태님 카엔터 알림 부탁드립니다"
+        },
+        {
+          "sender": "준태",
+          "time": "11:30",
+          "text": "네 확인했습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "10:46",
+          "text": "양면짐색발주진행"
+        },
+        {
+          "sender": "건희",
+          "time": "10:46",
+          "text": " [파일: image.png] [✅ 1명]"
+        },
+        {
+          "sender": "건희",
+          "time": "10:47",
+          "text": "agh 파이널체크만 부탁드립니다 발주입금하겠습니다"
+        },
+        {
+          "sender": "건희",
+          "time": "10:50",
+          "text": "준태 준태님 오늘 스트레스볼잔여 라온파크 입고되면 오후정도에 카엔터쪽에 알려주시면 좋을 것 같습니다 : ) [✅ 1명] [쓰레드 1개]"
+        },
+        {
+          "sender": "윤하",
+          "time": "10:50",
+          "text": "건희\n대표님, 리유저블백은 이렇게 작업해서 파일만 전달드리면 될까요? [파일: image.png] [쓰레드 7개]"
+        }
+      ]
+    },
+    "C0APK7RF82J": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "12:10",
+          "text": "가능합니다"
+        },
+        {
+          "sender": "건희",
+          "time": "12:10",
+          "text": "꼬리쿠션 제외"
+        },
+        {
+          "sender": "건희",
+          "time": "12:10",
+          "text": "마다옴 발주 준비 오늘 진행 할수있을까요?!"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "12:10",
+          "text": "가능합니다 [✅ 1명]"
+        },
+        {
+          "sender": "건희",
+          "time": "12:10",
+          "text": "꼬리쿠션 제외"
+        },
+        {
+          "sender": "건희",
+          "time": "12:10",
+          "text": "마다옴 발주 준비 오늘 진행 할수있을까요?!"
+        }
+      ]
+    }
+  },
+  "todos": [
+    {
+      "id": 115,
+      "assignee": "준태",
+      "channel": "contents_민수달",
+      "project": "민수달",
+      "text": "유튜브 첫 영상 게시",
+      "done": true,
+      "evidence": "4/10 준태 \"첫 영상 개시 되었습니다\" 유튜브 링크 공유"
+    },
+    {
+      "id": 116,
+      "assignee": "준태",
+      "channel": "02-카카오엔터_삼성",
+      "project": "KE삼성",
+      "text": "스트레스볼 잔여 라온파크 입고 후 카엔터 알림",
+      "done": true,
+      "evidence": "4/14 주간회의에서 삼성라이온즈 물류 상황 보고 완료"
+    }
+  ]
+}

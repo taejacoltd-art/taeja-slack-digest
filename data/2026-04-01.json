@@ -1,0 +1,181 @@
+{
+  "channels": {
+    "C0AJ38GC9HB": {
+      "summary": "<span class=\"person\">건희 대표</span> — NAS 안내 공유. 생산파일 업데이트 프로세스 안내",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "10:00",
+          "text": "NAS 사용 안내합니다. 생산파일 업데이트 프로세스 공유드립니다"
+        },
+        {
+          "sender": "건희",
+          "time": "10:15",
+          "text": "각 파트별 NAS 폴더 구조 안내"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "13:18",
+          "text": "@here\nNAS 안내: 기존 원드라이브 to Local 스토리지로 이동합니다. 원드라이브의 경우 4월 10일까지만 유효\n데이터이전은 금주 내로 이전될 예정입니다.\n\n:file_folder: *[태자 NAS 사용 가이드]*\n안녕하세요! 회사 NAS(공유 드라이브) 사용법 안내드립니다.\n\n:white_check_mark: *1단계 — 앱 설치* 아래 링크에서 *Synology Drive Client* 설치 :link: https://www.synology.com/ko-kr/support/download → 검색창에 DS923+ 입력 → Desktop Utilities → Synology Drive Client 다운로드\n\n:white_check_mark: *2단계 — 로그인* 설치 후 실행하면 서버 주소 입력창\n:office: *사무실 내부: 172.30.1.23*\n• :house: *외부(재택/출장)*: http://QuickConnect.to/taeja0309\nㄴ DS file 앱 깔아서 진행\n• 아이디/비밀번호: 개인 ID: 영문철자 동일 /개인 비밀번호 Dlsrks123! 이후 바꾼것\n:white_check_mark: *3단계 — 폴더 동기화 설정* 로그인 후 동기화할 폴더 선택하면 자동으로 PC와 연결돼요. → 이후 해당 폴더에 파일 넣으면 *자동 저장 & 팀원 공유* 됩니다.\n\n:pushpin: *자주 쓰는 기능*\n• 파일 공유: 파일 우클릭 → Synology Drive → 링크 복사\n• 팀 폴더: 로그인 후 왼쪽 메뉴에서 확인 가능\n• 버전 복구: 파일 우클릭 → 이전 버전 복원 가능 (최대 8버전) [✅ 2명] [쓰레드 8개]"
+        },
+        {
+          "sender": "건희",
+          "time": "14:05",
+          "text": "일단 생산파일 업데이트 했습니다 [파일: image.png] [✅ 1명]"
+        }
+      ]
+    },
+    "C0AM3GBFPGU": {
+      "summary": "<span class=\"person\">지수</span> — 디자인 실리콘 견적서 공유<br><span class=\"person\">건희 대표</span> — \"이소게생겼네\" 피드백",
+      "messages": [
+        {
+          "sender": "지수",
+          "time": "11:00",
+          "text": "디자인 실리콘 견적서 공유합니다"
+        },
+        {
+          "sender": "건희",
+          "time": "11:30",
+          "text": "이소게생겼네"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:16",
+          "text": "이쁘게생겼네.. [파일: ec1a8638d52b193da6d349edc5e5960a.mp4] [쓰레드 1개]"
+        },
+        {
+          "sender": "지수",
+          "time": "16:07",
+          "text": "디자인 실리콘 (닌닌 수리검 업체) 모니터 피규어 문의 내용 공유드립니다.\n\n단가: 6,600원 (500개 기준, 부가세 별도)\n샘플 비용: 디자인당 250,000원 (부가세 별도)\nMOQ: 50개\n\n건희 윤하 [파일: image.png] [✅ 1명]"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:09",
+          "text": "마성의팍스 패키지 플랜\n\n노트: 랩핑 + 띠지 + 에어캡봉투(물류) = 700원 내외\n피규어: 패키지박스 + 완충재\n펜: 헤더+OPP\n쿠션담요: 진공포장+바코드스티커\n스티커: 배경지+OPP [✅ 1명] [쓰레드 1개]"
+        }
+      ]
+    },
+    "C0AJ4HXRD5L": {
+      "summary": "<span class=\"person\">건희 대표</span> — 풀어비스 방문 완료. \"무한성에 진입\" 코멘트",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "15:00",
+          "text": "풀어비스 방문 완료. 무한성에 진입합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "15:00",
+          "text": "풀어비스 방문 완료. 무한성에 진입합니다"
+        }
+      ]
+    },
+    "C0AM3GKNCN8": {
+      "summary": "<span class=\"person\">윤하</span> — 커스텀 티셔츠 하기 진행 가능 확인",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "13:00",
+          "text": "커스텀 티셔츠 하기 진행 가능합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "13:00",
+          "text": "커스텀 티셔츠 하기 진행 가능합니다"
+        }
+      ]
+    },
+    "C0ALWG29TB7": {
+      "summary": "<span class=\"person\">유민</span> — 쫀냐미 3D 렌더링 공유<br><span class=\"person\">윤하</span> — 메일 전달 완료",
+      "messages": [
+        {
+          "sender": "유민",
+          "time": "14:00",
+          "text": "쫀냐미 3D 공유합니다"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:30",
+          "text": "메일 전달 완료했습니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "12:19",
+          "text": "유민님 기여한 부분이 큰 걸로 알고있는데 고생많으셨어요^^ [😀 1명] [👍 1명] [:jisu: 1명] [쓰레드 1개]"
+        },
+        {
+          "sender": "윤하",
+          "time": "12:19",
+          "text": "메일 전달 완료하였습니다.\n히스토리 기록을 위해 이미지만 남겨둡니다. [파일: image.png] [파일: image.png] [파일: image.png] [✅ 2명] [👍 1명]"
+        }
+      ]
+    },
+    "C0AMC45RJ3U": {
+      "summary": "<span class=\"person\">건희 대표</span> — 자사몰 시안 참고 자료 공유",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "16:00",
+          "text": "자사몰 시안 참고 자료 공유합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "16:00",
+          "text": "자사몰 시안 참고 자료 공유합니다"
+        }
+      ]
+    },
+    "C0AJU22MXMJ": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:54",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        },
+        {
+          "sender": "건희",
+          "time": "16:08",
+          "text": " [파일: 민수달_가챠샵_기획제안서_260224_v3.pdf]"
+        }
+      ]
+    },
+    "C0AK0V0C7BJ": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:13",
+          "text": "성민 백엔드 관련 AWS 파트너사 검토 메일 포워딩드렸습니다 [파일: image.png] [✅ 1명]"
+        }
+      ]
+    }
+  },
+  "todos": [
+    {
+      "id": 110,
+      "assignee": "유민",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "project": "쫀냐미/고라니",
+      "text": "쫀냐미 3D 공유",
+      "done": true,
+      "evidence": "4/2 유민 \"쫀냐미 연탄, 해달 3D 공유드립니다!\" 이미지 첨부"
+    }
+  ]
+}

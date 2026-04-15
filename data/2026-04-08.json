@@ -1,0 +1,79 @@
+{
+  "channels": {
+    "C0AM3GBFPGU": {
+      "summary": "<span class=\"person\">지수</span> — 마팍 렌더링 이미지 공유. 모니터 피규어 2종 견적서",
+      "messages": [
+        {
+          "sender": "지수",
+          "time": "10:00",
+          "text": "렌더링 이미지 공유합니다"
+        },
+        {
+          "sender": "지수",
+          "time": "10:30",
+          "text": "모니터 피규어 2종 견적서입니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "지수",
+          "time": "10:00",
+          "text": "렌더링 이미지 공유합니다"
+        },
+        {
+          "sender": "지수",
+          "time": "10:30",
+          "text": "모니터 피규어 2종 견적서입니다"
+        }
+      ]
+    },
+    "C0ALWFZQMTP": {
+      "summary": "<span class=\"person\">건희 대표</span> — 짐색 파이널체크. 양면짐색 발주 진행 확정",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "14:00",
+          "text": "짐색 파이널체크합니다. 양면짐색 발주 진행합니다"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "14:00",
+          "text": "짐색 파이널체크합니다. 양면짐색 발주 진행합니다"
+        }
+      ]
+    },
+    "C0AJU22MXMJ": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "08:50",
+          "text": "[이미지]"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "08:50",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        }
+      ]
+    }
+  },
+  "todos": [
+    {
+      "id": 113,
+      "assignee": "지수",
+      "channel": "01-pb_마성의팍스",
+      "project": "마성의팍스 PB",
+      "text": "모니터 피규어 2종 견적서",
+      "done": true,
+      "evidence": "4/9 지수 \"견적서 전달드립니다\" + 세금계산서 선발행 요청"
+    }
+  ]
+}

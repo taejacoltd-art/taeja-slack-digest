@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "initialized_at": "2026-03-18T18:00:00",
+  "last_cycle": "2026-04-14T11:30:25",
+  "bot_dm_channel": "D0AMBRMQ5HR",
+  "bot_dm_checkpoint": "1773913822.982099",
+  "channels": {
+    "C0AHRGP7CVD": {
+      "name": "#06-archiving",
+      "last_ts": "1775177716.866399",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJ087F3B5": {
+      "name": "#03-ui-ux",
+      "last_ts": "1776039892.257939",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJ0DKH22F": {
+      "name": "#05-주간회의기록",
+      "last_ts": "1776061646.411209",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJ38GC9HB": {
+      "name": "#00-announcement",
+      "last_ts": "1776046249.648189",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJ4HXRD5L": {
+      "name": "#01-product온더팬덤",
+      "last_ts": "1776077274.515979",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJ6NYLKT4": {
+      "name": "#04-contents-차-세린",
+      "last_ts": "1776051968.260909",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AJU22MXMJ": {
+      "name": "#04-contents-민수달",
+      "last_ts": "1775812923.913419",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AK0V0C7BJ": {
+      "name": "#02-개발ai_dev",
+      "last_ts": "1775177678.215529",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALD61LV18": {
+      "name": "#07-legal",
+      "last_ts": "1775177767.059929",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALJEPNQ6B": {
+      "name": "#물리-상품",
+      "last_ts": "1775177850.418009",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALWFZQMTP": {
+      "name": "#02-카카오엔터_삼성",
+      "last_ts": "1775785853.082189",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALWG29TB7": {
+      "name": "#03-카카오엔터_웹툰_쫀냐미_고라니",
+      "last_ts": "1776068797.537179",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALY0XQ40N": {
+      "name": "#05-잠재_기타",
+      "last_ts": "1776049425.715799",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0ALZU1NDMG": {
+      "name": "#team1-팬덤상품",
+      "last_ts": "1773709791.733029",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AM3GBFPGU": {
+      "name": "#01-마성의팍스5월pb",
+      "last_ts": "1776132436.573689",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AM3GKNCN8": {
+      "name": "#04-최고심_5월pb",
+      "last_ts": "1775540873.488479",
+      "last_checked": "2026-04-14T11:30:25"
+    },
+    "C0AMC45RJ3U": {
+      "name": "#06-자사몰project",
+      "last_ts": "1775208317.347419",
+      "last_checked": "2026-04-14T11:30:25"
+    }
+  },
+  "daily_stats": {
+    "2026-03-18": {
+      "tasks_created": 6,
+      "tasks_completed": 0,
+      "messages_processed": 120,
+      "cycles_run": 4
+    },
+    "2026-03-19": {
+      "tasks_created": 5,
+      "tasks_completed": 0,
+      "messages_processed": 287,
+      "cycles_run": 10
+    },
+    "2026-03-20": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 5,
+      "cycles_run": 8
+    },
+    "2026-03-23": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 21,
+      "cycles_run": 13
+    },
+    "2026-03-24": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 4,
+      "cycles_run": 8
+    },
+    "2026-03-25": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 0,
+      "cycles_run": 10
+    },
+    "2026-03-26": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 2,
+      "cycles_run": 4
+    },
+    "2026-03-27": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 8,
+      "cycles_run": 2
+    },
+    "2026-03-30": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 30,
+      "cycles_run": 2
+    },
+    "2026-03-31": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 69,
+      "cycles_run": 2
+    },
+    "2026-04-01": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 43,
+      "cycles_run": 2
+    },
+    "2026-04-02": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 19,
+      "cycles_run": 4
+    },
+    "2026-04-03": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 47,
+      "cycles_run": 4
+    },
+    "2026-04-04": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 3,
+      "cycles_run": 3
+    },
+    "2026-04-05": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 0,
+      "cycles_run": 3
+    },
+    "2026-04-06": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 25,
+      "cycles_run": 4
+    },
+    "2026-04-07": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 24,
+      "cycles_run": 4
+    },
+    "2026-04-08": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 8,
+      "cycles_run": 4
+    },
+    "2026-04-09": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 17,
+      "cycles_run": 4
+    },
+    "2026-04-10": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 19,
+      "cycles_run": 4
+    },
+    "2026-04-11": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 1,
+      "cycles_run": 3
+    },
+    "2026-04-12": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 0,
+      "cycles_run": 3
+    },
+    "2026-04-13": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 31,
+      "cycles_run": 4
+    },
+    "2026-04-14": {
+      "tasks_created": 0,
+      "tasks_completed": 0,
+      "messages_processed": 36,
+      "cycles_run": 2
+    }
+  },
+  "dm_scan_checkpoint": {
+    "D0ANCBEPGG0": "1774313913.911889",
+    "D0AMZD8T6KX": "1774228265.277759",
+    "D0AL0BS7XB7": "1773890574.220999",
+    "D0AKSHK9W8Y": "1772787627.159519",
+    "D0AJKJC2URX": "1774422321.885169",
+    "D0AJB7HJE77": "1773192513.032389",
+    "D0AJ6LXL1AN": "1773727199.687439",
+    "D0AJ4K2ARCN": "1774430047.083969",
+    "D0AJ0AB1R4K": "1773712299.008659",
+    "D0AJ09D3551": "1774424133.048659",
+    "D0AJ09BQN67": "1774433287.927169",
+    "D0AHR7M9ZSB": "1774251670.132769"
+  }
+}

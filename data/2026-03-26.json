@@ -1,0 +1,32 @@
+{
+  "channels": {
+    "C0AM3GBFPGU": {
+      "summary": "",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "10:08",
+          "text": "키캡 관련 4SET 5200원(vat미포)"
+        }
+      ],
+      "hasNew": true,
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "10:08",
+          "text": "키캡 관련\n\n• 4SET 5200원(vat미포) - 단 틴케이스+스펀지만 중국에서 매입할지?.. 결정필요 [✅ 3명]"
+        }
+      ]
+    },
+    "C0AJ0DKH22F": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "15:34",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        }
+      ]
+    }
+  },
+  "todos": []
+}
