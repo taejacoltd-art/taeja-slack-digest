@@ -1,12 +1,32 @@
 {
   "channels": {
     "C0AM3GBFPGU": {
-      "summary": "",
+      "summary": "<span class=\"person\">건희</span>가 마성의팍스 키캡 4SET 5,200원(VAT미포) — 단, 틴케이스+스펀지만 중국에서 매입할지 결정 필요. <span class=\"person\">윤하</span>가 견적서(견적서-태자기획팀-35097.pdf) 전달, 제작 완료 예정 차주 수요일. <span class=\"person\">건희</span> 입금완료 회신.",
       "messages": [
         {
           "sender": "건희",
           "time": "10:08",
-          "text": "키캡 관련 4SET 5200원(vat미포)"
+          "text": "키캡 관련 — 4SET 5200원(vat미포). 틴케이스+스펀지만 중국에서 매입할지 결정필요"
+        },
+        {
+          "sender": "윤하",
+          "time": "10:08",
+          "text": "발행하셨다고 연락왔습니다. 확인부탁드립니다"
+        },
+        {
+          "sender": "윤하",
+          "time": "11:27",
+          "text": "계좌번호 확인을 위해 견적서 전달드립니다 (견적서-태자기획팀-35097.pdf)"
+        },
+        {
+          "sender": "윤하",
+          "time": "11:48",
+          "text": "제작 완료 예정: 차주 수요일"
+        },
+        {
+          "sender": "건희",
+          "time": "20:38",
+          "text": "[입금완료]"
         }
       ],
       "hasNew": true,
@@ -60,7 +80,16 @@
           "time": "15:34",
           "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 상호작용 요소 메시지 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "15:34",
+          "text": "[상호작용 요소 메시지]"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -89,7 +118,26 @@
           "time": "20:48",
           "text": "KE_유지민 대리님: 내일 배차정보 나오는대로 공유 부탁드립니다\n\n위 내용으로 연락와서 남겨드립니다!"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 명일 온더팬덤 회의는 <span class=\"person\">준태</span>만 참여(상품팀 바쁜 상황)로 결정. <span class=\"person\">윤하</span>가 KE 유지민 대리에게 내일 배차정보 공유 요청 전달.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "15:35",
+          "text": "명일 온더팬덤회의는 본 방 준태님만 참여 — 상품팀은 바쁜상황"
+        },
+        {
+          "sender": "준태",
+          "time": "15:35",
+          "text": "네 알겠습니다!"
+        },
+        {
+          "sender": "윤하",
+          "time": "20:48",
+          "text": "KE_유지민 대리님: 내일 배차정보 나오는대로 공유 부탁드립니다"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

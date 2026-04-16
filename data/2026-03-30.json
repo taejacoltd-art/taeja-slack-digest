@@ -531,22 +531,17 @@
       ]
     },
     "C0AJ38GC9HB": {
-      "summary": "",
+      "summary": "<span class=\"person\">건희</span>가 이미지 2건 공유 + @here 유튜브 쇼츠(_bIK09Y7MwI) 공유 — \"이렇게 되면 안되는\" 사례.",
       "messages": [
         {
           "sender": "건희",
           "time": "12:32",
-          "text": "[이미지]"
-        },
-        {
-          "sender": "건희",
-          "time": "12:33",
-          "text": "[이미지]"
+          "text": "[이미지 공유]"
         },
         {
           "sender": "건희",
           "time": "13:50",
-          "text": "@here 이렇게 되면 안되는.."
+          "text": "@here 이렇게 되면 안되는.. — https://youtube.com/shorts/_bIK09Y7MwI"
         }
       ],
       "hasNew": true,
@@ -590,7 +585,21 @@
           "time": "10:58",
           "text": "무한대"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 붉은사막 플레이 중 떠올린 'AI NPC에 활용되는 B2B 솔루션' 아이디어 공유. <span class=\"person\">수혁</span>이 적용 범위 — 휴먼로봇/게임/광고/시니어/의료/엔터테인먼트/CS 챗봇 등 무한대 의견.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "10:47",
+          "text": "적용 가능한 대상 아이디어 — AI NPC에 활용되는 B2B Solution. 붉은사막 플레이 중 감정엔진의 메리트가 있다는 생각"
+        },
+        {
+          "sender": "수혁",
+          "time": "10:58",
+          "text": "적용 범위는 휴먼로봇, 게임, 광고, 시니어, 의료, 엔터테인먼트, C/S 챗봇 등... 무한대"
+        }
+      ],
+      "hasNew": true
     },
     "C0AHRGP7CVD": {
       "fullLog": [
@@ -599,7 +608,16 @@
           "time": "10:59",
           "text": "@here 26년 3월 30일 적용 사업자등록증- 활용 [파일: 사업자등록증.pdf] [✅ 준태]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 26년 3월 30일 적용 사업자등록증 PDF 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "10:59",
+          "text": "@here 26년 3월 30일 적용 사업자등록증 - 활용"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -738,7 +756,36 @@
           "time": "19:28",
           "text": "↳ 의견 남겼습니다! 완료 [파일: 커뮤_20260330-콘텐츠사업부-타임라인-V1.xlsx] [✅ 준태]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 인보이스 배경지 발주 확인(2차분 재고 있음). <span class=\"person\">준태</span>가 케인 진우절 운영안내 정리(7만원이상 엽서/세트 EX포카+렌티포카/팬카페 친필싸인) + Slack 섹션 가이드(20260330_Slack섹션가이드-V1.xlsx) 공유. <span class=\"person\">지수</span>가 케인 상단 이벤트 배너 공유 → <span class=\"person\">준태</span> 이상없음 회신. 19:05 <span class=\"person\">준태</span>가 콘텐츠사업부 타임라인 초안 공유, <span class=\"person\">건희</span>가 의견 추가하여 완료본(커뮤_20260330) 회신.",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "15:04",
+          "text": "2026 케인 굿즈 진우절 운영안내 — 7만원이상 안죄송해 엽서/세트 EX포카+렌티포카/팬카페 친필싸인. 별도 이벤트 목록 페이지+카드뉴스 페이지"
+        },
+        {
+          "sender": "준태",
+          "time": "16:19",
+          "text": "섹션 가이드 따라서 섹션 나눠두시면 편하실 것 같아서 공유 (20260330_Slack섹션가이드-V1.xlsx)"
+        },
+        {
+          "sender": "지수",
+          "time": "17:46",
+          "text": "@준태 @윤하 케인 상단 이벤트 배너 먼저 공유. 이상 없는지 확인 부탁"
+        },
+        {
+          "sender": "준태",
+          "time": "19:05",
+          "text": "@건희 콘텐츠사업부 타임라인 초안 공유. 내일 구글시트 생성 후 재공유 (20260330-콘텐츠사업부-타임라인-V1.xlsx)"
+        },
+        {
+          "sender": "건희",
+          "time": "19:28",
+          "text": "의견 남겼습니다! 완료 (커뮤_20260330-콘텐츠사업부-타임라인-V1.xlsx)"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

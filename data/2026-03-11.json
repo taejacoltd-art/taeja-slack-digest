@@ -32,7 +32,36 @@
           "time": "13:31",
           "text": "음성 대화는 chat gpt보다도 월등히 높네요... 매우 유의미한 시사점입니다"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">수혁</span>이 가설 작업 V1 초안 공유(미팅 후 Fine Tuning 예정), 제타(이루다) 음성대화가 ChatGPT보다 월등하다는 시사점 공유.",
+      "messages": [
+        {
+          "sender": "수혁",
+          "time": "10:47",
+          "text": "가설 작업중인 파일 공유합니다 — 온더팬덤_가설_20260311_V1.0.docx"
+        },
+        {
+          "sender": "수혁",
+          "time": "10:48",
+          "text": "초안이라 Rough하게 작업해서 금일 미팅후 Fine Tuning 할 예정"
+        },
+        {
+          "sender": "건희",
+          "time": "12:50",
+          "text": "확인했습니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "13:28",
+          "text": "제타는 옛날 이루다입니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "13:31",
+          "text": "음성 대화는 chat gpt보다도 월등히 높네요... 매우 유의미한 시사점"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

@@ -217,7 +217,21 @@
           "time": "19:48",
           "text": "@수혁"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 <span class=\"person\">성민</span>에게 3월 8/13/14/15/18일 방송 30분짜리 24개 파일 전달(2026-03-08.13.14.15.18.zip) — 녹음 12시간, MP3 192kbps 적합, 30분 분할 적합. 품질관리(소음·볼륨)는 보완 필요시 수정.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "19:48",
+          "text": "3월 8/13/14/15/18일 방송 30분짜리 24개파일 — 녹음 12시간/MP3 192kbps 적합/30분 분할 적합/품질관리 보완 필요시 수정"
+        },
+        {
+          "sender": "건희",
+          "time": "19:48",
+          "text": "@수혁"
+        }
+      ],
+      "hasNew": true
     },
     "C0AMC45RJ3U": {
       "fullLog": [
@@ -226,7 +240,16 @@
           "time": "21:36",
           "text": " [파일: IP_캐릭터_전문_커머스_플랫폼_-_온라인_팝업스토어_자사몰.pdf]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 IP 캐릭터 전문 커머스 플랫폼 - 온라인 팝업스토어 자사몰 PDF 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "21:36",
+          "text": "IP_캐릭터_전문_커머스_플랫폼_-_온라인_팝업스토어_자사몰.pdf 공유"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ087F3B5": {
       "fullLog": [
@@ -235,7 +258,16 @@
           "time": "13:35",
           "text": "@팀\n안녕하세요, 작주 회의에서 나온 의견 취합하여 A,B 시안으로 나누어 작업하였습니다.\n디자인 컨셉 및 방향성에 관하여 확정된 사항이 없어 최대한 디자인 요소없이 무채색으로 작업한 점 참고 부탁드립니다. [파일: [공유용] OTF UI A,B 시안 -260318-0.pdf] [👀 건희,성민] [✅ 준태,규민]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">윤하</span>가 작주 회의 의견 취합 후 A/B 시안(공유용 OTF UI A,B 시안 -260318-0.pdf) 공유 — 디자인 방향성 미확정으로 무채색 작업.",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "13:35",
+          "text": "@팀 작주 회의 의견 취합하여 A,B 시안 공유. 디자인 컨셉/방향성 미확정으로 디자인 요소없이 무채색으로 작업"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ4HXRD5L": {
       "fullLog": [
@@ -244,7 +276,16 @@
           "time": "21:01",
           "text": "↳  [파일: OnTheFandom_Recording_Script_SoRa_v1_3.xlsx]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 OnTheFandom Recording Script SoRa v1.3 xlsx 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "21:01",
+          "text": "OnTheFandom_Recording_Script_SoRa_v1_3.xlsx"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

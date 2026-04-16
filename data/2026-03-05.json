@@ -180,7 +180,31 @@
           "time": "19:00",
           "text": "버츄얼 전용 커뮤니티 사이트\n■ VWORLD\n• 버튜버 전용 팬 커뮤니티\n• 뉴스 / 방송 / 팬아트 / 라이브 목록 있음\nhttps://v-world.io/?utm_source=chatgpt.com"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">준태</span>가 이세돌 팬덤 마이원픽 투표 인증 활동 + 버츄얼 관련 커뮤니티(디시 vtubersnipe·spv, 에펨코리아 SOOP, V-WORLD) 리서치 공유.",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "18:49",
+          "text": "왁물원에서 마이원픽 투표 인증 게시글 진행중. 사이트: my1pick.com / 카페: cafe.naver.com/steamindiegame"
+        },
+        {
+          "sender": "준태",
+          "time": "18:53",
+          "text": "마이원픽 \"내 플레이리스트를 점령한 루키 여자 아이돌은?\" 투표 진행 중, 이세계아이돌 팬덤 인증 활동"
+        },
+        {
+          "sender": "준태",
+          "time": "18:58",
+          "text": "디시인사이드 버츄얼 스나/SOOP 갤러리, 에펨코리아 SOOP 게시판 리서치 공유"
+        },
+        {
+          "sender": "준태",
+          "time": "19:00",
+          "text": "버츄얼 전용 V-WORLD: 뉴스/방송/팬아트/라이브 목록 보유"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ087F3B5": {
       "fullLog": [
@@ -229,7 +253,31 @@
           "time": "15:53",
           "text": "↳ 알겟습니당 ㅎㅎ"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">성민</span>이 PDF 시안(예시용) 공유. <span class=\"person\">수혁</span>이 타깃을 대중 대신 narrow down(세린이와의 음성 대화) 방향 제안. PMF 검증 이후 정식 출시 의견.",
+      "messages": [
+        {
+          "sender": "성민",
+          "time": "15:39",
+          "text": "1.pdf, 2.pdf 공유 (예시용, 윤하님 요청)"
+        },
+        {
+          "sender": "수혁",
+          "time": "15:51",
+          "text": "내일 논의를 하겟지만 지금 타깃을 대중으로 잡아서는 안될거 같습니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "15:51",
+          "text": "나만의 프라이빗룸 대화 등은 PMF 검증 이후 정식일거 같습니다"
+        },
+        {
+          "sender": "수혁",
+          "time": "15:52",
+          "text": "지극히 narrow down 해서 세린이와의 음성 대화 느낌으로 가면 좋겟다라는 생각입니다"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

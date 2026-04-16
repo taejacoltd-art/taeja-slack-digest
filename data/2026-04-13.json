@@ -309,17 +309,27 @@
       ]
     },
     "C0ARZGQTPFZ": {
-      "summary": "",
+      "summary": "<span class=\"person\">건희</span>가 26-04월 3주차 주간회의 history 정리 — 쫀냐미(8월 중순 오픈 목표), 마성의팍스(쿠션 4/16 수정/봉제+피규어 4/24 샘플), 최고심(4/7 복주머니 샘플 발주, 4/24 촬영, 4/28 사전예약, 5/13 출고), 마왕(키캡 스펀지 금주금 완료), 옌룡(스티커·캔뱃지·반팔 샘플 발주), 마다옴(꼬리쿠션 F/U). <span class=\"person\">준태</span>가 임가공/물류/CS/커머스/IP콘텐츠 보고. 25년정산.zip 첨부, 1~3월 정산서 추가 필요(@준태).",
       "messages": [
         {
           "sender": "건희",
           "time": "14:44",
-          "text": "26-04월 3주차"
+          "text": "주간회의 history — 쫀냐미/마성의팍스/최고심/마왕/옌룡/마다옴/뢴트게늄 진행상황 정리 (쫀냐미 8월 중순 오픈 목표, 최고심 4/28 사전예약/5/13 출고)"
         },
         {
           "sender": "건희",
-          "time": "14:44",
-          "text": "@준태 @윤하 @지수 @유민 주간회의 향후 여기에 history 남겨주시면 됩니다"
+          "time": "14:45",
+          "text": "윤준태 선임 보고 — 임가공(마왕 4/20 김포입고/카엔터 와펜 4/17 반출) 물류(4/15 통깡이 2차/4/17 와펜/4/20 마왕/4/30 인형) CS(베이블루 4/24 재출고)"
+        },
+        {
+          "sender": "건희",
+          "time": "14:46",
+          "text": "@준태 + 쫀냐미 운영대행(삼성라이온즈건) 1~3월분 정산서 필요 (기존 12월까지 정산)"
+        },
+        {
+          "sender": "준태",
+          "time": "19:01",
+          "text": "관련해서는 내일 물류정산서까지 정리하고 전달 드리겠습니다"
         }
       ],
       "hasNew": true,
@@ -362,12 +372,12 @@
       ]
     },
     "C0ALY0XQ40N": {
-      "summary": "",
+      "summary": "<span class=\"person\">건희</span>가 상호작용 요소 메시지 공유.",
       "messages": [
         {
           "sender": "건희",
           "time": "12:03",
-          "text": "[이미지]"
+          "text": "[상호작용 요소 메시지]"
         }
       ],
       "hasNew": true,
@@ -411,7 +421,31 @@
           "time": "16:14",
           "text": "↳ conversation_summaries 테이블은 삭제 예정이고 (openai response를 활용해서 서비스 DB에 대화 맥락 설계가 이미 되어있음)\nuser_facts 테이블 전면 수정 -&gt; user_memories 테이블에 최고의 조합으로 다시 설계 했습니다. [✅ 건희]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 GitHub 03_user_tables.sql User RAG 검토 자료 공유 — emotion_pattern/reaction_style/intimacy_level 추가 카테고리 제안, conversational summaries에 user_facts 동시 저장 방법론 제시. <span class=\"person\">성민</span>이 conversation_summaries 테이블 삭제, user_facts → user_memories 테이블로 재설계 회신.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "16:07",
+          "text": "@성민 유저 RAG (03_user_tables.sql) 의견 — emotion_pattern, reaction_style, intimacy_level 추가 카테고리 제안. Conversational summaries에 user_facts 동시 저장 방법론"
+        },
+        {
+          "sender": "성민",
+          "time": "16:10",
+          "text": "해당 설계 주말에 상당부분 변경되어서 나중에 공유. 유저 rag 추가 카테고리는 설계 다 끝나고 검토"
+        },
+        {
+          "sender": "건희",
+          "time": "16:12",
+          "text": "유저RAG 결정 필사항: 1.Hume 도입 여부(emotion_pattern) 2.conversation_summaries에서 user_facts 동시 추출 가능한지 3.intimacy_level 계산 기준"
+        },
+        {
+          "sender": "성민",
+          "time": "16:14",
+          "text": "conversation_summaries 테이블 삭제 예정 (openai response 활용 서비스DB 대화맥락 설계 완료). user_facts → user_memories 테이블 재설계 완료"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ087F3B5": {
       "fullLog": [
@@ -420,7 +454,16 @@
           "time": "09:24",
           "text": "저희 피그마 팀 월간구독으로 사용하고 있는지 구독 결제 확인 부탁드립니다 [파일: IMG_7690.jpg] [✅ 윤하]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 피그마 팀 월간구독 사용 여부·구독 결제 확인 요청.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "09:24",
+          "text": "저희 피그마 팀 월간구독으로 사용하고 있는지 구독 결제 확인 부탁드립니다"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -549,7 +592,36 @@
           "time": "15:18",
           "text": "↳ 넵 스티커 금액 확인했습니다.\n캔뱃지는 디자인 당 30,000원 &gt; 홍광 샘플 비용입니다!"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 주간업무회의 매주 월요일 14시로 픽스 — 생산(임윤하 책임)/임가공·운영(준태 선임)/IP콘텐츠(준태 선임). 캘린더 알림 누락 이슈로 재전송. <span class=\"person\">윤하</span>가 쫀냐미~뢴트게늄 진행상황 카드형 공유. <span class=\"person\">준태</span>가 마왕 키캡(4/20 김포입고)/카엔터 와펜(4/17 반출) 등 임가공·물류·CS·커머스·IP콘텐츠 보고. 옌룡 샘플비 — 판스티커 5만원에 3장(<span class=\"person\">건희</span> 결정), 캔뱃지 디자인당 3만원.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "11:07",
+          "text": "주간 업무회의 매주 월요일 14시 — 생산(임윤하)/임가공·운영(준태)/IP콘텐츠(준태). 회의순서: 임윤하→윤준태→이건희→코멘트"
+        },
+        {
+          "sender": "건희",
+          "time": "10:30",
+          "text": "스킬트리(공정·기술 구현도) vs 아이템트리(결과값) — ex) PET 카드: 아이템 분류 지류, 스킬트리 대분류 인쇄, 중분류 재질변환"
+        },
+        {
+          "sender": "준태",
+          "time": "14:03",
+          "text": "주간 업무회의 4/14 14:00 — 마왕 키캡 4/20 김포입고/카엔터 와펜 4/17 반출/통깡이 4/15 출고/베이블루 CS 4/24 재출고/뢴트게늄 팬카페 4/14 20시 티케팅/케인 MD 4/18 24시 종료"
+        },
+        {
+          "sender": "윤하",
+          "time": "15:15",
+          "text": "옌룡 샘플 비용 — 판 스티커 10,000원(3장), 캔뱃지 디자인당 30,000원, 티셔츠 샘플 50,000원, 봉제류 샘플 250,000원"
+        },
+        {
+          "sender": "건희",
+          "time": "15:16",
+          "text": "기존에서 수량만 up해서 주는 조건으로, 판 스티커 5만원에 3장으로 하시죠. 캔뱃지는 3만원"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

@@ -111,7 +111,16 @@
           "time": "12:35",
           "text": "steam id: taeja0109 PW: Taeja0109!"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 Steam 계정 공유 — id: taeja0109 / PW: Taeja0109!",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "12:35",
+          "text": "steam id: taeja0109 PW: Taeja0109!"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

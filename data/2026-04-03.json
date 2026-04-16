@@ -92,17 +92,17 @@
       ]
     },
     "C0APK7RF82J": {
-      "summary": "",
+      "summary": "<span class=\"person\">건희</span>가 삼성 1차건 금일 입항 후 오후 통관 예정 알림 — 준태 연차로 본인이 부담당자로 진행.",
       "messages": [
         {
           "sender": "건희",
           "time": "09:48",
-          "text": "@준태"
+          "text": "삼성1차건 - 금일 입항 후 오후 통관 예정 - 스레드 대화"
         },
         {
           "sender": "건희",
           "time": "09:48",
-          "text": "삼성1차건 - 금일 입항 후 오후 통관 예정 - 스레드 대화"
+          "text": "금일 준태님 연차로, 제가 부담당자로 진행"
         }
       ],
       "hasNew": true,
@@ -131,7 +131,16 @@
           "time": "18:25",
           "text": "본 건 차주 월요일 F/U"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 자사몰 본 건 차주 월요일 F/U 결정.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "18:25",
+          "text": "본 건 차주 월요일 F/U"
+        }
+      ],
+      "hasNew": true
     },
     "C0AQ0V3H4JV": {
       "fullLog": [
@@ -150,7 +159,26 @@
           "time": "18:44",
           "text": "제 생각엔, 캐릭터 일"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">성민</span>이 User RAG 설계(user-rag-design.md) 공유. <span class=\"person\">건희</span>가 phase2 태자LLM은 pending로 결정.",
+      "messages": [
+        {
+          "sender": "성민",
+          "time": "13:51",
+          "text": "User RAG 설계 (user-rag-design.md)"
+        },
+        {
+          "sender": "건희",
+          "time": "16:18",
+          "text": "phase2 태자LLM - pending"
+        },
+        {
+          "sender": "건희",
+          "time": "18:44",
+          "text": "제 생각엔, 캐릭터 일"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -204,7 +232,36 @@
           "time": "18:45",
           "text": "↳ 전달드립니다! [파일: image.png] [✅ 지수]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 공급가 9천원후반대로 전달 의견. <span class=\"person\">지수</span>가 신규 명함 시안(태자 7인) 공유 — 윤하·유민 이상없음 회신. <span class=\"person\">윤하</span>가 중국 노동절(5/1~5/5) 공장·그린타임 대응 어려움 공지 — 샘플·본제작 일정 참고. <span class=\"person\">지수</span>가 명함 결제 요청 — 레드프린팅 124,740원(taejaworks/Dlsrks123!). 패러블엔터테인먼트(고양시 덕양구 삼송로 8 605호 김서준) 택배 접수 요청, <span class=\"person\">건희</span> 완료.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "09:52",
+          "text": "공급가 9천원후반대로 전달하면 좋을 것 같아요"
+        },
+        {
+          "sender": "지수",
+          "time": "10:46",
+          "text": "@channel 사무실 주소지 변경 신규 명함 시안 공유 (태자 7인 명함 내용 확인용.pdf)"
+        },
+        {
+          "sender": "윤하",
+          "time": "11:07",
+          "text": "중국 노동절: 5월 1일~5일 - 중국 공장·그린타임 대응 어려움. 샘플·본제작 일정 참고"
+        },
+        {
+          "sender": "지수",
+          "time": "14:26",
+          "text": "@건희 태자 7인 명함 결제 요청 — 레드프린팅 124,740원 (taejaworks / Dlsrks123!)"
+        },
+        {
+          "sender": "지수",
+          "time": "16:58",
+          "text": "@건희 택배 접수 부탁 — 경기도 고양시 덕양구 삼송로 8, 605호 패러블엔터테인먼트 김서준 010-2270-8736"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

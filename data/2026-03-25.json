@@ -63,7 +63,16 @@
           "time": "14:53",
           "text": " [파일: IMG_7463.png]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 IMG_7463.png 이미지 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "14:53",
+          "text": "[이미지: IMG_7463.png]"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ6NYLKT4": {
       "fullLog": [
@@ -72,7 +81,16 @@
           "time": "10:14",
           "text": "↳ 이게 온톨로지로 구축되어야 하는겁니다 [✅ 준태]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">수혁</span>이 차세린 데이터가 온톨로지로 구축되어야 한다고 의견 공유.",
+      "messages": [
+        {
+          "sender": "수혁",
+          "time": "10:14",
+          "text": "이게 온톨로지로 구축되어야 하는겁니다"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -121,7 +139,31 @@
           "time": "19:08",
           "text": ":white_check_mark:"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">윤하</span>가 베이블루 캔뱃지 바코드 스티커(50x30 100매 6개, 7,080원, 보따리만 스마트스토어) 결제 요청, <span class=\"person\">건희</span> 결제완료. 텔라우드/패러블 관련 이미지 공유.",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "12:05",
+          "text": "베이블루 캔뱃지 바코드 스티커 결제 부탁 — 50x30 100매 6개 7,080원 / 배송지: 아시아미디어타워 601호 홍광 01090016101"
+        },
+        {
+          "sender": "건희",
+          "time": "15:22",
+          "text": "결제완료"
+        },
+        {
+          "sender": "건희",
+          "time": "17:05",
+          "text": "텔라우드 [이미지]"
+        },
+        {
+          "sender": "건희",
+          "time": "17:06",
+          "text": "패러블!! @윤하 [이미지]"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

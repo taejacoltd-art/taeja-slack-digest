@@ -12,7 +12,16 @@
           "time": "18:23",
           "text": "바뀐 세린이"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 변경된 차세린 캐릭터 이미지 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "18:23",
+          "text": "바뀐 세린이 [이미지]"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []

@@ -68,7 +68,16 @@
           "time": "16:10",
           "text": "차세린 음성데이터 - 30분단위로 차주 월까지 제출\n@Google Calendar [✅ 준태]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 차세린 음성데이터 30분 단위로 차주 월요일까지 제출 지시(@준태).",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "16:10",
+          "text": "차세린 음성데이터 - 30분단위로 차주 월까지 제출"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

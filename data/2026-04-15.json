@@ -121,7 +121,26 @@
           "time": "15:25",
           "text": "↳ 피드백 반영하겠습니다 ! 감사합니다 ! ㅎㅎ [✅ 준태]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">유민</span>이 만든 차세린 첫 숏츠(치지직 클립 리메이크) 공유. <span class=\"person\">규민</span> 피드백 — 1) 중간 자막 크기 더 크게 2) 차세린 놀란 효과 일렁임 강도 줄이기. <span class=\"person\">유민</span> 반영 약속.",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "15:09",
+          "text": "@건희 @규민 유민님이 만드신 첫 숏츠 영상 (기존 치지직 클립 리메이크) — 확인 후 피드백 부탁"
+        },
+        {
+          "sender": "규민",
+          "time": "15:20",
+          "text": "1. 중간 자막 크기 조금 더 크게 2. 차세린이 놀란 효과 일렁이는 것 강도 조금 줄이기. 정말 잘 해주셨네요"
+        },
+        {
+          "sender": "유민",
+          "time": "15:25",
+          "text": "피드백 반영하겠습니다! 감사합니다"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ4HXRD5L": {
       "fullLog": [
@@ -140,7 +159,21 @@
           "time": "18:13",
           "text": "*금일 회의내용: 4월 30일(최장 해당 기준 차주)로 CBT일정 픽스*\n*ㆍUser RAG - 설계 완료, 구현 必*\n*ㆍCHR RAG- 설계 진행 중*\n*ㆍ인프라 관련(백업) 세팅*\n\n*위3가지 구현 완료 후 Test Flight public*\n*@here*"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 4/30(최장 차주)로 CBT 일정 픽스 — User RAG 설계완료 구현 必, CHR RAG 설계 진행중, 인프라(백업) 세팅. 3개 구현 완료 후 Test Flight public 진행.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "14:59",
+          "text": "Sync 및 planning 자료"
+        },
+        {
+          "sender": "건희",
+          "time": "18:13",
+          "text": "금일 회의내용: 4/30(최장 차주)로 CBT 일정 픽스 — User RAG 설계완료 구현 필, CHR RAG 설계 진행중, 인프라(백업) 세팅. 3가지 구현 완료 후 Test Flight public @here"
+        }
+      ],
+      "hasNew": true
     },
     "C0AJ0DKH22F": {
       "fullLog": [
@@ -149,7 +182,16 @@
           "time": "15:01",
           "text": "↳  [파일: CHR RAG_V1.zip] [파일: image.png]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">건희</span>가 CHR RAG_V1.zip 자료 공유.",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "15:01",
+          "text": "CHR RAG_V1.zip"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -283,7 +325,26 @@
           "time": "19:35",
           "text": "내일 뵙겠습니다! :slightly_smiling_face::slightly_smiling_face: [:heavy_heart_exclamation_mark_ornament: 윤하]"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">윤하</span>가 마왕 개백수 티셔츠 박스 넘버·수량·비고 공유. <span class=\"person\">준태</span>가 마왕 개백수 티셔츠 입고완료 회신. <span class=\"person\">준태</span>가 이번주(4/13~4/17) 진행사항 정리 — 패러블(뢴트게늄 4/14 티케팅, 케인 4/17 종료, 통깡이 4/15 배송 완료, 베이블루 4/22 재생산), 마왕 4/20 배송, 최고심(할인구좌 4/14 거절, 폐기물 작업 4/16, 26 S/S 4/24~4/28 오픈), 마성의팍스(카카오 선물하기 5/12~5/21, 킬러카드 5/21~5/23), 차세린(숏츠 2편), 민수달(작가 피드 매일 업로드), 삼성(2차 와펜 4/16~4/17 반출/2차 인형 4/30~5/8 반출).",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "10:31",
+          "text": "@준태 개백수 티셔츠 박스 넘버와 수량 및 비고사항 공유드립니다"
+        },
+        {
+          "sender": "준태",
+          "time": "12:22",
+          "text": "마왕 개백수 티셔츠 입고완료되었습니다! @here"
+        },
+        {
+          "sender": "준태",
+          "time": "18:24",
+          "text": "이번주 진행사항(4/13~4/17) — [패러블] 뢴트게늄 티케팅(4/14완료)/케인 4/17종료/통깡이 4/15완료/베이블루 4/22 재생산. [마왕] 4/20 배송/키캡 4/17~4/19 임가공. [최고심] 할인구좌 거절/폐기물 4/16/26 S/S 4/24~4/28 오픈. [마성의팍스] 카카오 5/12~5/21/킬러카드 5/21~5/23"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [

@@ -68,7 +68,16 @@
           "time": "11:31",
           "text": "http://172.30.1.44:5173"
         }
-      ]
+      ],
+      "summary": "<span class=\"person\">성민</span>이 로컬 개발 서버 주소(http://172.30.1.44:5173) 공유.",
+      "messages": [
+        {
+          "sender": "성민",
+          "time": "11:31",
+          "text": "http://172.30.1.44:5173"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": []
