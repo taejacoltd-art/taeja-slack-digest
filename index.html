@@ -35,6 +35,36 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
 .msg-card.thread-reply .msg-avatar{width:22px;height:22px;font-size:10px}
 .msg-card.thread-reply .thread-label{font-size:10px;color:#aeaeb2;margin-left:4px}
 
+/* Search */
+.search-toggle{width:28px;height:28px;border:none;background:transparent;cursor:pointer;font-size:15px;color:#86868b;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.search-toggle:hover{background:#f0f0f2;color:#1d1d1f}
+.search-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:100;justify-content:center;padding-top:80px}
+.search-overlay.show{display:flex}
+.search-box{background:#fff;border-radius:16px;width:640px;max-height:75vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.2);overflow:hidden}
+.search-input-wrap{display:flex;align-items:center;padding:16px 20px;border-bottom:1px solid #e5e5e7;gap:12px}
+.search-input-wrap .search-icon{font-size:18px;color:#aeaeb2;flex-shrink:0}
+.search-input{flex:1;border:none;outline:none;font-size:16px;font-family:'Pretendard',sans-serif;color:#1d1d1f}
+.search-input::placeholder{color:#d1d1d6}
+.search-close{width:28px;height:28px;border:none;background:#f0f0f2;border-radius:6px;cursor:pointer;font-size:13px;color:#6e6e73;display:flex;align-items:center;justify-content:center}
+.search-close:hover{background:#e5e5e7}
+.search-filters{display:flex;gap:6px;padding:10px 20px;border-bottom:1px solid #f0f0f2}
+.search-filter{padding:4px 10px;border-radius:6px;border:1px solid #e5e5e7;background:#fff;font-size:11px;font-weight:600;color:#6e6e73;cursor:pointer;transition:all .15s}
+.search-filter.active{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+.search-results{flex:1;overflow-y:auto;padding:8px 12px}
+.search-results::-webkit-scrollbar{width:4px}
+.search-results::-webkit-scrollbar-thumb{background:#d1d1d6;border-radius:4px}
+.search-result{padding:10px 12px;border-radius:10px;cursor:pointer;transition:background .15s;margin-bottom:2px}
+.search-result:hover{background:#f5f5f7}
+.search-result-header{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.search-result-channel{font-size:11px;font-weight:600;color:#aeaeb2}
+.search-result-date{font-size:11px;color:#d1d1d6}
+.search-result-sender{font-size:12px;font-weight:600;color:#1d1d1f}
+.search-result-text{font-size:13px;color:#424245;line-height:1.5}
+.search-result-text mark{background:#fff3cd;border-radius:2px;padding:0 2px}
+.search-empty{padding:40px;text-align:center;color:#aeaeb2;font-size:14px}
+.search-count{padding:8px 20px;font-size:11px;color:#aeaeb2;border-bottom:1px solid #f0f0f2}
+.search-shortcut{font-size:11px;color:#d1d1d6;margin-left:auto}
+
 /* Main */
 .main{display:flex;flex-direction:column;overflow:hidden}
 
@@ -184,9 +214,12 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <div class="sidebar-header">
-      <h2>TAEJA JT</h2>
-      <div class="team">Slack Dashboard</div>
+    <div class="sidebar-header" style="display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <h2>TAEJA JT</h2>
+        <div class="team">Slack Dashboard</div>
+      </div>
+      <button class="search-toggle" id="searchBtn" title="검색 (Ctrl+K)">&#128269;</button>
     </div>
     <div class="channel-list" id="channelList">
       <div class="ch-item active" data-channel="all">
@@ -224,6 +257,27 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
     <div class="todo-list" id="todoList"></div>
   </div>
 
+</div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input class="search-input" id="searchInput" type="text" placeholder="대화 내용 검색..." autofocus>
+      <span class="search-shortcut">Ctrl+K</span>
+      <button class="search-close" id="searchClose">ESC</button>
+    </div>
+    <div class="search-filters" id="searchFilters">
+      <div class="search-filter active" data-sf="all">전체</div>
+      <div class="search-filter" data-sf="person">사람별</div>
+      <div class="search-filter" data-sf="channel">채널별</div>
+    </div>
+    <div class="search-count" id="searchCount" style="display:none"></div>
+    <div class="search-results" id="searchResults">
+      <div class="search-empty">검색어를 입력하세요</div>
+    </div>
+  </div>
 </div>
 
 <!-- Edit Modal -->
@@ -1128,6 +1182,158 @@ document.getElementById('editDelete').onclick = () => {
   closeEditModal();
   renderTodos();
 };
+
+// ── Search ──
+let searchFilter = 'all';
+
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('show');
+  const input = document.getElementById('searchInput');
+  input.value = '';
+  input.focus();
+  document.getElementById('searchResults').innerHTML = '<div class="search-empty">검색어를 입력하세요</div>';
+  document.getElementById('searchCount').style.display = 'none';
+}
+
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('show');
+}
+
+document.getElementById('searchBtn').onclick = openSearch;
+document.getElementById('searchClose').onclick = closeSearch;
+document.getElementById('searchOverlay').onclick = (e) => {
+  if (e.target === document.getElementById('searchOverlay')) closeSearch();
+};
+
+// Ctrl+K shortcut
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    openSearch();
+  }
+  if (e.key === 'Escape') closeSearch();
+});
+
+// Filter buttons
+document.getElementById('searchFilters').querySelectorAll('.search-filter').forEach(el => {
+  el.onclick = () => {
+    document.querySelectorAll('.search-filter').forEach(e => e.classList.remove('active'));
+    el.classList.add('active');
+    searchFilter = el.dataset.sf;
+    doSearch();
+  };
+});
+
+// Search input
+let searchTimeout;
+document.getElementById('searchInput').addEventListener('input', () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(doSearch, 200);
+});
+
+async function doSearch() {
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  const results = document.getElementById('searchResults');
+  const countEl = document.getElementById('searchCount');
+
+  if (!query || query.length < 2) {
+    results.innerHTML = '<div class="search-empty">2글자 이상 입력하세요</div>';
+    countEl.style.display = 'none';
+    return;
+  }
+
+  results.innerHTML = '<div class="search-empty">검색 중...</div>';
+
+  // Load all dates
+  await Promise.all(availableDates.map(d => loadDateData(d)));
+
+  const found = [];
+  const sortedDates = Object.keys(SAMPLE_DATA).sort().reverse();
+
+  for (const dateKey of sortedDates) {
+    const data = SAMPLE_DATA[dateKey];
+    if (!data?.channels) continue;
+
+    for (const [chId, ch] of Object.entries(data.channels)) {
+      const chInfo = CHANNELS.find(c => c.id === chId);
+      const chName = chInfo ? chInfo.name : chId;
+      const logs = ch.fullLog || ch.messages || [];
+
+      for (const msg of logs) {
+        const text = (msg.text || '').toLowerCase();
+        const sender = (msg.sender || '').toLowerCase();
+
+        let match = false;
+        if (searchFilter === 'all') {
+          match = text.includes(query) || sender.includes(query);
+        } else if (searchFilter === 'person') {
+          match = sender.includes(query);
+        } else if (searchFilter === 'channel') {
+          match = chName.toLowerCase().includes(query) && (text.length > 0);
+        }
+
+        if (match) {
+          found.push({ dateKey, chId, chName, msg, sender: msg.sender, time: msg.time, text: msg.text });
+        }
+      }
+    }
+  }
+
+  countEl.textContent = `${found.length}건 검색됨`;
+  countEl.style.display = '';
+
+  if (found.length === 0) {
+    results.innerHTML = '<div class="search-empty">검색 결과가 없습니다</div>';
+    return;
+  }
+
+  // Show max 100 results
+  const display = found.slice(0, 100);
+  let html = '';
+  for (const r of display) {
+    const d = new Date(r.dateKey + 'T00:00:00');
+    const dateLabel = `${d.getMonth()+1}/${d.getDate()}`;
+    const member = MEMBERS.find(m => m.short === r.sender || m.key === r.sender);
+    const displayName = member ? member.name : r.sender;
+
+    // Highlight search term
+    let displayText = r.text;
+    if (displayText.length > 200) displayText = displayText.substring(0, 200) + '...';
+    const re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    displayText = displayText.replace(re, '<mark>$1</mark>');
+
+    html += `<div class="search-result" data-date="${r.dateKey}" data-channel="${r.chId}">
+      <div class="search-result-header">
+        <span class="search-result-channel">#${r.chName}</span>
+        <span class="search-result-date">${dateLabel} ${r.time}</span>
+      </div>
+      <span class="search-result-sender">${displayName}</span>
+      <div class="search-result-text">${displayText}</div>
+    </div>`;
+  }
+
+  if (found.length > 100) {
+    html += `<div class="search-empty">외 ${found.length - 100}건 더...</div>`;
+  }
+
+  results.innerHTML = html;
+
+  // Click to navigate
+  results.querySelectorAll('.search-result').forEach(el => {
+    el.onclick = () => {
+      const dateKey = el.dataset.date;
+      const chId = el.dataset.channel;
+      selectedDate = new Date(dateKey + 'T00:00:00');
+      viewMonth = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1);
+      selectedChannel = chId;
+      closeSearch();
+      renderCalendar();
+      renderChannelList();
+      renderContent();
+      renderTodos();
+    };
+  });
+}
 
 init();
 </script>
