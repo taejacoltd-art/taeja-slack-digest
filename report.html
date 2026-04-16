@@ -731,27 +731,29 @@ function renderSingleChannel(container, data, dateStr) {
   }
 
   const hasFullLog = chData.fullLog && chData.fullLog.length > 0;
+  const msgs = chData.messages || [];
+  const summary = chData.summary || '';
+  const fullLogDefault = (!summary && msgs.length === 0 && hasFullLog);
   let html = `
     <div class="content-header">
       <h1>#${ch.name}</h1>
-      <div class="sub">${dateStr} &middot; ${chData.messages.length}건의 메시지${hasFullLog ? ' &middot; 전체 로그 ' + chData.fullLog.length + '건' : ''}</div>
+      <div class="sub">${dateStr} &middot; ${msgs.length > 0 ? msgs.length + '건의 메시지' : ''}${hasFullLog ? (msgs.length > 0 ? ' &middot; ' : '') + '전체 로그 ' + chData.fullLog.length + '건' : ''}</div>
       <div class="content-tabs">
-        <div class="content-tab active" data-ctab="summary">요약</div>
-        <div class="content-tab" data-ctab="messages">대화</div>
-        ${hasFullLog ? '<div class="content-tab" data-ctab="fulllog">전체 로그</div>' : ''}
+        ${(summary || msgs.length > 0) ? '<div class="content-tab active" data-ctab="summary">요약</div><div class="content-tab" data-ctab="messages">대화</div>' : ''}
+        ${hasFullLog ? '<div class="content-tab' + ((!summary && msgs.length === 0) ? ' active' : '') + '" data-ctab="fulllog">전체 로그</div>' : ''}
       </div>
     </div>
-    <div id="ctab-summary">
-    <div class="msg-group">
+    <div id="ctab-summary"${fullLogDefault ? ' style="display:none"' : ''}>
+    ${summary ? `<div class="msg-group">
       <div class="msg-group-title">요약</div>
       <div class="msg-card">
-        <div class="msg-text" style="padding-left:0;line-height:1.8">${chData.summary}</div>
+        <div class="msg-text" style="padding-left:0;line-height:1.8">${summary}</div>
       </div>
-    </div>
-    <div class="msg-group">
-      <div class="msg-group-title">대화</div>`;
+    </div>` : ''}
+    ${msgs.length > 0 ? `<div class="msg-group">
+      <div class="msg-group-title">대화</div>` : ((!summary && !hasFullLog) ? '<div class="empty-state"><div class="text">데이터 없음</div></div>' : '')}`;
 
-  chData.messages.forEach(msg => {
+  msgs.forEach(msg => {
     const member = MEMBERS.find(m => m.short === msg.sender || m.key === msg.sender);
     const avClass = member ? `av-${member.key}` : '';
     const initial = msg.sender.charAt(0);
@@ -767,11 +769,12 @@ function renderSingleChannel(container, data, dateStr) {
       </div>`;
   });
 
-  html += '</div></div>'; // close msg-group + ctab-summary
+  if (msgs.length > 0) html += '</div>'; // close msg-group
+  html += '</div>'; // close ctab-summary
 
-  // Full log section (hidden by default)
+  // Full log section
   if (hasFullLog) {
-    html += '<div id="ctab-fulllog" style="display:none"><div class="msg-group"><div class="msg-group-title">전체 대화 로그 (' + chData.fullLog.length + '건)</div>';
+    html += '<div id="ctab-fulllog"' + (fullLogDefault ? '' : ' style="display:none"') + '><div class="msg-group"><div class="msg-group-title">전체 대화 로그 (' + chData.fullLog.length + '건)</div>';
     chData.fullLog.forEach(msg => {
       const isThread = msg.text.startsWith('↳ ');
       const displayText = isThread ? msg.text.substring(2) : msg.text;
