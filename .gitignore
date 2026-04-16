@@ -1,5 +1,6 @@
 # Local Netlify folder
 .netlify
 *.py
+!scripts/*.py
 __pycache__/
 channel_dump.json
