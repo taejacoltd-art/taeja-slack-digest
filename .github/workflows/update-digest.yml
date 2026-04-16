@@ -1,0 +1,48 @@
+name: Update Slack Digest
+
+on:
+  schedule:
+    # 평일 KST 10:00, 16:00, 18:00 (UTC 01:00, 07:00, 09:00)
+    - cron: '0 1 * * 1-5'
+    - cron: '0 7 * * 1-5'
+    - cron: '0 9 * * 1-5'
+  workflow_dispatch:  # 수동 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch Slack data + update JSON
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        run: python scripts/fetch_and_update.py
+
+      - name: Copy report.html to index.html
+        run: cp report.html index.html
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(TZ=Asia/Seoul date +"%Y-%m-%d %H:%M")
+            git commit -m "자동 업데이트: $DATE KST"
+            git push
+          fi
