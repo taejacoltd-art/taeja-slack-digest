@@ -40,6 +40,11 @@ jobs:
       - name: Copy report.html to index.html
         run: cp report.html index.html
 
+      - name: Send Slack DM notification
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        run: python scripts/notify_dm.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
