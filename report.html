@@ -413,9 +413,10 @@ let SAMPLE_DATA = {};
 let availableDates = [];
 
 // ── State ──
-let currentDate = new Date(2026, 3, 15); // 2026-04-15
-let selectedDate = new Date(2026, 3, 15);
-let viewMonth = new Date(2026, 3, 1);
+const _now = new Date();
+let currentDate = new Date(_now.getFullYear(), _now.getMonth(), _now.getDate());
+let selectedDate = new Date(_now.getFullYear(), _now.getMonth(), _now.getDate());
+let viewMonth = new Date(_now.getFullYear(), _now.getMonth(), 1);
 let selectedChannel = 'all';
 let selectedPerson = 'all';
 let todoView = 'date'; // 'date' or 'all'
