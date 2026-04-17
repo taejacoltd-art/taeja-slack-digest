@@ -4,3 +4,6 @@
 !scripts/*.py
 __pycache__/
 channel_dump.json
+.env
+*.log
+backup_run.ps1
