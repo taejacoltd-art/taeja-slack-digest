@@ -2,10 +2,11 @@ name: Update Slack Digest
 
 on:
   schedule:
-    # 평일 KST 10:00, 16:00, 18:00 (UTC 01:00, 07:00, 09:00)
-    - cron: '0 1 * * 1-5'
-    - cron: '0 7 * * 1-5'
-    - cron: '0 9 * * 1-5'
+    # 평일 KST 10:05, 16:05, 18:05 (UTC 01:05, 07:05, 09:05)
+    # 정시 회피 — GitHub Actions schedule은 매시 정각에 큐 폭주로 자주 지연/스킵됨
+    - cron: '5 1 * * 1-5'
+    - cron: '5 7 * * 1-5'
+    - cron: '5 9 * * 1-5'
   workflow_dispatch:  # 수동 실행 가능
 
 permissions:
