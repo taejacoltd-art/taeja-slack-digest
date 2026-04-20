@@ -333,7 +333,8 @@
       "channel": "TAEJA DM",
       "project": "NFC CD 키링",
       "text": "인쇄 및 조립 임가공 공장 가능 여부 확인",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 윤하: ↳ 넵넵 공장에서 시도해본다고합니다! (11:37) + 윤하: ↳ 넵 !! Nfc 스티커 부착입니다! (11:49)"
     },
     {
       "id": 3,
@@ -349,7 +350,8 @@
       "channel": "TAEJA DM",
       "project": "NFC CD",
       "text": "중국 공장에서 1,3번(기성 CD 케이스 인쇄 및 조립 임가공) 가능 여부 확인",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 윤하: ↳ 넵넵 공장에서 시도해본다고합니다! + 윤하: ↳ 넵 !! Nfc 스티커 부착입니다!"
     },
     {
       "id": 5,
@@ -365,7 +367,8 @@
       "channel": "TAEJA DM",
       "project": "NFC CD",
       "text": "중국 공장에서 1번(기성 CD 케이스 인쇄 후 삽입), 3번(조립 임가공) 가능 여부 확인",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 윤하: '1,3번까지 공장에서 할 수 있을지 확인해보겠습니다' → '공장에서 시도해본다고합니다!' → '단가 업데이트 드립니다!' (결과물 제시)"
     },
     {
       "id": 7,
@@ -381,7 +384,8 @@
       "channel": "TAEJA DM",
       "project": "NFC CD",
       "text": "1,3번(기성 CD 케이스 인쇄/조립 임가공) 공장에서 가능한지 확인",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 윤하: ↳ 넵넵 공장에서 시도해본다고합니다! (11:37) + 윤하: ↳ 넵 !! Nfc 스티커 부착입니다! (11:49)"
     },
     {
       "id": 9,
@@ -405,7 +409,8 @@
       "channel": "TAEJA DM",
       "project": "NFC CD",
       "text": "중국 공장에서 완제품(NFC 스티커 부착) 제작 가능 여부 및 단가 확인",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 윤하: ↳ 넵 !! Nfc 스티커 부착입니다! (2026-04-17 11:49) - 중국 공장에서 NFC 스티커 부착 완제품 제작 가능 여부 확인 완료 및 단가($3~$5) 제시"
     }
   ]
 }
