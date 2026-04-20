@@ -167,13 +167,29 @@ def main():
         if d:
             all_data[dk] = d
 
+    def fb_get(dk, tid):
+        entry = fb_state.get(dk)
+        if entry is None:
+            return None
+        # Firebase: 키가 연속 정수면 list, 아니면 dict로 반환
+        if isinstance(entry, list):
+            try:
+                if tid < len(entry):
+                    return entry[tid]
+            except Exception:
+                return None
+            return None
+        if isinstance(entry, dict):
+            return entry.get(str(tid))
+        return None
+
     pending = []
     for dk, data in all_data.items():
         for t in data.get('todos', []):
             if t.get('done'):
                 continue
             # 사용자가 이미 Firebase에 값 넣었으면 건드리지 않음 (true/false 모두)
-            fb_val = (fb_state.get(dk) or {}).get(str(t['id']))
+            fb_val = fb_get(dk, t['id'])
             if fb_val is not None:
                 continue
             pending.append((dk, t))
