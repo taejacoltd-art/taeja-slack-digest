@@ -37,6 +37,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/analyze_with_llm.py
 
+      - name: Auto-check completed todos (past 7 days)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/auto_check_done.py
+
       - name: Copy report.html to index.html
         run: cp report.html index.html
 
