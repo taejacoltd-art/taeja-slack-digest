@@ -947,7 +947,7 @@ async function renderAllTodos() {
       e.stopPropagation();
       const item = el.closest('.todo-item');
       const id = parseInt(item.dataset.id);
-      const dateKey = findTodoDate(id);
+      const dateKey = item.dataset.datekey || findTodoDate(id);
       if (!dateKey) return;
       fbSetDone(dateKey, id, true);
       item.classList.add('done');
@@ -962,7 +962,8 @@ async function renderAllTodos() {
     el.onclick = (e) => {
       e.stopPropagation();
       const id = parseInt(el.dataset.edit);
-      const dateKey = findTodoDate(id);
+      const item = el.closest('.todo-item');
+      const dateKey = item.dataset.datekey || findTodoDate(id);
       if (dateKey) {
         selectedDate = new Date(dateKey + 'T00:00:00');
         openEditModal(id);
@@ -1029,7 +1030,7 @@ async function renderDoneTodos() {
       e.stopPropagation();
       const item = el.closest('.todo-item');
       const id = parseInt(item.dataset.id);
-      const dateKey = findTodoDate(id);
+      const dateKey = item.dataset.datekey || findTodoDate(id);
       if (!dateKey) return;
       fbSetDone(dateKey, id, false);
       item.classList.add('hiding');
@@ -1041,7 +1042,8 @@ async function renderDoneTodos() {
     el.onclick = (e) => {
       e.stopPropagation();
       const id = parseInt(el.dataset.edit);
-      const dateKey = findTodoDate(id);
+      const item = el.closest('.todo-item');
+      const dateKey = item.dataset.datekey || findTodoDate(id);
       if (dateKey) {
         selectedDate = new Date(dateKey + 'T00:00:00');
         openEditModal(id);
@@ -1097,7 +1099,7 @@ function bindTodoEvents(dateKey) {
   if (addBtn) addBtn.onclick = () => openEditModal(null);
 }
 
-function todoItemHTML(t) {
+function todoItemHTML(t, dateKey) {
   const assignees = Array.isArray(t.assignee) ? t.assignee : [t.assignee];
   const tags = assignees.map(a => {
     const m = MEMBERS.find(m => m.key === a);
@@ -1105,8 +1107,9 @@ function todoItemHTML(t) {
     return `<span class="todo-assignee-tag ${cls}">${m ? m.short : a}</span>`;
   }).join('');
   const evidence = t.evidence ? `<div class="todo-evidence">${t.evidence}</div>` : '';
+  const dk = dateKey || t._dateKey || '';
   return `
-    <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}">
+    <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}" data-datekey="${dk}">
       <div class="todo-check"></div>
       <div class="todo-content">
         <div>
