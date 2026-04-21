@@ -1,0 +1,43 @@
+{
+  "channels": {
+    "C0AN5UAE2EN": {
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "11:32",
+          "text": " [파일: 19b18e95d7717ea271bc4c9d1b3d5cb6effd194bae87d73dd00522794070855d.png]"
+        },
+        {
+          "sender": "윤하",
+          "time": "11:32",
+          "text": "대표님, 잘 다녀오세요!!"
+        },
+        {
+          "sender": "유민",
+          "time": "11:33",
+          "text": "잘 다녀오세요오!!"
+        },
+        {
+          "sender": "지수",
+          "time": "11:34",
+          "text": " [파일: IMG_0933.jpg]"
+        }
+      ],
+      "summary": "<span class=\"person\">윤하</span>와 <span class=\"person\">유민</span>이 대표님의 출장 또는 외출을 배웅하는 인사를 나눴습니다. <span class=\"person\">지수</span>가 관련 사진을 공유했습니다.",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "11:32",
+          "text": "대표님, 잘 다녀오세요!!"
+        },
+        {
+          "sender": "유민",
+          "time": "11:33",
+          "text": "잘 다녀오세요오!!"
+        }
+      ],
+      "hasNew": true
+    }
+  },
+  "todos": []
+}
