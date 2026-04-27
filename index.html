@@ -779,13 +779,17 @@ function renderSingleChannel(container, data, dateStr) {
     const member = MEMBERS.find(m => m.short === msg.sender || m.key === msg.sender);
     const avClass = member ? `av-${member.key}` : '';
     const initial = msg.sender.charAt(0);
+    const tsAttr = msg.ts ? ` data-ts="${msg.ts}"` : '';
+    const timeHTML = msg.ts
+      ? `<a class="msg-time-link" href="${slackPermalink(selectedChannel, msg.ts)}" target="_blank" rel="noopener"><div class="msg-time">${msg.time}</div></a>`
+      : `<div class="msg-time">${msg.time}</div>`;
 
     html += `
-      <div class="msg-card">
+      <div class="msg-card"${tsAttr}>
         <div class="msg-sender">
           <div class="msg-avatar ${avClass}">${initial}</div>
           <div class="msg-name">${member ? member.name : msg.sender}</div>
-          <div class="msg-time">${msg.time}</div>
+          ${timeHTML}
         </div>
         <div class="msg-text">${msg.text}</div>
       </div>`;
@@ -803,13 +807,17 @@ function renderSingleChannel(container, data, dateStr) {
       const member = MEMBERS.find(m => m.short === msg.sender || m.key === msg.sender);
       const avClass = member ? `av-${member.key}` : '';
       const initial = msg.sender.charAt(0);
+      const tsAttr = msg.ts ? ` data-ts="${msg.ts}"` : '';
+      const timeHTML = msg.ts
+        ? `<a class="msg-time-link" href="${slackPermalink(selectedChannel, msg.ts)}" target="_blank" rel="noopener"><div class="msg-time">${msg.time}</div></a>`
+        : `<div class="msg-time">${msg.time}</div>`;
       html += `
-        <div class="msg-card${isThread ? ' thread-reply' : ''}">
+        <div class="msg-card${isThread ? ' thread-reply' : ''}"${tsAttr}>
           <div class="msg-sender">
             <div class="msg-avatar ${avClass}">${initial}</div>
             <div class="msg-name">${member ? member.name : msg.sender}</div>
             ${isThread ? '<div class="thread-label">쓰레드</div>' : ''}
-            <div class="msg-time">${msg.time}</div>
+            ${timeHTML}
           </div>
           <div class="msg-text">${displayText}</div>
         </div>`;
@@ -990,6 +998,8 @@ async function renderAllTodos() {
       }
     };
   });
+
+  bindTodoJumpHandlers(list);
 }
 
 async function renderDoneTodos() {
@@ -1070,6 +1080,8 @@ async function renderDoneTodos() {
       }
     };
   });
+
+  bindTodoJumpHandlers(list);
 }
 
 function findTodoDate(id) {
@@ -1115,6 +1127,8 @@ function bindTodoEvents(dateKey) {
     };
   });
 
+  bindTodoJumpHandlers(list);
+
   const addBtn = document.getElementById('addTodoBtn');
   if (addBtn) addBtn.onclick = () => openEditModal(null);
 }
@@ -1153,12 +1167,53 @@ function todoItemHTML(t, dateKey) {
         <div class="todo-text">${t.text}</div>
         <div class="todo-assignees">${tags}</div>
         ${evidence}
+        ${actions}
       </div>
       <button class="todo-edit" data-edit="${t.id}" title="수정">&#9998;</button>
     </div>`;
 }
 
 // ── Helpers ──
+const SLACK_WORKSPACE = 'taeja';
+function slackPermalink(channelId, ts) {
+  if (!channelId || !ts) return '#';
+  return `https://${SLACK_WORKSPACE}.slack.com/archives/${channelId}/p${String(ts).replace('.','')}`;
+}
+
+function bindTodoJumpHandlers(list) {
+  list.querySelectorAll('.todo-jump-internal').forEach(el => {
+    el.onclick = (e) => {
+      e.stopPropagation();
+      jumpToTodoSource(el.dataset.channel, el.dataset.ts, el.dataset.datekey);
+    };
+  });
+}
+
+function jumpToTodoSource(channelId, ts, dateKey) {
+  if (!channelId || !dateKey) return;
+  // 1) 날짜·채널 전환
+  selectedDate = new Date(dateKey + 'T00:00:00');
+  viewMonth = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1);
+  selectedChannel = channelId;
+  renderCalendar();
+  renderChannelList();
+  renderContent();
+  // 2) 전체 로그 탭으로 전환 후 해당 메시지로 스크롤+하이라이트
+  setTimeout(() => {
+    const fullTab = document.querySelector('.content-tab[data-ctab="fulllog"]');
+    if (fullTab) fullTab.click();
+    if (!ts) return;
+    setTimeout(() => {
+      const card = document.querySelector(`.msg-card[data-ts="${ts}"]`);
+      if (card) {
+        card.scrollIntoView({behavior:'smooth', block:'center'});
+        card.classList.add('msg-highlight');
+        setTimeout(() => card.classList.remove('msg-highlight'), 2400);
+      }
+    }, 80);
+  }, 30);
+}
+
 function formatDate(d) {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
