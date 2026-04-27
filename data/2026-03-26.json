@@ -1,32 +1,32 @@
 {
   "channels": {
     "C0AM3GBFPGU": {
-      "summary": "<span class=\"person\">건희</span>가 마성의팍스 키캡 4SET 5,200원(VAT미포) — 단, 틴케이스+스펀지만 중국에서 매입할지 결정 필요. <span class=\"person\">윤하</span>가 견적서(견적서-태자기획팀-35097.pdf) 전달, 제작 완료 예정 차주 수요일. <span class=\"person\">건희</span> 입금완료 회신.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>, 키캡 4SET 5,200원(VAT 미포함) 견적 확인 후 입금 완료 — 제작 차주 수요일 완료 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>, 세금계산서 확인 후 입금 완료(20:38)</li><li><span class=\"person\">윤하</span>, 견적서 전달 및 제작 완료일 차주 수요일 공유</li><li>틴케이스+스펀지 중국 매입 여부 결정 필요</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "10:08",
-          "text": "키캡 관련 — 4SET 5200원(vat미포). 틴케이스+스펀지만 중국에서 매입할지 결정필요"
+          "text": "키캡 관련\n\n• 4SET 5200원(vat미포) - 단 틴케이스+스펀지만 중국에서 매입할지?.. 결정필요 [✅ 윤하,준태,지수]"
         },
         {
           "sender": "윤하",
           "time": "10:08",
-          "text": "발행하셨다고 연락왔습니다. 확인부탁드립니다"
+          "text": "↳ 발행하셨다고 연락왔습니다 \n확인부탁드립니다 [✅ 건희]"
         },
         {
           "sender": "윤하",
           "time": "11:27",
-          "text": "계좌번호 확인을 위해 견적서 전달드립니다 (견적서-태자기획팀-35097.pdf)"
+          "text": "↳ 계좌번호 확인을 위해 견적서 전달드립니다. [파일: 견적서-태자기획팀-35097.pdf]"
         },
         {
           "sender": "윤하",
           "time": "11:48",
-          "text": "제작 완료 예정: 차주 수요일"
+          "text": "↳ 제작 완료 예정: 차주 수요일입니다. [✅ 지수]"
         },
         {
           "sender": "건희",
           "time": "20:38",
-          "text": "[입금완료]"
+          "text": "↳ [입금완료]"
         }
       ],
       "hasNew": true,
@@ -81,12 +81,12 @@
           "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 상호작용 요소 메시지 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 상호작용 요소 포함 메시지 발송</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "15:34",
-          "text": "[상호작용 요소 메시지]"
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
         }
       ],
       "hasNew": true
@@ -119,22 +119,32 @@
           "text": "KE_유지민 대리님: 내일 배차정보 나오는대로 공유 부탁드립니다\n\n위 내용으로 연락와서 남겨드립니다!"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 명일 온더팬덤 회의는 <span class=\"person\">준태</span>만 참여(상품팀 바쁜 상황)로 결정. <span class=\"person\">윤하</span>가 KE 유지민 대리에게 내일 배차정보 공유 요청 전달.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>, 명일(3/27) 온더팬덤회의 <span class=\"person\">준태</span>만 참여 결정</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>: KE_유지민 대리 → 내일 배차정보 공유 요청</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "15:35",
-          "text": "명일 온더팬덤회의는 본 방 준태님만 참여 — 상품팀은 바쁜상황"
+          "text": "명일 온더팬덤회의는 본 방 준태님만 참여"
+        },
+        {
+          "sender": "건희",
+          "time": "15:35",
+          "text": "상품팀은 바쁜상황이라..ㅠ 그게 나을 듯 합니다 ^^"
         },
         {
           "sender": "준태",
           "time": "15:35",
-          "text": "네 알겠습니다!"
+          "text": "네 알겠습니다 !"
+        },
+        {
+          "sender": "지수",
+          "time": "15:35",
+          "text": "확인했습니다!"
         },
         {
           "sender": "윤하",
           "time": "20:48",
-          "text": "KE_유지민 대리님: 내일 배차정보 나오는대로 공유 부탁드립니다"
+          "text": "KE_유지민 대리님: 내일 배차정보 나오는대로 공유 부탁드립니다\n\n위 내용으로 연락와서 남겨드립니다!"
         }
       ],
       "hasNew": true

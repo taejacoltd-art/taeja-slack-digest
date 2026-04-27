@@ -1,22 +1,32 @@
 {
   "channels": {
     "C0AJ6NYLKT4": {
-      "summary": "<span class=\"person\">규민</span> — 4주차 분석 공유. 방송 전략 논의 (소속 공개 방향)",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">규민</span>, 차세린 4주차 피드백 공유 — 방송 진행 성장 확인, 디스코드 전달 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: 악성 시청자·OTP 이슈 스스로 해결, 0명 시청자 상황에서도 자연스러운 진행력 평가</li><li><span class=\"person\">수혁</span>·<span class=\"person\">규민</span>: 1대1 채팅 서비스 방송 중 언급 제안, 소속 공개 방향 논의</li><li><span class=\"person\">건희</span>·<span class=\"person\">규민</span>: 이번주 주말 언급 후 다음주 수요일 발표 계획</li></ul>",
       "messages": [
         {
           "sender": "규민",
-          "time": "10:00",
-          "text": "4주차 분석입니다"
+          "time": "11:13",
+          "text": "저번주에 비해 방송 진행 면에서 많이 성장 하셨습니다"
+        },
+        {
+          "sender": "준태",
+          "time": "12:17",
+          "text": "↳ 내용 확인했습니다!\n지난주도 너무 고생 많으셨습니다!\n\n저도 확실히 악성 시청자 & 메이플 넥슨 OTP 설정 이슈 등을 방송 중에 스스로 해결해나가는(시청자들의 말을 듣고) 모습이 인상깊었고, 초반에 시청자가 0명일 때에도 혼잣말로 방송을 자연스럽게 이어나가는 모습이 참 인상적이더라구요! ! (시청자가 없어서 당황스럽고 민망할 법도 한데,, ) 확실히 방송에 대한 역량이 있으시고 차세린 만의 재미 요소가 있는 것 같습니다.(컴맹,왕초보 스트리머의 도전을 놀리면서도 응원하게 되는)"
+        },
+        {
+          "sender": "수혁",
+          "time": "16:08",
+          "text": "나랑 1대1로 대화 할수 잇는 채팅 서비스 어떨것 같아?"
         },
         {
           "sender": "규민",
-          "time": "10:30",
-          "text": "소속 공개 방향에 대해 논의 필요합니다"
+          "time": "16:12",
+          "text": "대신 차세린 소속이 있다는것을 지금은 숨기고 하는데 밝히는 방향으로 가야 할 것 같습니다"
         },
         {
-          "sender": "건희",
-          "time": "11:00",
-          "text": "소속 공개 시기에 대해 전략적으로 접근합시다"
+          "sender": "규민",
+          "time": "17:33",
+          "text": "이번주 주말 방송시작과 끝에 언급만 하고\n그 다음주 수요일에 발표하는것도 좋을거같아요"
         }
       ],
       "hasNew": true,
@@ -124,12 +134,27 @@
       ]
     },
     "C0AJ4HXRD5L": {
-      "summary": "<span class=\"person\">건희 대표</span> — MVP 런칭 F/U 5개 아이템. 중장기 발전방향 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 4.27 MVP 런칭을 위한 5개 과제와 중장기 발전 방향 공유 — RAG 구조 결정, LLM 룰 기획, 레이턴시 개선, UI/UX 확정</div><ul class=\"sum-bullets\"><li><span class=\"person\">성민</span> 유저/캐릭터 DB 구성을 위한 그래프 DB vs 하이브리드 DB 방식 확정 필요</li><li><span class=\"person\">수혁</span> 부적절 발언 차단 LLM 룰 가이드라인 및 프롬프트 작성 필요</li><li><span class=\"person\">건희</span>가 RAG DB USER/CHR DB Schema 및 MVP 구조도 전달</li></ul>",
       "messages": [
         {
           "sender": "건희",
-          "time": "14:00",
-          "text": "MVP 런칭 F/U 5개 아이템 공유합니다. 중장기 발전방향 논의합시다"
+          "time": "14:56",
+          "text": "<4.27 MVP 런칭을 위한 F/U>\n1\tRAG 구조 결정: 유저/캐릭터 DB 구성을 위한 그래프 DB와 하이브리드 DB 중 적합한 방식 확정. – 김성민 @성민\n2\tLLM 룰(Judge) 기획: 부적절 발언 차단을 위한 구체적인 가이드라인 및 프롬프트 작성. – 명확한 가이드라인 or 의견 必: 오수혁 @수혁\n3\t첫 세션 레이턴시 개선: 11labs 호출 시 발생하는 초기 지연(4~5초)을 줄이기 위한 비동기 처리 또는 예열(Warm-up) 테스트 진행. – @성민 @건희\n4\t유저RAG/ 차세린(캐릭터)RAG 구성 결정: 유저 Intent or Emotional  - 캐릭터 Intent간 매칭 필요 – @규민 @건희\n5      UI/UX확정 @윤하 @성민\n•        사용자 개입(Intervention) 기능: AI가 발화하는 도중에도 사용자가 말을 끊고 새로운 대화를 시작할 수 있는 실시간 개입 기능을 개발하여 자연스러운 대화 경험을 제공합니다. [✅ 윤하]"
+        },
+        {
+          "sender": "건희",
+          "time": "14:57",
+          "text": "<중장기>\n\n-중장기 발전 방향 (Mid term)\n-시기: MVP 출시 이후~\n•        자체 서빙 LLM 구축: 단순히 외부 LLM API에 의존하는 것을 넘어, 서비스 바이블과 유저 경험이 반영된 '태자만의 LLM 노드(토크 제너레이터, 컴포저)'를 구축하여 대화의 품질과 통제력 UP\n•        감정 엔진 고도화: 초기 감정 헤드 학습(Level 1)을 넘어, 데이터가 충분히 쌓인 후에는 Emotion2VEC 모델 자체를 파인튜닝(Level 2)하여 더욱 정교한 감정 인식을 구현합니다.\n•        자체 TTS 엔진 개발: 11labs에 대한 높은 의존도와 레이턴시 한계를 극복하기 위해, QWEN3 등을 기반으로 한 자체 보이스 엔진(TVE: Taeja Voice Engine)을 개발합니다."
+        },
+        {
+          "sender": "건희",
+          "time": "14:59",
+          "text": "혹시나 꼭 추가해야할 내용 있으면 본 스레드에 댓글로 남겨주시면 감사드리겠습니다 ! @here [파일: 3월_27일_회의록_요약_보고서.pdf]"
+        },
+        {
+          "sender": "건희",
+          "time": "21:54",
+          "text": "[Discussion 필요]\n③ 대화 퀄리티 관점, 아래 작업 전달드립니다.\n1. MVP 구조도(PPT) - 구조도의 경우 금요일 나눈 버젼에서 보완하였습니다.\n 2.   RAG DB - USER/CHR DB Schema 전달드립니다. 다만.. User의 경우 현재 DB가 없고, 이후 emotion2 활용을 대비한 구조로 기획하였습니다. [파일: image.png] [파일: OnTheFandom_RAG_Schema_v3.docx] [파일: 구조도_MVP구조도_260330_V1.pptx]"
         }
       ],
       "hasNew": true,
@@ -157,17 +182,27 @@
       ]
     },
     "C0AMC45RJ3U": {
-      "summary": "<span class=\"person\">윤하</span> — 쫀냐미 자사몰 시안 공유. IP 콘텐츠 방향 논의",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 쫀냐미 자사몰 시안 링크 전달 및 메인/상품 페이지 디자인 컨셉 설명</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>: 메인 화면을 배경 전체를 하나의 장면으로 구성, 요소들을 버튼으로 활용하여 IP 컨텐츠 전개</li><li><span class=\"person\">윤하</span>: 상품 페이지는 비밀기지 내부 진입 연출로 작업, 방문자가 IP 세계관 참여자로 느끼도록 구성</li><li><span class=\"person\">건희</span>: PDF화 없이 전달 예정</li></ul>",
       "messages": [
         {
+          "sender": "건희",
+          "time": "10:00",
+          "text": "@윤하 @준태 @유민 @지수"
+        },
+        {
           "sender": "윤하",
-          "time": "11:00",
-          "text": "쫀냐미 자사몰 시안 공유합니다"
+          "time": "19:08",
+          "text": "쫀냐미 자사몰 시안 링크 전달드립니다.\n\nhttps://taejamoomoo-cpu.github.io/chaeso/"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:16",
+          "text": "*자사몰 시안 설명*\n\n메인 화면: 배경 전체를 하나의 장면으로 구성하였으며, 화면 속 각 요소들이 버튼으로 동작합니다.\n디자인 내 요소들을 버튼으로 활용하여 단순한 쇼핑몰의 형태가 아닌 IP의 새로운 컨텐츠를 새로운 공간에서 전개하는 방향으로 보여질 수 있도록 작업하였습니다.\n\n상품 페이지: 쫀냐미 클릭 시, 상품 진열 페이지로 이동합니다.\n타 쇼핑몰처럼 단순히 상품을 나열하는 리스트 형태가 아닌 비밀기지 내부로 진입하는 연출로 작업하였습니다.\n상품 페이지또한 쫀냐미의 캐릭터성을 웹에 그대로 녹여, 방문자가 단순 구매자가 아닌 IP 세계관의 참여자로 느낄 수 있도록 작업하였습니다."
         },
         {
           "sender": "건희",
-          "time": "11:30",
-          "text": "IP 콘텐츠 방향 같이 논의합시다"
+          "time": "19:30",
+          "text": "PDF화 할 필요없이 보내겠습니다"
         }
       ],
       "hasNew": true,
@@ -200,7 +235,7 @@
       ]
     },
     "C0AM3GBFPGU": {
-      "summary": "<span class=\"person\">윤하</span> — 마팍 패키지 플랜 정리 완료. 프리오더 확정",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>, 패키지 플랜 정리 완료 및 프리오더 확정</div>",
       "messages": [
         {
           "sender": "윤하",
@@ -218,7 +253,7 @@
       ]
     },
     "C0AM3GKNCN8": {
-      "summary": "<span class=\"person\">윤하</span> — 최고심 신제품 디자인 공유. 커스텀 티셔츠/복주머니키링",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 최고심 신제품 디자인 공유 — 커스텀 티셔츠, 복주머니키링</div>",
       "messages": [
         {
           "sender": "윤하",
@@ -236,12 +271,27 @@
       ]
     },
     "C0ALWFZQMTP": {
-      "summary": "<span class=\"person\">윤하</span> — OPP 헤더 변경 단가 확인",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>, 광주 창고 실사 완료 — 3/31 중국 출고, 4/2 광주 도착 예정, 봉제류 220원/헤더띠 50원 VAT제외</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span> 선임, 납품 임가공/물류 책임자로 진행 확정</li><li>4/2 임가공 시작 전 6종 각각 사진/영상 요청 및 직접 검수 예정</li><li><span class=\"person\">윤하</span>, 헤더 OPP 변경 시 단가 11원 동일 확인</li></ul>",
       "messages": [
         {
+          "sender": "건희",
+          "time": "09:22",
+          "text": "↳ 안녕하세요.\n\n2일전 토요일 광주 창고 실사다녀왔습니다.\n• 창고 임가공 장소는 충분한 상황, 그동안 작업많이해본 업체인 걸 확인\nㄴ 지금부터 납품 임가공/물류 관련 책임자는 @준태 선임님이 진행해주시면 감사드리겠습니다.  3/31에 중국에서 출고 - 4/2에 광주에 도착예정(1차)\n\n• 봉제류 개당 VAT제외 220원- 양면인형, 봉제류등 정방향으로 넣어달라고 더블체크/ 확인\nㄴ 이외 100개 쌀 때 생겼던 문제들(박스안에 넣는 방법 등) 확인 필요\n• 인형머리띠, 릴파우치의 경우 증지만 부착하는 것으로 VAT 제외 50원 진행\n• 결제방법: 완성 후 100% 입금 [✅ 준태]"
+        },
+        {
+          "sender": "건희",
+          "time": "09:23",
+          "text": "↳ @윤하 @지수 @유민 현 상황 참고 부탁드립니다\n• 광주에 1차 물량 도착하고 작업시작 전 직접 검수 진행코자 하니 참고 부탁드립니다 [✅ 지수,유민,준태]"
+        },
+        {
+          "sender": "준태",
+          "time": "11:47",
+          "text": "↳ 확인했습니다.\n임가공업체 대표님 초대한 카톡방\n만들어서 소통 중에 있습니다.\n\n4월2일 임가공 시작할 때\n6종 각각의 임가공 사진 OR 영상\n요청드렸습니다.\n\n확인 후 창에 공유드리겠습니다."
+        },
+        {
           "sender": "윤하",
-          "time": "16:00",
-          "text": "OPP 헤더 변경 단가 확인합니다"
+          "time": "16:19",
+          "text": "@건희\n대표님, OPP > 헤더 OPP 변경 시 OPP 자체 단가는 변동 없는 것으로 확인하였습니다. (기존 단가 11원 동일) [✅ 준태]"
         }
       ],
       "hasNew": true,
@@ -269,12 +319,12 @@
       ]
     },
     "C0ALWG29TB7": {
-      "summary": "<span class=\"person\">윤하</span> — 8/7 오픈 목표 타임라인 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 8월 7일 오픈 목표 타임라인 전달 — <span class=\"person\">건희</span> 외 전체 공유</div><ul class=\"sum-bullets\"><li>8월 7일 오픈 목표로 타임라인 설정 (임의 일정)</li><li><span class=\"person\">준태</span> 확인 완료</li></ul>",
       "messages": [
         {
           "sender": "윤하",
-          "time": "17:00",
-          "text": "8/7 오픈 목표 타임라인 공유합니다"
+          "time": "20:07",
+          "text": "@건희 @here\n\n8월 7일 오픈 목표로 잡은 타임라인 전달드립니다. 오픈 일정은 임의로 설정한 점 참고 부탁드립니다. [파일: image.png] [✅ 준태]"
         }
       ],
       "hasNew": true,
@@ -287,17 +337,32 @@
       ]
     },
     "C0APK7RF82J": {
-      "summary": "<span class=\"person\">건희 대표</span> — #발주-임가공 채널 개설. 베이블루 건, 케인 건 기록 시작",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>·<span class=\"person\">윤하</span>, 베이블루·케인 발주건 처리 — 렌티큘러 400원, 봉제인형 헤더 700원, 패러블 퀵발송 22,600원</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 베이블루 소량 발주(건희), 이후 <span class=\"person\">준태</span> 담당 / 물류단 증지부착만 진행</li><li><span class=\"person\">윤하</span>: 케인 렌티큘러 공급가 400원(500장 기준), 봉제인형 헤더 700원(150×100 종이헤더 $0.3) 확정</li><li><span class=\"person\">윤하</span>: 패러블로 케인건 퀵 1박스 발송 22,600원 (패러블 자체 옷 부자재 포함)</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "12:13",
-          "text": "베이블루 건"
+          "text": "베이블루 건 [✅ 준태]"
+        },
+        {
+          "sender": "건희",
+          "time": "12:14",
+          "text": "ㆍ발주담당: 이건희 - 소량\nㆍ이후건 담당 : 윤준태"
         },
         {
           "sender": "윤하",
-          "time": "14:15",
-          "text": "케인"
+          "time": "14:23",
+          "text": "@건희\n대표님, 케인 봉제인형 헤더 진행 시 공급가는 어떻게 전달해야할까요?\n\n렌티큘러는 아르떼 단가 500장 기준 장당 360원 입니다.\n\n엽서는 ADC단가 100원이며, 공급가 420원으로 나갔습니다!"
+        },
+        {
+          "sender": "건희",
+          "time": "15:33",
+          "text": "렌티는 400원정도로 하시죠  - 500장@윤하\n태자가 아예 임가공안했을 경우*"
+        },
+        {
+          "sender": "윤하",
+          "time": "16:27",
+          "text": "@준태\n준태님, 패러블에 케인건으로 퀵 1박스 발송하였습니다!\n\n금액: 22,600원 [✅ 준태]"
         }
       ],
       "hasNew": true,
@@ -385,12 +450,32 @@
       ]
     },
     "C0AQ0V3H4JV": {
-      "summary": "<span class=\"person\">건희 대표</span> — 태자LLM 로드맵 공유: Phase1 MVP(4/27) → Phase2 정식베타(6/27) → Phase3 정식런칭(10월). LLM Judge 정의",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 태자 LLM 3단계 로드맵 제시 — MVP 4/27, 베타 6/27, 정식 10월 목표</div><ul class=\"sum-bullets\"><li><span class=\"person\">성민</span>: MVP는 1개 LLM + instructions Judge 방식, RAG가 태자 LLM 파이프라인의 기반</li><li><span class=\"person\">수혁</span>: LLM Judge 구성안 작성 후 목/금 회의 예정</li><li>1개 LLM 시 Judge 품질 우려 vs 2개 LLM 시 레이턴시 우려</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "15:17",
-          "text": "태자LLM Phase 1~3 로드맵 공유. MVP 4/27, 정식베타 6/27, 정식런칭 10월 목표"
+          "text": "Phase 1 (Short-term / MVP): 외부 LLM(OpenAI) + 하드코딩 룰 베이스 Judge로 가드레일 구축. 이 기간 동안 유저 대화 데이터를 지속 축적\nㄴ 금번 목표 4월 27일\nPhase 2 (Mid-term): 축적된 데이터와 서비스 바이블을 기반으로 자체 서브 LLM을 *파인튜닝하고*, 토크 제너레이터(문장 가공)와 머신러닝 기반 Judge 노드를 도입합니다.\nㄴ 정식 베타 6월 27일 목표\nPhase 3 (Long-term): 외부 LLM 의존도를 최소화하고, 의도 파악부터 답변 생성·검열까지 모든 과정을 '태자 LLM 노드' 안에서 자체 처리하는 완전한 독자 생태계를 완성합니다.\nㄴ 정식 런칭 10월 목표"
+        },
+        {
+          "sender": "성민",
+          "time": "15:45",
+          "text": "↳ MVP때는 LLM을 호출할때 openai의 instructions에 Judge를 추가하는 방식으로 진행합니다! 그래서 몇 문장으로 이루어진 규칙들이 될거같습니다."
+        },
+        {
+          "sender": "수혁",
+          "time": "16:05",
+          "text": "↳ 음 이부분은 제가 구성좀 해서 회의를 하시죠"
+        },
+        {
+          "sender": "건희",
+          "time": "17:32",
+          "text": "↳ **본 건 각 CASE별 MVP 시나리오*\n• 1개의 LLM 진행 시 -  Judge품질에 있어 우려\n• 2개 LLM 진행 시 - 레이턴시 우려"
+        },
+        {
+          "sender": "성민",
+          "time": "22:12",
+          "text": "↳ 지금 설계하고 있는 유저/캐릭터 RAG가 태자 LLM 파이프라인의 기반입니다.\n\n대표님이 말씀하신 1번 LLM(분석)이 좋은 응답을 생성하려면, 유저가 누구인지(유저 메모리)와 캐릭터가 어떤 성격인지(캐릭터 지식)를 알아야 합니다. 이걸 검색해서 LLM에 넣어주는 게 RAG의 역할이고, 지금 그 설계를 하고 있습니다.\n\n2번 LLM(Judge)의 친밀도 레벨이나 문장 길이 조절은 RAG 위에 올라가는 후처리 레이어입니다. RAG가 정확한 컨텍스트를 줘야 Judge도 의미 있는 판단을 할 수 있습니다. 다만 친밀도와 문장 길이 조절은 1번 LLM의 프롬프트에 포함시키는 것만으로 충분히 처리할 수 있어서, MVP 단계에서 별도 Judge LLM을 두는 것보다 프롬프트로 먼저 해결하고 실서비스에서 응답 품질 문제가 발견되면 그때 Judge 레이어를 추가하는 게 효율적입니다.\n\n정리하면, 지금 만드는 RAG가 1번 LLM의 입력 품질을 결정하고, 입력 품질이 전체 응답 품질을 결정합니다. RAG가 빠지면 1번 LLM은 유저도 모르고 캐릭터도 모르는 상태에서 응답하게 되니까, RAG 설계가 태자 LLM의 시작점이 맞습니다."
         }
       ],
       "hasNew": true,
@@ -473,17 +558,32 @@
       ]
     },
     "C0AQ0VDEC4R": {
-      "summary": "<span class=\"person\">건희 대표</span> — 태자감정엔진 단계별 마일스톤 공유 (Phase1 감정헤드 학습 → Phase2 파인튜닝 → Phase3 자동화)<br><span class=\"person\">성민</span> — 감정 엔진 설계 문서 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 태자 감정엔진 3단계 로드맵(Phase 1~3) 제시, <span class=\"person\">성민</span>에게 문서 정리 요청</div><ul class=\"sum-bullets\"><li>Phase 1: Emotion2VEC 768차원 임베딩 + 5,000세트 라벨링 데이터로 20개 감정 헤드 학습</li><li><span class=\"person\">성민</span>이 voice-emotion-labeling.md, voice-emotion-data.md 공유 후 핵심 포인트만 재정리 약속</li><li>IR Deck 활용 목적으로 <span class=\"person\">수혁</span> 멘션</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "15:25",
-          "text": "감정엔진 Phase 1~3 마일스톤: Level1 감정헤드 학습 → Level2 Emotion2VEC 파인튜닝 → Level3 QWEN 오디오 도입"
+          "text": "[단계별 마일스톤]\n\n-Phase 1 (Level 1 / 단기 - MVP 런칭 이후\n• Emotion2VEC의 가중치는 고정한 채 768차원 임베딩을 추출하고, 수기 라벨링된 5,000세트 데이터와 매칭하여 태자만의 '감정 헤드(20개 감정)'를 파이토치로 학습시킵니다. 비용과 데이터가 적게 들어 빠르게 초기 엔진을 완성\n==\n- Phase 2 (Level 2 / 중기): 데이터가 대량 축적되면 Emotion2VEC 모델 자체의 가중치 잠금을 해제하고 파인튜닝하여, 한국어에 최적화된 더 정교한 임베딩을 추출합니다.\n==\n-Phase 3 (장기): QWEN 오디오 모델을 도입해 반어법 감지를 전담시키고, 사용자 음성 데이터의 라벨링을 자동화하여 엔진이 스스로 진화하는 플라이휠을 구축합니다. [파일: 회신필요_한국어_특화_감정_인식_엔진_상세_로드맵.docx]"
+        },
+        {
+          "sender": "건희",
+          "time": "15:27",
+          "text": "↳ @성민 팀장님 본 엔진 관련하여 회의 내용으로 정리하였으나,\nhttps://taejacoltd.slack.com/archives/C0AK0V0C7BJ/p1774587606382139\n금요일 발표해주신 내용에 근거하기 어렵다고 판단.. 해당 문서 베이스에 코멘트나 추가적으로 작성 부탁드립니다 (생각 SYNC 목적)\n• MVP단 이후 IR Deck에 활용 @수혁"
         },
         {
           "sender": "성민",
           "time": "15:29",
-          "text": "감정 엔진 관련 설계 문서 여기에도 추가해놓겠습니다!"
+          "text": "감정 엔진 관련 설계 문서 여기에도 추가해놓겠습니다! [파일: voice-emotion-labeling.md] [파일: voice-emotion-data.md]"
+        },
+        {
+          "sender": "건희",
+          "time": "15:30",
+          "text": "↳ 해당 문서가 내용이 너무 많아서.. ㅠ.ㅠ 저희가 개발할때 가장 중요한 포인트들만 정리해주실 수 있으실까요?"
+        },
+        {
+          "sender": "성민",
+          "time": "15:30",
+          "text": "↳ 네네 정리 한번 해볼게요"
         }
       ],
       "hasNew": true,
@@ -531,17 +631,22 @@
       ]
     },
     "C0AJ38GC9HB": {
-      "summary": "<span class=\"person\">건희</span>가 이미지 2건 공유 + @here 유튜브 쇼츠(_bIK09Y7MwI) 공유 — \"이렇게 되면 안되는\" 사례.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 이미지 파일 2건과 YouTube 영상 공유 — @here 태그로 주의 환기</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "12:32",
-          "text": "[이미지 공유]"
+          "text": "[파일: image.png] [✅ 윤하]"
+        },
+        {
+          "sender": "건희",
+          "time": "12:33",
+          "text": "[파일: image.png]"
         },
         {
           "sender": "건희",
           "time": "13:50",
-          "text": "@here 이렇게 되면 안되는.. — https://youtube.com/shorts/_bIK09Y7MwI"
+          "text": "https://youtube.com/shorts/_bIK09Y7MwI?si=GvzLo8y6c1KkU7eF \n@here  이렇게 되면 안되는.."
         }
       ],
       "hasNew": true,
@@ -586,17 +691,27 @@
           "text": "무한대"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 붉은사막 플레이 중 떠올린 'AI NPC에 활용되는 B2B 솔루션' 아이디어 공유. <span class=\"person\">수혁</span>이 적용 범위 — 휴먼로봇/게임/광고/시니어/의료/엔터테인먼트/CS 챗봇 등 무한대 의견.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 감정엔진의 ai NPC 활용 B2B Solution 아이디어 제안 — 붉은사막 예시 기반</div><ul class=\"sum-bullets\"><li><span class=\"person\">수혁</span>: 적용 범위는 휴먼로봇, 게임, 광고, 시니어, 의료, 엔터테인먼트, C/S 챗봇 등 무한대</li></ul>",
       "messages": [
         {
           "sender": "건희",
+          "time": "10:45",
+          "text": "https://www.youtube.com/watch?v=eHH2ajTtbsY"
+        },
+        {
+          "sender": "건희",
           "time": "10:47",
-          "text": "적용 가능한 대상 아이디어 — AI NPC에 활용되는 B2B Solution. 붉은사막 플레이 중 감정엔진의 메리트가 있다는 생각"
+          "text": "안녕하세요? 적용 가능한 대상 아이디어 전달드립니다.\n\nai NPC에 활용되는 B2B Solution\n• 아이디어는 붉은사막을 플레이하던 중, 저희가 개발할 감정엔진이 상당히 메리트가 있다는.. 생각이 들었습니다 (위 예시)"
         },
         {
           "sender": "수혁",
           "time": "10:58",
-          "text": "적용 범위는 휴먼로봇, 게임, 광고, 시니어, 의료, 엔터테인먼트, C/S 챗봇 등... 무한대"
+          "text": "네 적용 범위는 휴먼로봇, 게임, 광고, 시니어, 의료, 엔터테인먼트, C/S 챗봇 등..."
+        },
+        {
+          "sender": "수혁",
+          "time": "10:58",
+          "text": "무한대"
         }
       ],
       "hasNew": true
@@ -609,12 +724,12 @@
           "text": "@here 26년 3월 30일 적용 사업자등록증- 활용 [파일: 사업자등록증.pdf] [✅ 준태]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 26년 3월 30일 적용 사업자등록증 PDF 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 2026년 3월 30일 적용 사업자등록증 파일 공유</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "10:59",
-          "text": "@here 26년 3월 30일 적용 사업자등록증 - 활용"
+          "text": "@here 26년 3월 30일 적용 사업자등록증- 활용 [파일: 사업자등록증.pdf] [✅ 준태]"
         }
       ],
       "hasNew": true
@@ -757,32 +872,32 @@
           "text": "↳ 의견 남겼습니다! 완료 [파일: 커뮤_20260330-콘텐츠사업부-타임라인-V1.xlsx] [✅ 준태]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 인보이스 배경지 발주 확인(2차분 재고 있음). <span class=\"person\">준태</span>가 케인 진우절 운영안내 정리(7만원이상 엽서/세트 EX포카+렌티포카/팬카페 친필싸인) + Slack 섹션 가이드(20260330_Slack섹션가이드-V1.xlsx) 공유. <span class=\"person\">지수</span>가 케인 상단 이벤트 배너 공유 → <span class=\"person\">준태</span> 이상없음 회신. 19:05 <span class=\"person\">준태</span>가 콘텐츠사업부 타임라인 초안 공유, <span class=\"person\">건희</span>가 의견 추가하여 완료본(커뮤_20260330) 회신.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">지수</span>가 케인 구매증정 이벤트 배너·이벤트페이지 4장 제작 완료, <span class=\"person\">준태</span>가 콘텐츠사업부 타임라인 초안 공유</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: 2026 케인 굿즈 진우절 운영 안내 공유 — 7만원 이상 구매 시 엽서 증정, 세트 구매 시 포카 추가 증정</li><li><span class=\"person\">지수</span>: 케인 이벤트페이지 4장·배너 2장 제작 완료, <span class=\"person\">준태</span> 확인 완료</li><li><span class=\"person\">건희</span>: 타임라인 초안에 의견 남김, 스텝 원 내용으로 팀간 리소스 배분 진행 예정</li></ul>",
       "messages": [
+        {
+          "sender": "건희",
+          "time": "10:12",
+          "text": "이미 사무실에 있는 거 아닌가요?"
+        },
+        {
+          "sender": "윤하",
+          "time": "10:12",
+          "text": "네네, 2차 오더분 재고 있습니다."
+        },
         {
           "sender": "준태",
           "time": "15:04",
-          "text": "2026 케인 굿즈 진우절 운영안내 — 7만원이상 안죄송해 엽서/세트 EX포카+렌티포카/팬카페 친필싸인. 별도 이벤트 목록 페이지+카드뉴스 페이지"
-        },
-        {
-          "sender": "준태",
-          "time": "16:19",
-          "text": "섹션 가이드 따라서 섹션 나눠두시면 편하실 것 같아서 공유 (20260330_Slack섹션가이드-V1.xlsx)"
+          "text": "■ 2026 케인 굿즈: 진우절 — 운영 안내\n\n【1. 구매 이벤트】대상: 7만원 이상 구매자 증정: 안죄송해 엽서(2026ver)\n【2. 세트 구매 증정 이벤트】대상: 세트 A 또는 세트 B 구매자 증정: EX등급 그짤 포카 + 왠지 죄송한 렌티포카(2026ver)"
         },
         {
           "sender": "지수",
-          "time": "17:46",
-          "text": "@준태 @윤하 케인 상단 이벤트 배너 먼저 공유. 이상 없는지 확인 부탁"
-        },
-        {
-          "sender": "준태",
-          "time": "19:05",
-          "text": "@건희 콘텐츠사업부 타임라인 초안 공유. 내일 구글시트 생성 후 재공유 (20260330-콘텐츠사업부-타임라인-V1.xlsx)"
+          "time": "18:26",
+          "text": "@준태 준태님, 케인 이벤트페이지 4장으로 나누어서 공유폴더에 올려두었습니다. 내용 이상 없는지 확인 부탁드립니다!"
         },
         {
           "sender": "건희",
           "time": "19:28",
-          "text": "의견 남겼습니다! 완료 (커뮤_20260330-콘텐츠사업부-타임라인-V1.xlsx)"
+          "text": "의견 남겼습니다! 완료"
         }
       ],
       "hasNew": true

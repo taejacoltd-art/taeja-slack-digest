@@ -1,17 +1,32 @@
 {
   "channels": {
     "C0AJ6NYLKT4": {
-      "summary": "<span class=\"person\">준태</span> — 크리에이터 미팅 13시 진행. 통합 설정시트 공유 완료",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>, <span class=\"person\">규민</span>이 2026-03-20 13시 차세린 태자 사무실 미팅을 위한 채널분석 및 AI캐릭터 설정시트 공유</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: 매니저 코멘트 정리본 및 음성데이터 반영 결과물 공유</li><li><span class=\"person\">준태</span>: AI캐릭터 설정시트(캐릭터바이블 초안) 통합본 전달</li><li><span class=\"person\">규민</span>: 미팅 시 디스코드 매니저 코멘트 내용 설명 예정</li></ul>",
       "messages": [
         {
           "sender": "준태",
-          "time": "12:00",
-          "text": "크리에이터 미팅 13시 진행합니다"
+          "time": "12:44",
+          "text": "안녕하세요\n\n2026.03.20 13시_크리에이터 차세린_태자 사무실 미팅 예정\n\n미팅 시, 해당 내용 공유 및 피드백 진행 예정입니다.\n\n@규민 규민님께서 디스코드에서 언급해주신 매니저 코멘트 내용\n정리해서 남겨드렸으니, 미팅 시 같이 설명 부탁드립니다. [파일: (준태,규민)20260320_차세린_채널분석-V1.docx]"
+        },
+        {
+          "sender": "건희",
+          "time": "12:45",
+          "text": "요거 저희 음성데이터 다 반영한결과물이죠?!"
         },
         {
           "sender": "준태",
-          "time": "15:00",
-          "text": "통합 설정시트 공유 완료했습니다"
+          "time": "15:23",
+          "text": "네 그렇습니다 !"
+        },
+        {
+          "sender": "준태",
+          "time": "15:23",
+          "text": "대표님, 규민님과 각자 작성한 내용 통합하여 공유드립니다! [파일: (준태,규민 정리)AI캐릭터_설정시트_20260320-V1.docx]"
+        },
+        {
+          "sender": "건희",
+          "time": "15:24",
+          "text": "캐릭터바이블초안입니다"
         }
       ],
       "hasNew": true,
@@ -54,12 +69,17 @@
       ]
     },
     "C0AMC45RJ3U": {
-      "summary": "<span class=\"person\">준태</span> — IP업계 시장조사 자료 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 IP굿즈 자사몰 1차 시장조사 자료 공유, <span class=\"person\">윤하</span>가 KE 스토리팀 제안서(쫀냐미·고라니) 업로드</div>",
       "messages": [
         {
           "sender": "준태",
-          "time": "11:00",
-          "text": "IP업계 시장조사 자료 공유합니다"
+          "time": "19:09",
+          "text": "@팀\n자사몰 관련\n1차 ip업계 시장조사 내용 공유드립니다! [파일: 20260320_IP굿즈_자사몰_시장조사-V4.docx]"
+        },
+        {
+          "sender": "윤하",
+          "time": "21:06",
+          "text": "[파일: [제안서] KE 스토리팀 제안 _ 쫀냐미, 고라니.pdf]"
         }
       ],
       "hasNew": true,
@@ -77,17 +97,17 @@
       ]
     },
     "C0ALWG29TB7": {
-      "summary": "<span class=\"person\">준태</span> — 고라니 MD 제안서 4품목 작성 완료. 쫀냐미 아이스트레이 아이디어 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>, 고라니 MD 4품목(발매트/피규어 무드등/까딱 피규어/봉제 쿠션) + 쫀냐미 아이템 2종(아이스트레이/양우산) 제안</div><ul class=\"sum-bullets\"><li>고라니 제품기획안 V2 문서 전달 완료</li><li>쫀냐미 아이템 이미지 공유 완료</li></ul>",
       "messages": [
         {
           "sender": "준태",
-          "time": "14:00",
-          "text": "고라니 MD 제안서 4품목 작성 완료했습니다"
+          "time": "18:38",
+          "text": "고라니 MD 제안서 전달드립니다!\n4품목 :\n\n1. 발매트\n2. 피규어 무드등\n3. 까딱 피규어\n4. 봉제 쿠션\n@윤하 [파일: 20260320_고라니_제품기획안_간단-V2.docx]"
         },
         {
           "sender": "준태",
-          "time": "14:30",
-          "text": "쫀냐미 아이스트레이 아이디어입니다"
+          "time": "19:00",
+          "text": "쫀냐미 아이템 1개\n\n아이스트레이\n양우산 [파일: image.png] [파일: image.png] [✅ 윤하,준태]"
         }
       ],
       "hasNew": true,
@@ -112,7 +132,7 @@
           "text": "steam id: taeja0109 PW: Taeja0109!"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 Steam 계정 공유 — id: taeja0109 / PW: Taeja0109!",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 Steam 계정 정보 공유 — ID: taeja0109</div>",
       "messages": [
         {
           "sender": "건희",

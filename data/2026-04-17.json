@@ -13,12 +13,17 @@
           "text": "↳ *본 건 차주 페이스쿠션/플러시펜/모니터피규어 샘플확인 후 결정*(말)"
         }
       ],
-      "summary": "<span class=\"person\">윤하</span>가 팍스 스티커 제작 단가를 업데이트했습니다. 500개는 $1.5, 1000개는 $1.2이며 패키지 포함 완제 단가입니다.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span> 팍스 스티커 제작 단가 공유 — 500개 $1.5, 1000개 $1.2, <span class=\"person\">건희</span> 차주 샘플 확인 후 결정 예정</div><ul class=\"sum-bullets\"><li>스티커 제작 단가: 500개 $1.5, 1000개 $1.2 (패키지 포함 완제품)</li><li><span class=\"person\">건희</span>: 차주 페이스쿠션/플러시펜/모니터피규어 샘플 확인 후 결정</li></ul>",
       "messages": [
         {
           "sender": "윤하",
           "time": "11:48",
           "text": "팍스 스티커 제작 단가 업데이트드립니다.(패키지 포함 완제 단가)\n\n500개: $1.5\n1000개: $1.2"
+        },
+        {
+          "sender": "건희",
+          "time": "21:20",
+          "text": "↳ *본 건 차주 페이스쿠션/플러시펜/모니터피규어 샘플확인 후 결정*(말)"
         }
       ],
       "hasNew": true
@@ -36,7 +41,7 @@
           "text": "↳ 오늘 오후 4시에 예약되어있습니다 [✅ 준태,건희]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 오늘 업로드 여부를 문의했고, <span class=\"person\">규민</span>이 오늘 오후 4시에 예약되어 있다고 답변했습니다.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">규민</span>이 오늘 오후 4시 콘텐츠 업로드 예약 완료 확인</div>",
       "messages": [
         {
           "sender": "건희",
@@ -264,7 +269,7 @@
           "text": "↳ 보령 파이팅입니다 :joy:"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 통깡이 피규어 2,3차 CS 현황 6건(얼굴 도색불량 1개, 팔 떨어짐 3개, 배경판 파손 1개, 피부톤 이상 1개)을 보고했고, <span class=\"person\">건희</span>는 개봉 영상 및 박스넘버 확인, 파손건은 비디오 없으면 거절하는 대응전략을 지시했습니다. 공장과 협의하여 금주 주말까지 CS 건 확인 후 파츠별 제작하기로 했으며, 1차 CS는 차주 월요일, 2차 CS는 4월 30일까지 마감하기로 결정했습니다.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>·<span class=\"person\">준태</span>, 통깡이 피규어 2·3차 CS 6건 대응 완료 — 금주 주말까지 공장 파츠 제작·배송, 1차 CS 차주 월요일 마감</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>, NFC CD 중국 자체 완제 가능 확인 — UV $3, 옵셋 $5 (100개 기준)</li><li>통깡이 CS 대응: 영상 미제출 시 교환환불 거절, 공장에서 파츠 제작 후 발송 예정</li><li>삼성 스트레스볼 불량 8건, TPR 소재 특성상 정상 범위로 확인 답변</li></ul>",
       "messages": [
         {
           "sender": "준태",
@@ -272,9 +277,9 @@
           "text": "[통깡이 2,3차건 cs 현황]\n\n• 얼굴 도색 불량 1개 \n• 팔 떨어짐 3개 \n• 하단 배경판 파손 1개 \n• 상체 하체 피부톤 이상 1개(불량이 맞는지 사진 확인 필요)"
         },
         {
-          "sender": "건희",
-          "time": "12:13",
-          "text": "대응전략\n\n1. 파손의 경우 비디오 유무 확인\n• 비디오없을 경우 레진특성상 교환환불 어렵다 로 대응\n2. 파손 경위 확인 필요\n3. 얼굴 도색불량 (흰색)의 경우 재료특성상 발생할 수 있고 제거할 수 있으나, 필요한 경우 태자 사무실로 발송(수리)"
+          "sender": "윤하",
+          "time": "11:11",
+          "text": "1. 기성 CD 케이스에 종이 인쇄 후 직접 삽입 (임가공)\n2. 아크릴 CD + NFC 스티커 중국 제작\n3. 조립 임가공\n이 과정으로 제작 가능할 것 같습니다. 1,3번까지 공장에서 할 수 있을지 확인해보겠습니다"
         },
         {
           "sender": "윤하",
@@ -301,6 +306,14 @@
           "time": "19:36",
           "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
         }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 상호작용 요소 포함 메시지 전송</div>",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "19:36",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        }
       ]
     },
     "C0AQ0V3H4JV": {
@@ -314,6 +327,14 @@
           "sender": "건희",
           "time": "21:05",
           "text": "금일 인터뷰를 통한 발췌본베이스의 - 각 md파일 - intent 부분 정리한 내용 포함\nContinual/Factual -&gt; 01.Raw resource에 있습니다.\n\n향후 업무 예상: 해당 파일 기준으로 직접 md파일 작성(  Q1~Q5 +Intent) * Style의 경우 컨텐츠팀 매니저 작성\n\n==\nㆍ 진행 중\n• 재료 발췌본 → 실제 md 파일 변환 (대표가 직접 작성)\nㆍ 미착수\n• 2차 인터뷰 (차세린 + 매니저 인터뷰)\n• HyPE 가상질문 생성 파이프라인\n• DB 스키마 확정 및 구현\n• STT → RAG → LLM → TTS 전체 연동\n*자세한 내용 W7 정리파일 참고 @here [파일: character_rag_260417.zip] [파일: W7_정리파일_RAG_기타_260417.md]"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 인터뷰 발췌본 기반 md파일 작성 및 RAG 파이프라인 진행상황 공유 — 2026-04-17</div><ul class=\"sum-bullets\"><li>Continual/Factual 인터뷰 발췌본 intent 정리 완료, 01.Raw resource에 업로드</li><li>대표가 직접 Q1~Q5+Intent 형식 md파일 작성 예정 (Style은 컨텐츠팀 매니저 담당)</li><li>미착수: 2차 인터뷰(차세린+매니저), HyPE 가상질문 생성, DB 스키마, STT-RAG-LLM-TTS 전체 연동</li></ul>",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "21:05",
+          "text": "금일 인터뷰를 통한 발췌본베이스의 - 각 md파일 - intent 부분 정리한 내용 포함\nContinual/Factual -&gt; 01.Raw resource에 있습니다.\n\n향후 업무 예상: 해당 파일 기준으로 직접 md파일 작성(  Q1~Q5 +Intent) * Style의 경우 컨텐츠팀 매니저 작성\n\n==\nㆍ 진행 중\n• 재료 발췌본 → 실제 md 파일 변환 (대표가 직접 작성)\nㆍ 미착수\n• 2차 인터뷰 (차세린 + 매니저 인터뷰)\n• HyPE 가상질문 생성 파이프라인\n• DB 스키마 확정 및 구현\n• STT → RAG → LLM → TTS 전체 연동\n*자세한 내용 W7 정리파일 참고 @here"
         }
       ]
     }

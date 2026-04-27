@@ -1,17 +1,27 @@
 {
   "channels": {
     "C0AK0V0C7BJ": {
-      "summary": "<span class=\"person\">성민</span>/<span class=\"person\">수혁</span> — DB 스키마 설계 계속. 테이블 구조 확정",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>, 14시 GTMT 회의 소집 — 이건희 발표 포함, 윤하/지수/유민 부분 참가 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">수혁</span> System Layer 디스커션 자료 공유 (건희, 성민 확인)</li><li><span class=\"person\">성민</span> 음성 감정 라벨링·데이터 문서 2건 공유</li><li>회의 순서: 이건희 → 오수혁 → 김성민 → 기타 논의</li></ul>",
       "messages": [
         {
-          "sender": "성민",
-          "time": "10:00",
-          "text": "DB 테이블 구조 확정합니다"
+          "sender": "수혁",
+          "time": "10:29",
+          "text": "[파일: ONF_System Layer_오수혁(안)_오늘 디스커션 내용.pptx] [👀 건희,성민]"
         },
         {
-          "sender": "수혁",
-          "time": "10:30",
-          "text": "네 확인했습니다"
+          "sender": "건희",
+          "time": "13:20",
+          "text": "금일 14시 회의자료 [파일: 0330 GTMT(GO TO MARKET TAEJA.pptx]"
+        },
+        {
+          "sender": "건희",
+          "time": "13:22",
+          "text": "@윤하 @지수 @유민 14시 회의 GTMT(이건희 발표)만 참가 부탁드립니다\n<회의 순서>\n참가인원: 전체인원\n1. 이건희\n2. 오수혁\n3. 김성민\n4. 기타 논의 [✅ 성민,윤하,유민,준태]"
+        },
+        {
+          "sender": "성민",
+          "time": "14:00",
+          "text": "[파일: voice-emotion-labeling.md] [파일: voice-emotion-data.md]"
         }
       ],
       "hasNew": true,
@@ -39,12 +49,32 @@
       ]
     },
     "C0AJU22MXMJ": {
-      "summary": "<span class=\"person\">준태</span> — 민수달 유튜브채널 운영 통합관리 구글시트 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 차주 월요일 회의 후 유튜브 채널 생성 지시, <span class=\"person\">준태</span>가 통합관리 V1 파일 제작 완료</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span> 20260327-유튜브채널운영-통합관리-V1 파일 전달 완료</li><li><span class=\"person\">규민</span> 정기 업로드 부담 피드백, 디테일 조율 예정</li></ul>",
       "messages": [
         {
+          "sender": "건희",
+          "time": "18:49",
+          "text": "유투브채널 차주 월요일 회의 후 생성 @준태 [✅ 준태]"
+        },
+        {
           "sender": "준태",
-          "time": "11:00",
-          "text": "유튜브채널 운영 통합관리 구글시트 공유합니다"
+          "time": "18:59",
+          "text": "금일 \"20260327-유튜브채널운영-통합관리-V1\" 관련한 파일 제작하여 전달드립니다!\n\nhttps://docs.google.com/spreadsheets/d/1m1NJPW4g_mSqnCkp1OYyIO_BWpKWiI0pIfXUFbHAjv0/edit?usp=sharing [파일: 20260327-유튜브채널운영-통합관리-V1]"
+        },
+        {
+          "sender": "규민",
+          "time": "19:04",
+          "text": "↳ 정기 업로드의 경우 많이 힘들어보입니다.. [:grinning: 준태]"
+        },
+        {
+          "sender": "준태",
+          "time": "19:08",
+          "text": "↳ 네 초안이라서 같이 디테일 잡아보아요!!"
+        },
+        {
+          "sender": "규민",
+          "time": "19:09",
+          "text": "↳ 네"
         }
       ],
       "hasNew": true,
@@ -77,12 +107,12 @@
       ]
     },
     "C0ALWFZQMTP": {
-      "summary": "<span class=\"person\">준태</span>가 임가공업체 전달 작업요청서(20260327_KE삼성_3차작업요청서-V1) 공유 — 박스 39박스 발송, 월요일 퀵으로 100박스 추가 발송.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 임가공업체 작업요청서 전달 완료 — 오늘 39박스 발송, 월요일 100박스 추가 발송 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: KE삼성 3차 작업요청서 <span class=\"person\">건희</span>에 공유</li><li>박스 오늘 39개 발송 완료, 월요일 퀵으로 100박스 추가 발송</li></ul>",
       "messages": [
         {
           "sender": "준태",
           "time": "17:25",
-          "text": "@건희 임가공업체에 전달할 작업요청서 작성하여 공유 (20260327_KE삼성_3차작업요청서-V1.xlsx) — 오늘 39박스 보냈고, 월요일 퀵으로 물류사에서 100박스 더 보낼 예정"
+          "text": "@건희\n\n대표님 임가공업체에 전달할 작업요청서 작성하여 공유드립니다 !\n\n박스는 오늘 39박스 보냈고,\n월요일 퀵으로 물류사에서 100박스 더 보내놓겠습니다! [파일: 20260327_KE삼성_3차작업요청서-V1.xlsx]"
         }
       ],
       "hasNew": true,
@@ -102,12 +132,12 @@
           "text": "금주 업데이트 프롬프트 전달 드립니다 @성민 [👀 성민]"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 차세린 금주 업데이트 프롬프트 <span class=\"person\">성민</span>에게 전달.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 <span class=\"person\">성민</span>에게 금주 업데이트 프롬프트 전달</div>",
       "messages": [
         {
           "sender": "준태",
           "time": "19:11",
-          "text": "금주 업데이트 프롬프트 전달 드립니다 @성민"
+          "text": "금주 업데이트 프롬프트 전달 드립니다 @성민 [👀 성민]"
         }
       ],
       "hasNew": true
@@ -120,12 +150,12 @@
           "text": "Adobe -2 Lic / PW: 각 담당자 개인DM\n1. zeesu.kim@taejaworks.com\n2. yumin.lee@taejaworks.com"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 Adobe Lic 2개 발급 — zeesu.kim/yumin.lee@taejaworks.com, PW는 개인DM.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 Adobe 라이선스 2개 및 비밀번호 정보 공유 — zeesu.kim@taejaworks.com, yumin.lee@taejaworks.com</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "11:54",
-          "text": "Adobe -2 Lic / PW: 각 담당자 개인DM — zeesu.kim@taejaworks.com, yumin.lee@taejaworks.com"
+          "text": "Adobe -2 Lic / PW: 각 담당자 개인DM\n1. zeesu.kim@taejaworks.com\n2. yumin.lee@taejaworks.com"
         }
       ],
       "hasNew": true
@@ -193,32 +223,32 @@
           "text": "↳ @지수\n@유민"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 2026 케인 진우절 운영안내 정리 — 7만원이상=안죄송해 엽서, 세트구매=EX포카+렌티포카+엽서, 팬카페인증=친필싸인 엽서. 상품/이벤트 페이지 구조, 단품/세트 공통 안내문구, 별도 제작 페이지 2종(이벤트 목록+카드뉴스). 케인 교환반품 기준·배송일 5/21 변경 등 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>, 2026 케인 굿즈 진우절 운영 안내 공유 및 배송일 5월 21일로 변경</div><ul class=\"sum-bullets\"><li>세트 구매 시 EX등급 그짤 포카 + 렌티포카 증정, 7만원 이상 구매 시 엽서 증정</li><li><span class=\"person\">준태</span>, 상품 리스트 확정하여 구글시트 공유 — <span class=\"person\">지수</span>·<span class=\"person\">유민</span> 상품명·판매가 제작 요청</li><li>배송일자 5월 21일로 변경</li></ul>",
       "messages": [
         {
           "sender": "준태",
           "time": "11:30",
-          "text": "2026 케인 굿즈 진우절 운영 안내 — 7만원이상 안죄송해 엽서 / 세트구매 EX포카+렌티포카+엽서 / 팬카페인증 친필싸인 엽서. 별도 이벤트 페이지+카드뉴스 페이지"
+          "text": "■ 2026 케인 굿즈: 진우절 — 운영 안내\n\n━━━━━━━━━━━━━━━━━━━━━━\n\n【1. 구매 이벤트】\n\n대상: 7만원 이상 구매자\n증정: 안죄송해 엽서(2026ver)\n\n【2. 세트 구매 증정 이벤트】\n\n대상: 세트 A 또는 세트 B 구매자\n증정: EX등급 그짤 포카 + 왠지 죄송한 렌티포카(2026ver)\n\n※ 세트 구매 시 실질 증정 내역:\n  - EX등급 그짤 포카\n  - 왠지 죄송한 렌티포카(2026ver)\n  - 안죄송해 엽서(2026ver) (7만원 이상이므로 구매 이벤트 자동 해당)\n\n【3. 팬카페 인증 이벤트】\n\n참여 방법: 팬카페에 구매 인증 + 구글폼 작성\n증정: 안죄송해 엽서(2026ver)에 케인님 직접 친필 싸인 및 메시지\n구글폼: 매니저님 제작 후 공유 예정"
         },
         {
           "sender": "준태",
           "time": "11:50",
-          "text": "랜덤구성/아크릴 보호필름/미세 색상차이 — 라크 양식에서 추가 정리. 라크 위키 링크"
+          "text": "● 랜덤 구성 상품은 구성/종류 선택이 불가하며, 교환 사유에 해당하지 않습니다.\n● 아크릴 제품은 보호 필름이 부착되어 있습니다.\n\n+표 내에 추가할 사항 : 미세 색상 차이\n\n기존에 쓰던 라크 양식에서 해당 부분만 추가해두었습니다\n\nhttps://sjpirt8q9cog.jp.larksuite.com/wiki/P12Bw3Y1KiSeDIkgL66jnco4pBg?from=from_copylink\n\n@지수\n@유민"
         },
         {
           "sender": "준태",
           "time": "12:10",
-          "text": "@지수 @유민 구글시트 1시트 상품리스트 확정 — 상품명/판매가 해당 이름으로 제작 부탁"
+          "text": "↳ @지수\n@유민\n\nhttps://docs.google.com/spreadsheets/d/1qBr08rq4hfzcsWaES4ys9_KWlxRwlug_WQLeBCfqkE0/edit?usp=sharing\n\n구글시트 - 1시트 내용 상품리스트는 확정입니다! 상품명 판매가 해당 이름으로 제작 부탁드립니다 ~"
         },
         {
           "sender": "지수",
           "time": "15:37",
-          "text": "@준태 케인 교환 반품 기준은 표시된 부분으로 기재하겠습니다"
+          "text": "↳ @준태 준태님, 케인 교환 반품 기준은 표시된 부분으로 기재하겠습니다!"
         },
         {
           "sender": "준태",
           "time": "16:27",
-          "text": "배송일자: 5월21일로 미뤘습니다! @지수 @유민"
+          "text": "↳ 배송일자 : 5월21일로 미뤘습니다! 참고 부탁드립니다 !"
         }
       ],
       "hasNew": true

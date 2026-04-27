@@ -1,17 +1,32 @@
 {
   "channels": {
     "C0AJ38GC9HB": {
-      "summary": "<span class=\"person\">건희 대표</span> — NAS 안내 공유. 생산파일 업데이트 프로세스 안내",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 원드라이브→NAS 이전 안내, 4월 10일까지 원드라이브 유효·금주 내 데이터 이전 예정</div><ul class=\"sum-bullets\"><li>Synology Drive Client 설치 후 사무실(172.30.1.23) 또는 외부(QuickConnect.to/taeja0309) 접속</li><li><span class=\"person\">건희</span> 생산파일 업데이트 완료, <span class=\"person\">준태</span> 세팅 확인</li><li><span class=\"person\">유민</span> 다운로드 및 로그인 후 알림 요청</li></ul>",
       "messages": [
         {
           "sender": "건희",
-          "time": "10:00",
-          "text": "NAS 사용 안내합니다. 생산파일 업데이트 프로세스 공유드립니다"
+          "time": "13:18",
+          "text": "@here\nNAS 안내: 기존 원드라이브 to Local 스토리지로 이동합니다. 원드라이브의 경우 4월 10일까지만 유효\n데이터이전은 금주 내로 이전될 예정입니다."
         },
         {
           "sender": "건희",
-          "time": "10:15",
-          "text": "각 파트별 NAS 폴더 구조 안내"
+          "time": "14:05",
+          "text": "일단 생산파일 업데이트 했습니다 [파일: image.png]"
+        },
+        {
+          "sender": "준태",
+          "time": "14:07",
+          "text": "확인했습니다!\n세팅 완료입니다 !"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:18",
+          "text": "연결은 완료했고 생산 폴더는 안보입니다! [파일: image.png] [파일: image.png]"
+        },
+        {
+          "sender": "건희",
+          "time": "15:54",
+          "text": "@유민 유민님 다운로드하고,\n로그인한 뒤에 알려주세요"
         }
       ],
       "hasNew": true,
@@ -64,17 +79,27 @@
       ]
     },
     "C0AM3GBFPGU": {
-      "summary": "<span class=\"person\">지수</span> — 디자인 실리콘 견적서 공유<br><span class=\"person\">건희 대표</span> — \"이소게생겼네\" 피드백",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">지수</span>가 모니터 피규어 업체(디자인 실리콘) 견적 공유 — 단가 6,600원(500개), 샘플 250,000원, MOQ 50개</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span> 마성의팍스 전체 패키지 플랜(노트·피규어·펜·쿠션담요·스티커) 정리</li><li>모니터 피규어 샘플 미입고 상태 확인</li></ul>",
       "messages": [
         {
-          "sender": "지수",
-          "time": "11:00",
-          "text": "디자인 실리콘 견적서 공유합니다"
+          "sender": "건희",
+          "time": "11:16",
+          "text": "이쁘게생겼네.. [파일: ec1a8638d52b193da6d349edc5e5960a.mp4]"
         },
         {
           "sender": "건희",
-          "time": "11:30",
-          "text": "이소게생겼네"
+          "time": "12:43",
+          "text": "↳ 저희 모니터피규어 아직 샘플이 안들어갔군요.."
+        },
+        {
+          "sender": "지수",
+          "time": "16:07",
+          "text": "디자인 실리콘 (닌닌 수리검 업체) 모니터 피규어 문의 내용 공유드립니다.\n\n단가: 6,600원 (500개 기준, 부가세 별도)\n샘플 비용: 디자인당 250,000원 (부가세 별도)\nMOQ: 50개\n\n@건희 @윤하 [파일: image.png]"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:09",
+          "text": "마성의팍스 패키지 플랜\n\n노트: 랩핑 + 띠지 + 에어캡봉투(물류) = 700원 내외\n피규어: 패키지박스 + 완충재\n펜: 헤더+OPP\n쿠션담요: 진공포장+바코드스티커\n스티커: 배경지+OPP"
         }
       ],
       "hasNew": true,
@@ -107,7 +132,7 @@
       ]
     },
     "C0AJ4HXRD5L": {
-      "summary": "<span class=\"person\">건희 대표</span> — 풀어비스 방문 완료. \"무한성에 진입\" 코멘트",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span> 풀어비스 방문 완료, 무한성 진입</div>",
       "messages": [
         {
           "sender": "건희",
@@ -125,7 +150,7 @@
       ]
     },
     "C0AM3GKNCN8": {
-      "summary": "<span class=\"person\">윤하</span> — 커스텀 티셔츠 하기 진행 가능 확인",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span> — 커스텀 티셔츠 하기 진행 가능 보고</div>",
       "messages": [
         {
           "sender": "윤하",
@@ -143,17 +168,22 @@
       ]
     },
     "C0ALWG29TB7": {
-      "summary": "<span class=\"person\">유민</span> — 쫀냐미 3D 렌더링 공유<br><span class=\"person\">윤하</span> — 메일 전달 완료",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 메일 전달 완료 및 히스토리 기록용 이미지 공유</div><ul class=\"sum-bullets\"><li><span class=\"person\">유민</span> 기여도 높은 작업 완료</li></ul>",
       "messages": [
         {
-          "sender": "유민",
-          "time": "14:00",
-          "text": "쫀냐미 3D 공유합니다"
+          "sender": "윤하",
+          "time": "12:19",
+          "text": "메일 전달 완료하였습니다.\n히스토리 기록을 위해 이미지만 남겨둡니다."
         },
         {
-          "sender": "윤하",
-          "time": "14:30",
-          "text": "메일 전달 완료했습니다"
+          "sender": "건희",
+          "time": "12:19",
+          "text": "유민님 기여한 부분이 큰 걸로 알고있는데 고생많으셨어요^^"
+        },
+        {
+          "sender": "유민",
+          "time": "12:20",
+          "text": "↳ 감사합니다 !! ㅎㅎ"
         }
       ],
       "hasNew": true,
@@ -176,7 +206,7 @@
       ]
     },
     "C0AMC45RJ3U": {
-      "summary": "<span class=\"person\">건희 대표</span> — 자사몰 시안 참고 자료 공유",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 자사몰 시안 참고 자료 공유</div>",
       "messages": [
         {
           "sender": "건희",
@@ -206,12 +236,17 @@
           "text": " [파일: 민수달_가챠샵_기획제안서_260224_v3.pdf]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 민수달 가챠샵 기획제안서 v3(260224) 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 민수달_가챠샵_기획제안서_260224_v3.pdf 파일 공유</div>",
       "messages": [
         {
           "sender": "건희",
+          "time": "11:54",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."
+        },
+        {
+          "sender": "건희",
           "time": "16:08",
-          "text": "민수달_가챠샵_기획제안서_260224_v3.pdf"
+          "text": "[파일: 민수달_가챠샵_기획제안서_260224_v3.pdf]"
         }
       ],
       "hasNew": true
@@ -224,12 +259,12 @@
           "text": "@성민 백엔드 관련 AWS 파트너사 검토 메일 포워딩드렸습니다 [파일: image.png] [✅ 성민]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 <span class=\"person\">성민</span>에게 백엔드 관련 AWS 파트너사 검토 메일 포워딩.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 <span class=\"person\">성민</span>에게 AWS 파트너사 검토 메일 포워딩 완료</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "11:13",
-          "text": "@성민 백엔드 관련 AWS 파트너사 검토 메일 포워딩드렸습니다"
+          "text": "@성민 백엔드 관련 AWS 파트너사 검토 메일 포워딩드렸습니다 [파일: image.png] [✅ 성민]"
         }
       ],
       "hasNew": true
@@ -247,17 +282,17 @@
           "text": "↳ 조금 지켜보다가 연락드리려고 했는데 \n확인하셨군요 ㅋㅋ [:grinning: 준태]"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 차세린 이미지 업로드 확인, <span class=\"person\">규민</span> 답변.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 <span class=\"person\">규민</span>의 이미지 업로드 확인 완료</div>",
       "messages": [
         {
           "sender": "준태",
           "time": "11:05",
-          "text": "@규민 안녕하세요 규민님 이미지 업로드 한 것 확인했습니다! 감사합니다"
+          "text": "↳ @규민\n\n안녕하세요 규민님 이미지 업로드 한 것 확인했습니다!  ㅎㅎ 감사합니다. [✅ 규민]"
         },
         {
           "sender": "규민",
           "time": "12:13",
-          "text": "조금 지켜보다가 연락드리려고 했는데 확인하셨군요 ㅋㅋ"
+          "text": "↳ 조금 지켜보다가 연락드리려고 했는데 \n확인하셨군요 ㅋㅋ [:grinning: 준태]"
         }
       ],
       "hasNew": true
@@ -425,32 +460,32 @@
           "text": "대표님, 저희 먼저 들어가보겠습니다!"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 삼성 임가공 업체 — 투명 마감 스티커 35매 부족, 착불 퀵으로 추가 발송 협의(@here). <span class=\"person\">건희</span>가 만우절 케인 페이지 폐쇄몰 검색 노출 이슈 공유 — 매니저·케인님과 일정 앞당기는 쪽으로 변경. <span class=\"person\">준태</span>가 검색·유튜브쇼핑 문제 해결 완료(SEO/검색 비허용). <span class=\"person\">윤하</span>가 케인 포토카드 풀세트 공급가 — 패키지 640+포카14종 6,600+OPP·임가공 500=토탈 7,740원, 팬텀픽 판매가 37,000원. <span class=\"person\">준태</span>가 베이블루 입학식 아크릴 키링 사무실 도착(인쇄 퀄리티 일부 우려), 별도 임가공 없이 증지 부착만으로 출고 — 김포(태자) 홍진기 입고지로 진행. <span class=\"person\">건희</span>가 자체 진행 결정.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 삼성 임가공 업체 투명 스티커 35매 착불 퀵 발송, 만우절 이벤트 폐쇄몰 조기 노출 대응, 케인 포토카드 공급가 7,740원 확인 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span> 스티커 추가수량 보유, 35매 퀵 발송 진행</li><li><span class=\"person\">준태</span> 폐쇄몰 SEO 비허용 설정 완료, 유튜브쇼핑 문제 12시 37분 해결</li><li><span class=\"person\">윤하</span> 케인 포토카드 풀세트 500세트 기준 공급가 7,740원 확인 요청</li></ul>",
       "messages": [
         {
           "sender": "준태",
           "time": "09:57",
-          "text": "@here 삼성 임가공 업체 - 투명 스티커(마감 스티커) 수량 부족 연락. 35매 정도 착불 퀵으로 보내달라고 요청"
+          "text": "안녕하세요!\n\n저희 삼성 임가공 업체에 보낸 <투명 스티커(마감 스티커)>\n수량이 부족하다고 오전에 연락이 오셨습니다.\n\n혹시 수량이 부족했을까요?\n(만약 부족하게 보낸게 아니라면 , 임가공 업체에서 특정 박스를\n필요 수량 이상으로 접고 스티커 부착을 해서 그런 것이 아닌가 싶습니다..)\n\nQ. 임가공 업체 ) 저희 사무실에 스티커 추가 물량이 있는지, 오늘 오전에 재입고 해줄 수 있는지 문의주셨습니다.\n\n@here"
+        },
+        {
+          "sender": "준태",
+          "time": "10:07",
+          "text": "오늘 작업을 마무리 하고 싶다고 35매 착불 퀵으로 보내달라고 하십니다."
         },
         {
           "sender": "건희",
           "time": "11:10",
-          "text": "만우절 이벤트 — 폐쇄몰 설정 상품이 검색으로 일부 노출 이슈. 일정을 앞당기는 쪽으로 변경"
-        },
-        {
-          "sender": "준태",
-          "time": "12:37",
-          "text": "@건희 검색 / 유튜브쇼핑 문제 해결 완료"
+          "text": "경위: 금일 만우절 이벤트 관련하여 상황 공유드립니다. 당초 20:30에 실제 상품 페이지를 공개하는 일정으로 준비하고 있었으나, 상품 승인 및 세팅 과정에서 폐쇄몰로 설정된 상품이 몰 내 자연 노출은 되지 않았지만, 검색을 통해 일부 확인 가능한 상태로 노출된 이슈가 발생했습니다. 내부 확인 결과, 전일 저녁 상품 승인 위한 과정에서 일시적으로 상품 등록이 반영되며 검색 노출이 이루어진 것으로 파악되었습니다. 대응: 매니저님 및 케인님과 논의하여 일정을 앞당기는 쪽으로 변경하고자 합니다."
         },
         {
           "sender": "윤하",
           "time": "14:29",
-          "text": "@건희 케인 포토카드 풀세트 공급가 (500세트) — 패키지 640원+포카 14종 6,600원+OPP·임가공 500원 = 토탈 7,740원. 팬텀픽 판매가 37,000원. ADC 임가공 비용 높아 자체 진행 좋을 것"
+          "text": "@건희\n대표님, 케인 포토카드 풀세트 공급가 확인 부탁드립니다. (500세트 기준)\nADC 임가공 비용이 높아 자체 진행이 좋을 것 같습니다.\n\n패키지: 640원\n포토카드 14종: 6,600원\nOPP+임가공: 예상 500원\n\n토탈 단가: 7,740원\n\n팬텀픽 판매가 37,000원"
         },
         {
           "sender": "준태",
           "time": "14:37",
-          "text": "@건희 베이블루 입학식 아크릴 키링 사무실 도착. 별도 임가공 없이 증지 부착만 진행 → 출고. 입고지: 경기 김포 대포산단로73 7F(태자) 홍진기 010-5845-2170"
+          "text": "대표님 베이블루 입학식 아크릴 키링이\n금일 저희 사무실로 택배배송 왔습니다.\n\n상품 개봉해서 수량 확인해보니 발주 수량만큼 마카표시 되어 있고,\n\n특이사항으로는 윤하님께서 제품 확인했을 때, 인쇄 퀄리티는 조금 떨어져 보이는 부분이 있다곤 합니다..\n\n별도 임가공 처리 없이 증지 부착만 진행하면 되어서\n금일 아래 출고 진행할 물류사로 보내겠습니다.\n\n세븐 택배 송장 출력만 부탁드립니다\n@건희\n\n1. 입고지:경기도 김포시 대포산단로73 7F(태자)\n담당자: 홍진기/010-5845-2170"
         }
       ],
       "hasNew": true

@@ -1,17 +1,17 @@
 {
   "channels": {
     "C0ALWFZQMTP": {
-      "summary": "<span class=\"person\">윤하</span> — 양면인형키링 등판 이슈 보고. 임가공 업데이트",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>·<span class=\"person\">준태</span>, 카카오엔터 삼성 1차오더 납품일정 확정 — 4/2 입고·4/7 이동, 개당 220원(VAT별도)</div><ul class=\"sum-bullets\"><li>3/25~26 통관 후 수/목 저녁 사무실 임가공 (각 100개)</li><li>부자재·아웃박스 3/28 이동, 1차오더 전량 4/7 경기광주시 SY로지팩토리 이동</li><li><span class=\"person\">준태</span> 납품일정표 V2 공유 완료</li></ul>",
       "messages": [
         {
-          "sender": "윤하",
-          "time": "10:00",
-          "text": "양면인형키링 등판 이슈입니다. 임가공 업데이트합니다"
+          "sender": "건희",
+          "time": "18:08",
+          "text": "본 건 관련 업데이트 드립니다.\n\n각 100개 - 3/25,26 수요일 통관 후 수/목 저녁 임가공 (사무실)\n\n<1차오더 전량> 4/2일경 입고 후 4/7 이동\nㆍ주소: 경기광주시 삼동415-1 창고 SY로지팩토리\nㆍ단가: 개당 220원(vat별도)\n*부자재(패키지/증지/투명테이프) 및 아웃박스 등은 3/28 이동 [✅ 준태]"
         },
         {
-          "sender": "건희",
-          "time": "10:30",
-          "text": "확인. 대응 방안 논의합시다"
+          "sender": "준태",
+          "time": "18:25",
+          "text": "업데이트본 공유드립니다\n\n@팀 [파일: 20260324_KE삼성_납품일정표-V2.pdf]"
         }
       ],
       "hasNew": true,
@@ -56,27 +56,27 @@
           "text": "↳ 확인했습니다"
         }
       ],
-      "summary": "<span class=\"person\">성민</span>이 차세린 프롬프트 정리 MD 공유. <span class=\"person\">건희</span>가 엔진의 베이스 정보로 컨텐츠팀이 지속 관리/수정해야 할 문서 타입 안내 — <span class=\"person\">준태</span>·<span class=\"person\">규민</span> 확인 회신.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">성민</span>이 차세린 프롬프트 정리 파일 공유 — <span class=\"person\">건희</span>가 컨텐츠팀 지속 관리 문서로 안내</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 엔진 베이스 정보, 컨텐츠팀이 지속 관리/수정</li><li><span class=\"person\">준태</span>: 추후 변동사항 MD 파일로 공유 예정</li></ul>",
       "messages": [
         {
           "sender": "성민",
           "time": "17:26",
-          "text": "차세린 프롬프트 정리했습니다. 참고해주세요! @건희 @준태 @규민"
+          "text": "차세린 프롬프트 정리했습니다. 참고해주세요! @건희 @준태 @규민 [파일: cha-serin-prompt_md.md]"
         },
         {
           "sender": "건희",
           "time": "17:33",
-          "text": "엔진의 베이스 정보가 될 것 — 컨텐츠팀에서 지속적으로 관리/수정해야하는 타입의 문서로 봐주시면 됩니다"
+          "text": "↳ 본 내용은 엔진의 베이스 정보가 될 것이라.. 컨텐츠팀에서 지속적으로 관리/ 수정 해야하는 타입의 문서로 봐주시면 될 것 같습니다!\n @규민 @준태 @수혁 [✅ 준태,규민]"
         },
         {
           "sender": "준태",
           "time": "17:34",
-          "text": "확인했습니다! 추후 변동사항 있으면 MD 파일로 공유드리겠습니다"
+          "text": "↳ 확인했습니다 !\n\n추후 변동사항 있으면 MD 파일로 공유드리겠습니다 ! [✅ 건희]"
         },
         {
           "sender": "규민",
           "time": "17:41",
-          "text": "확인했습니다"
+          "text": "↳ 확인했습니다"
         }
       ],
       "hasNew": true
@@ -154,27 +154,32 @@
           "text": "↳ @건희"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 차세린 1차 음성 학습 데이터(중립 001-035, 276-285 / 수줍음 241-275, 344-353) 전달. 음성 전처리 파이프라인(pyannote→Demucs→DeepFilterNet→문장분리→HuBERT 감정태그) 제안, <span class=\"person\">규민</span>에게 검토 요청. <span class=\"person\">규민</span>이 잡음·정제 결과 일관성 우려 의견 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 차세린 음성 데이터 전처리 파이프라인 제시 — <span class=\"person\">규민</span>에게 검토 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: pyannote→Demucs→DeepFilterNet→HuBERT 순 전처리 과정 공유</li><li><span class=\"person\">규민</span>: 배경잡음 잔존 우려, 기계학습 시 영향 가능성 지적</li><li><span class=\"person\">규민</span>: 보컬로이드 방식 등 대안 참고 영상 공유</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "14:34",
-          "text": "@성민 스크립트 내 음성 파일 전달 — 001-035(중립)/276-285(중립)/241-275(수줍음)/344-353(수줍음)"
+          "text": "@성민 스크립트 내 음성 파일 전달드립니다.\n001-035(중립)\n276-285(중립)\n241-275(수줍음)\n344-353(수줍음) [파일: 1차.중립+수줍음_.zip]"
         },
         {
           "sender": "건희",
           "time": "16:17",
-          "text": "방송 영상/음성 → pyannote 차세린 추출 → Demucs BGM제거 → DeepFilterNet 노이즈제거 → 문장 단위 자동분리 → HuBERT 감정태그 → 학습용 데이터셋 완성. @규민 데이터전처리 검토 부탁"
+          "text": "방송 영상/음성 파일 입력\n→ pyannote로 차세린 목소리만 추출\n→ Demucs로 BGM 제거\n→ DeepFilterNet으로 노이즈 제거\n→ 문장 단위로 자동 분리\n→ HuBERT로 감정 태그 달기\n→ 학습용 데이터셋 완성\n\n@규민 혹시.. 데이터전처리 과정 검토 부탁드립니다! (기존 유투브하실 때)"
         },
         {
           "sender": "규민",
           "time": "17:39",
-          "text": "이런 방식으로 목소리를 추출 하면, 목소리 뒤에 깔려있던 잡음 정도에 따라 정제 결과 값이 미묘하게 다를거 같은데 들었을 때 어느정도 다 비슷한가요?"
+          "text": "이런 방식으로 목소리를 추출 하면, 목소리 뒤에 깔려있던 잡음 정도에 따라 정제 되어 나오는 목소리의 결과 값이 미묘하게 다를거 같은데 들었을 때 어느정도 다 비슷한가요?"
         },
         {
           "sender": "규민",
           "time": "18:14",
-          "text": "mr이랑 보컬만 분리해봤는데, 늘 들어보면 배경잡음이 무조건 끼어있어서.. 사람에게는 안들려도 기계가 학습할 때 그런거까지 학습할 수도 있겠다"
+          "text": "저는 mr이랑 보컬만 분리해봤는데, 늘 들어보면 배경잡음이 무조건 끼어있어서.. 사람에게는 안들려도 기계가 학습할 때 그런거 까지 같이 학습을 할 수도 있겠다 라는 생각입니다"
+        },
+        {
+          "sender": "규민",
+          "time": "18:53",
+          "text": "저희랑 서비스 방향은 다르지만, 이런것도 생각나서 올려봅니다\nhttps://youtu.be/zWNcJAUa55c?si=meZlu5_u2EJkCvKU"
         }
       ],
       "hasNew": true
@@ -207,17 +212,22 @@
           "text": "Fandom 아키텍처 다이어그램 공유합니다. 아직 작업 중이니 참고용으로 봐주세요. [파일: fandom-architecture.png] [✅ 건희]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 회의 시간 3시로 변경(@수혁 @성민). <span class=\"person\">성민</span>이 Fandom 아키텍처 다이어그램(작업 중) 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 미팅 시간을 3시로 변경, <span class=\"person\">성민</span>이 Fandom 아키텍처 다이어그램 공유</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 본 건 미팅 3시로 변경 (@수혁, @성민)</li><li><span class=\"person\">성민</span>: Fandom 아키텍처 다이어그램 공유 (작업 중)</li></ul>",
       "messages": [
         {
           "sender": "건희",
+          "time": "17:32",
+          "text": "#gcal"
+        },
+        {
+          "sender": "건희",
           "time": "18:04",
-          "text": "본 건 3시로 변경 @수혁 @성민"
+          "text": "본 건 3시로 변경 @수혁 @성민 [✅ 성민]"
         },
         {
           "sender": "성민",
           "time": "20:30",
-          "text": "Fandom 아키텍처 다이어그램 공유합니다. 아직 작업 중이니 참고용으로 봐주세요 (fandom-architecture.png)"
+          "text": "Fandom 아키텍처 다이어그램 공유합니다. 아직 작업 중이니 참고용으로 봐주세요. [파일: fandom-architecture.png] [✅ 건희]"
         }
       ],
       "hasNew": true
@@ -235,17 +245,17 @@
           "text": "↳ 대표님, 해당 파일로 미팅 진행 부탁드립니다.\n• 고라니 상품설명 오탈자 수정하였습니다. [파일: [제안서] KE 스토리팀 제안 _ 쫀냐미, 고라니_ver2.pdf] [✅ 준태]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 KE 스토리팀 제안서(쫀냐미·고라니) 회의자료 공유, <span class=\"person\">윤하</span>가 고라니 상품설명 오탈자 수정 ver2 전달.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 KE 스토리팀 제안서(쫀냐미, 고라니) ver2로 미팅 요청 — 고라니 상품설명 오탈자 수정 완료</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>가 대표님께 ver2 파일로 미팅 진행 요청</li><li>고라니 상품설명 오탈자 수정본 공유</li></ul>",
       "messages": [
         {
           "sender": "건희",
           "time": "12:49",
-          "text": "회의자료 — [제안서] KE 스토리팀 제안 _ 쫀냐미, 고라니 (1).pdf"
+          "text": "회의자료 [파일: [제안서] KE 스토리팀 제안 _ 쫀냐미, 고라니 (1).pdf]"
         },
         {
           "sender": "윤하",
           "time": "14:17",
-          "text": "대표님, 해당 파일로 미팅 진행 부탁드립니다. 고라니 상품설명 오탈자 수정 ver2 (KE 스토리팀 제안 _ 쫀냐미, 고라니_ver2.pdf)"
+          "text": "↳ 대표님, 해당 파일로 미팅 진행 부탁드립니다.\n• 고라니 상품설명 오탈자 수정하였습니다. [파일: [제안서] KE 스토리팀 제안 _ 쫀냐미, 고라니_ver2.pdf] [✅ 준태]"
         }
       ],
       "hasNew": true
@@ -288,22 +298,32 @@
           "text": "ㅋㅋㅋㅋ"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 케인 마스터시트 공유. <span class=\"person\">윤하</span>가 한탕이 봉제인형 한정/프리오더 상세페이지 2개 필요 여부, 카드뉴스, 구매인증 이벤트 상세페이지 기재 여부 확인 요청 → <span class=\"person\">준태</span>가 이벤트페이지/카드뉴스 필요 + 상품페이지 이벤트내용 기재 필요 회신.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>, 케인 3월 MD 체크리스트 공유 및 한탕이 봉제인형 이벤트페이지·카드뉴스 진행 확정</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span> 한탕이 봉제인형 상세페이지·카드뉴스·구매인증 이벤트 기재 여부 확인 요청</li><li><span class=\"person\">준태</span> 이벤트페이지/카드뉴스 필요, 상품페이지 내 이벤트내용 기재 필요 확정</li></ul>",
       "messages": [
         {
           "sender": "준태",
           "time": "10:59",
-          "text": "민호님과 지금 만지는 케인 체크리스트 — [케인] 2026年 3月 MD 마스터시트(w.파트너십)"
+          "text": "민호님과 지금 만지는 케인 체크리스트 입니다 ㅎㅎ!"
         },
         {
           "sender": "윤하",
           "time": "11:03",
-          "text": "한탕이 봉제인형 한정판매/프리오더 상세페이지 2개 모두 필요한지, 카드뉴스 진행 여부, 구매인증 이벤트 내용 상세페이지 내 기재 필요여부 확인 부탁"
+          "text": "한탕이 봉제인형 한정판매 / 프리오더 상세페이지 2개 모두 필요한지\n카드뉴스 진행 여부\n구매인증 이벤트 내용 상세페이지 내 기재 필요여부\n\n확인 부탁드립니다!"
+        },
+        {
+          "sender": "준태",
+          "time": "11:48",
+          "text": "문의 남겨두었고, 확인되는 대로 공유 드리겠습니다 : )"
         },
         {
           "sender": "준태",
           "time": "11:54",
-          "text": "@윤하 이벤트페이지/카드뉴스 필요. 상품페이지에도 이벤트내용 기재 필요"
+          "text": "@윤하\n이벤트페이지/카드뉴스 필요\n\n상품페이지에도\n> 이벤트내용 기재 필요(확정 시, 상세내용 정리해서 전달드리겠습니다.)"
+        },
+        {
+          "sender": "준태",
+          "time": "17:30",
+          "text": "차세린의 나이는 밝히기 수줍은 나이.."
         }
       ],
       "hasNew": true

@@ -1,22 +1,32 @@
 {
   "channels": {
     "C0AJ6NYLKT4": {
-      "summary": "<span class=\"person\">규민</span> — 차세린 디자인 어셋 논의. 배경파일/캐릭터 테이블 레이어 관련<br><span class=\"person\">윤하</span> — 캐릭터 레이어 분리 작업 진행 중",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">규민</span>과 <span class=\"person\">윤하</span>가 차세린 방송 배경·채팅창 이미지 조명 어둡게 수정 완료, 치지익 방송국 \"차 세린\"으로 오픈</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>가 배경파일 공유 후 <span class=\"person\">규민</span> 확인 요청</li><li><span class=\"person\">규민</span>이 조명 어둡게 요청, <span class=\"person\">윤하</span>가 4K 이미지 및 야간 버전 영상 전달</li><li>치지직 닉네임 \"차 세린\"(띄어쓰기) 선점 완료</li></ul>",
       "messages": [
         {
+          "sender": "건희",
+          "time": "11:18",
+          "text": "@규민  배경파일 요청하신대로 됐는지 확인 부탁드립니다! [파일: 영상_1080p (1).mp4] [파일: 방송 배경_4K.png] [파일: 방송 예시.png]"
+        },
+        {
           "sender": "규민",
-          "time": "11:00",
-          "text": "차세린 디자인 어셋 관련 논의합니다. 배경파일과 캐릭터 테이블 레이어 정리 필요합니다"
+          "time": "11:46",
+          "text": "@수혁 캐릭터 자체에 달린 악세사리는 작업자에게 주문이 완료된 상태라서 당장 수정은 힘들것 같습니다,,,  그 외적으로  zzz 헤어핀을 넣은 이유는 캐릭터 시트 초안에 멍함, 졸린, 눕기 등 나른한 느낌의 키워드가 들어가 있어서 어느정도는 의도하고 선택한 부분입니다."
+        },
+        {
+          "sender": "규민",
+          "time": "16:18",
+          "text": "적용 모두 해보았는데, 배경이 너무 옷 색이랑 같고 밝아서, 방 조명을 기존에 대기화면 주셨던거 처럼 어둡게만 가능할까요? [파일: 123.png]"
         },
         {
           "sender": "윤하",
-          "time": "11:30",
-          "text": "캐릭터 레이어 분리 작업 진행 중입니다"
+          "time": "16:25",
+          "text": "↳ 수정 이미지 전달드립니다. 영상은 따로 작업하여 전달드릴게요. [파일: [4K] 차세린 방송 채팅창 -260227-1.png] [파일: [4K] 차세린 방송 책상 -260227-1.png] [파일: [4K] 차세린 방송 BG -260227-1.png]"
         },
         {
-          "sender": "수혁",
-          "time": "13:00",
-          "text": "어셋 포맷 가이드 확인했습니다"
+          "sender": "규민",
+          "time": "17:37",
+          "text": "닉네임 선점 이슈로 \"차세린\"이 아닌 \"차 세린\" 인점 알려드립니다"
         }
       ],
       "hasNew": true,
@@ -181,27 +191,27 @@
           "text": "버츄얼 전용 커뮤니티 사이트\n■ VWORLD\n• 버튜버 전용 팬 커뮤니티\n• 뉴스 / 방송 / 팬아트 / 라이브 목록 있음\nhttps://v-world.io/?utm_source=chatgpt.com"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 이세돌 팬덤 마이원픽 투표 인증 활동 + 버츄얼 관련 커뮤니티(디시 vtubersnipe·spv, 에펨코리아 SOOP, V-WORLD) 리서치 공유.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 마이원픽 투표 현황 및 버츄얼 관련 주요 커뮤니티 정보 공유</div><ul class=\"sum-bullets\"><li>왁물원 팬카페에서 마이원픽 \"내 플레이리스트를 점령한 루키 여자 아이돌\" 투표 인증 게시글 활발</li><li>디시인사이드(버츄얼 스나, 숲 버츄얼 갤러리), 에펨코리아(숲 게시판), VWORLD 등 버츄얼 커뮤니티 현황 공유</li></ul>",
       "messages": [
         {
           "sender": "준태",
           "time": "18:49",
-          "text": "왁물원에서 마이원픽 투표 인증 게시글 진행중. 사이트: my1pick.com / 카페: cafe.naver.com/steamindiegame"
+          "text": "현재 왁물원(이세계아이돌 공식 팬카페)에서는 마이원픽 투표 인증 게시글이 올라오고 있는 상황입니다.\n\n팬들이 마이원픽 사이트를 통해 투표를 진행한 뒤 스크린샷 등으로 인증 글을 작성하고 있으며,\n카페 내에서 투표 참여를 독려하는 분위기가 형성되어 있습니다.\n\n관련 사이트(마이원픽)\nhttps://www.my1pick.com/\n\n관련 커뮤니티(왁물원 네이버카페 ※사진첨부)\nhttps://cafe.naver.com/steamindiegame [파일: image.png]"
         },
         {
           "sender": "준태",
           "time": "18:53",
-          "text": "마이원픽 \"내 플레이리스트를 점령한 루키 여자 아이돌은?\" 투표 진행 중, 이세계아이돌 팬덤 인증 활동"
+          "text": "마이원픽 앱 내 *\"내 플레이리스트를 점령한 루키 여자 아이돌은?\"* 투표가 진행 중이며,\n 이세계아이돌 팬덤에서도 *투표 참여 및 인증 활동이 이루어지고 있는 상황입니다.*\n이세계아이돌 팬덤의 경우 *음악 앨범을 발매하는 여자 아이돌 특성상*,\n 해당 투표에서 *자신이 좋아하는 아이돌의 노출도와 순위를 높이기 위한 목적*으로 참여하고 있는 것으로 보입니다. [파일: image.png]"
         },
         {
           "sender": "준태",
           "time": "18:58",
-          "text": "디시인사이드 버츄얼 스나/SOOP 갤러리, 에펨코리아 SOOP 게시판 리서치 공유"
+          "text": "*디시인사이드*\n1. 버츄얼 스나 갤러리\n• 버츄얼 관련 이용자가 가장 많은 커뮤니티 중 하나\n• 이용자 성향이 다소 공격적인 편\nhttps://gall.dcinside.com/mini/board/lists/?id=vtubersnipe\n2. 숲(SOOP) 버츄얼 갤러리\n• 숲(SOOP) 플랫폼 기반 버츄얼 관련 커뮤니티\n• 비교적 자유로운 분위기의 커뮤니티 공간\nhttps://gall.dcinside.com/mini/board/lists/?id=spv\n\n*에펨코리아*\n1. 숲(SOOP) 게시판\n• 숲 방송 시청자들이 활동하는 커뮤니티\n• 버츄얼 관련 정보 및 이슈가 자주 공유되는 공간\nhttps://www.fmkorea.com/afreecatv"
         },
         {
           "sender": "준태",
           "time": "19:00",
-          "text": "버츄얼 전용 V-WORLD: 뉴스/방송/팬아트/라이브 목록 보유"
+          "text": "버츄얼 전용 커뮤니티 사이트\n■ VWORLD\n• 버튜버 전용 팬 커뮤니티\n• 뉴스 / 방송 / 팬아트 / 라이브 목록 있음\nhttps://v-world.io/?utm_source=chatgpt.com"
         }
       ],
       "hasNew": true
@@ -254,12 +264,12 @@
           "text": "↳ 알겟습니당 ㅎㅎ"
         }
       ],
-      "summary": "<span class=\"person\">성민</span>이 PDF 시안(예시용) 공유. <span class=\"person\">수혁</span>이 타깃을 대중 대신 narrow down(세린이와의 음성 대화) 방향 제안. PMF 검증 이후 정식 출시 의견.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">성민</span>이 윤하 요청으로 PDF 파일 2개 공유, <span class=\"person\">수혁</span>이 타깃을 세린이 음성 대화로 narrow down 제안</div><ul class=\"sum-bullets\"><li><span class=\"person\">수혁</span>: 내일 논의 예정, 타깃을 대중이 아닌 세린이와의 음성 대화로 좁힐 것 제안</li><li>나만의 프라이빗룸 대화는 PMF 검증 이후로 미룸</li></ul>",
       "messages": [
         {
           "sender": "성민",
           "time": "15:39",
-          "text": "1.pdf, 2.pdf 공유 (예시용, 윤하님 요청)"
+          "text": "[파일: 1.pdf] [파일: 2.pdf] [✅ 윤하]"
         },
         {
           "sender": "수혁",
@@ -268,13 +278,18 @@
         },
         {
           "sender": "수혁",
-          "time": "15:51",
-          "text": "나만의 프라이빗룸 대화 등은 PMF 검증 이후 정식일거 같습니다"
+          "time": "15:52",
+          "text": "세린이와의 음성 대화"
         },
         {
           "sender": "수혁",
-          "time": "15:52",
-          "text": "지극히 narrow down 해서 세린이와의 음성 대화 느낌으로 가면 좋겟다라는 생각입니다"
+          "time": "15:53",
+          "text": "느낌으로 가면 좋겟다라는 생각입니다"
+        },
+        {
+          "sender": "성민",
+          "time": "15:53",
+          "text": "아아 이건 그냥 예시용으로 윤하님이 보고싶다 하셔서 pdf 파일로 뽑아봤습니다"
         }
       ],
       "hasNew": true

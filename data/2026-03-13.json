@@ -8,7 +8,7 @@
           "text": "1. 캐릭터 아바타 사용 이슈\n2. 2차저작물 시 크리에이터 반발 요소"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 법무 검토용 이슈 정리 — 1) 캐릭터 아바타 사용 이슈, 2) 2차저작물 시 크리에이터 반발 요소.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 캐릭터 아바타 사용 및 2차저작물 관련 법률 이슈 제기</div><ul class=\"sum-bullets\"><li>캐릭터 아바타 사용 이슈 검토 필요</li><li>2차저작물 시 크리에이터 반발 요소 검토 필요</li></ul>",
       "messages": [
         {
           "sender": "건희",
@@ -26,12 +26,12 @@
           "text": "Figma Make를 활용해 컨셉 시안을 작성해봤습니다. 전체 플로우와 구성 위주로 봐주시면 감사하겠습니다. [파일: character.pdf] [파일: chat.pdf] [파일: login.pdf] [파일: my.pdf]"
         }
       ],
-      "summary": "<span class=\"person\">성민</span>이 Figma Make 활용한 컨셉 시안(character/chat/login/my 4종 PDF) 공유 — 전체 플로우와 구성 위주 검토 요청.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">성민</span>이 Figma Make로 컨셉 시안 4종(character/chat/login/my) 작성 완료</div>",
       "messages": [
         {
           "sender": "성민",
           "time": "14:07",
-          "text": "Figma Make를 활용해 컨셉 시안 작성 — character/chat/login/my pdf, 전체 플로우와 구성 위주로 봐주세요"
+          "text": "Figma Make를 활용해 컨셉 시안을 작성해봤습니다. 전체 플로우와 구성 위주로 봐주시면 감사하겠습니다. [파일: character.pdf] [파일: chat.pdf] [파일: login.pdf] [파일: my.pdf]"
         }
       ],
       "hasNew": true
@@ -44,12 +44,12 @@
           "text": "↳ 작가님, 대표님 고생 많으셨습니다!! :rolling_on_the_floor_laughing:\n\n앞으로 지속적인 관계가 이어질 것 같은 좋은 기운이 느껴집니다 !"
         }
       ],
-      "summary": "<span class=\"person\">준태</span>가 작가님·대표님 노고 인사 — 지속적인 관계 이어질 좋은 기운 메시지.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 작가님·대표님과의 미팅 성공적 종료 보고 — 지속 협력 기대</div>",
       "messages": [
         {
           "sender": "준태",
           "time": "09:57",
-          "text": "작가님, 대표님 고생 많으셨습니다!! 앞으로 지속적인 관계가 이어질 것 같은 좋은 기운이 느껴집니다"
+          "text": "↳ 작가님, 대표님 고생 많으셨습니다!! :rolling_on_the_floor_laughing:\n\n앞으로 지속적인 관계가 이어질 것 같은 좋은 기운이 느껴집니다 !"
         }
       ],
       "hasNew": true

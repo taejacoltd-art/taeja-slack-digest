@@ -8,12 +8,12 @@
           "text": " [파일: image.png] [✅ 준태]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 차세린 관련 이미지 공유, <span class=\"person\">준태</span> 확인.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 이미지 파일 공유 — <span class=\"person\">준태</span> 확인 완료</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "22:11",
-          "text": "[이미지 공유]"
+          "text": "[파일: image.png] [✅ 준태]"
         }
       ],
       "hasNew": true
@@ -26,12 +26,12 @@
           "text": "https://youtube.com/shorts/PohS9d8bvSY?si=AjiyAUwXYkvh1FUp [👀 성민]"
         }
       ],
-      "summary": "<span class=\"person\">건희</span>가 유튜브 쇼츠 링크(PohS9d8bvSY) UI/UX 참고용으로 공유, <span class=\"person\">성민</span> 확인.",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 YouTube Shorts 링크 공유</div>",
       "messages": [
         {
           "sender": "건희",
           "time": "14:58",
-          "text": "https://youtube.com/shorts/PohS9d8bvSY 참고링크"
+          "text": "https://youtube.com/shorts/PohS9d8bvSY?si=AjiyAUwXYkvh1FUp [👀 성민]"
         }
       ],
       "hasNew": true
