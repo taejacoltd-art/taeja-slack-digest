@@ -5,12 +5,14 @@
         {
           "sender": "건희",
           "time": "18:23",
-          "text": " [파일: image.png] [👀 윤하]"
+          "text": " [파일: image.png] [👀 윤하]",
+          "ts": "1774171389.604699"
         },
         {
           "sender": "건희",
           "time": "18:23",
-          "text": "바뀐 세린이"
+          "text": "바뀐 세린이",
+          "ts": "1774171390.719439"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 바뀐 세린 이미지를 공유</div>",

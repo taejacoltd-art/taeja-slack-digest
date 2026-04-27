@@ -5,7 +5,8 @@
         {
           "sender": "건희",
           "time": "22:11",
-          "text": " [파일: image.png] [✅ 준태]"
+          "text": " [파일: image.png] [✅ 준태]",
+          "ts": "1772889117.923959"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 이미지 파일 공유 — <span class=\"person\">준태</span> 확인 완료</div>",
@@ -23,7 +24,8 @@
         {
           "sender": "건희",
           "time": "14:58",
-          "text": "https://youtube.com/shorts/PohS9d8bvSY?si=AjiyAUwXYkvh1FUp [👀 성민]"
+          "text": "https://youtube.com/shorts/PohS9d8bvSY?si=AjiyAUwXYkvh1FUp [👀 성민]",
+          "ts": "1772863107.858129"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 YouTube Shorts 링크 공유</div>",

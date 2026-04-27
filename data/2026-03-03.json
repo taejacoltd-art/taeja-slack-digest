@@ -14,7 +14,8 @@
         {
           "sender": "건희",
           "time": "18:11",
-          "text": "@channel\n안녕하세요, 이건희입니다.\n\n본 Slack은 AI Native 를 위해 (즉, 소통 효율성/자동화 외부 연계성 등 고려)우선 개설되었습니다. 본 슬랙은 하기 규정대로 운영됩니다_260303_ V1 버젼\n\n*1. AI 활용 기본 원칙*\n• 기획, 문서 작성, 아이디어 정리 시 AI 활용을 권장합니다.\n• 초안 작성은 AI를 활용하고, 최종 판단과 책임은 사람이 집니다.\n• 반복 작업이나 리서치는 적극적으로 AI를 사용합니다.\n*2. 의사결정 구조*\n• AI는 참고 자료 및 제안 도구입니다.\n• 최종 의사결정자는 각 안건별로 명확히 합니다.\n• 논의가 길어질 경우 *책임자가 정리 후 결정합니다.*\n*3. 채널 운영 가이드*\n: 각 책임자가 공유할 내용만 전달하는 공지 방\n\n\n• 문제 정의\n• 가설 및 기능 범위\n• 우선순위 및 KPI\n• AI 기반 기획 초안 공유 가능\n\n• 모델 테스트\n• 프롬프트 실험\n• Composer 설계 연구\n• 기술 및 사례 리서치\n• 확정된 스펙 기반 개발\n• 구현 중심 커뮤니케이션\n\n• UX 플로우\n• UI 설계\n• 사용자 경험 개선\n감사합니다. [✅ 윤하]"
+          "text": "@channel\n안녕하세요, 이건희입니다.\n\n본 Slack은 AI Native 를 위해 (즉, 소통 효율성/자동화 외부 연계성 등 고려)우선 개설되었습니다. 본 슬랙은 하기 규정대로 운영됩니다_260303_ V1 버젼\n\n*1. AI 활용 기본 원칙*\n• 기획, 문서 작성, 아이디어 정리 시 AI 활용을 권장합니다.\n• 초안 작성은 AI를 활용하고, 최종 판단과 책임은 사람이 집니다.\n• 반복 작업이나 리서치는 적극적으로 AI를 사용합니다.\n*2. 의사결정 구조*\n• AI는 참고 자료 및 제안 도구입니다.\n• 최종 의사결정자는 각 안건별로 명확히 합니다.\n• 논의가 길어질 경우 *책임자가 정리 후 결정합니다.*\n*3. 채널 운영 가이드*\n: 각 책임자가 공유할 내용만 전달하는 공지 방\n\n\n• 문제 정의\n• 가설 및 기능 범위\n• 우선순위 및 KPI\n• AI 기반 기획 초안 공유 가능\n\n• 모델 테스트\n• 프롬프트 실험\n• Composer 설계 연구\n• 기술 및 사례 리서치\n• 확정된 스펙 기반 개발\n• 구현 중심 커뮤니케이션\n\n• UX 플로우\n• UI 설계\n• 사용자 경험 개선\n감사합니다. [✅ 윤하]",
+          "ts": "1772529099.454349"
         }
       ]
     },
@@ -37,12 +38,14 @@
         {
           "sender": "건희",
           "time": "18:06",
-          "text": "1. 기술정의서\n: https://docs.google.com/document/d/1BKb66YaJBj4AsTk8IjsEiSg43udHmqTP/edit?usp=sharing&amp;ouid=112128850631269797001&amp;rtpof=true&amp;sd=true [파일: 온더팬덤(OnTheFandom)_PRD_수정사항_및_MOAT_전략_종합_분석.docx]"
+          "text": "1. 기술정의서\n: https://docs.google.com/document/d/1BKb66YaJBj4AsTk8IjsEiSg43udHmqTP/edit?usp=sharing&amp;ouid=112128850631269797001&amp;rtpof=true&amp;sd=true [파일: 온더팬덤(OnTheFandom)_PRD_수정사항_및_MOAT_전략_종합_분석.docx]",
+          "ts": "1772528812.205389"
         },
         {
           "sender": "건희",
           "time": "18:19",
-          "text": "ㆍ담당: 정 이건희@건희 부 오수혁 @foreversm6 *TECH 정 @성민\n\n-제품 정의 공간\n-MVP 범위 정의\n-문제 정의 및 가설 설정\n-기능 우선순위 논의\n-제품 구조 설계\n→ 아이디어는 여기서 정리합니다.\n→ 방향이 확정되면 Dev/UI-UX로 이동합니다.\n→ *반드시 결론을 남깁니다.*"
+          "text": "ㆍ담당: 정 이건희@건희 부 오수혁 @foreversm6 *TECH 정 @성민\n\n-제품 정의 공간\n-MVP 범위 정의\n-문제 정의 및 가설 설정\n-기능 우선순위 논의\n-제품 구조 설계\n→ 아이디어는 여기서 정리합니다.\n→ 방향이 확정되면 Dev/UI-UX로 이동합니다.\n→ *반드시 결론을 남깁니다.*",
+          "ts": "1772529593.833629"
         }
       ]
     },
@@ -51,7 +54,8 @@
         {
           "sender": "건희",
           "time": "18:16",
-          "text": "ㆍ본 방 정담당자 : 윤준태 선임@준태 / 부담당자: @규민\n\n• AI 서비스 운영 채널\n• 크리에이터 방송과 직접 연결되는 영역\n• 방송 연동 진행 상황 공유\n• 룸 생성 및 관리\n• 클립 관리\n• 운영 이슈 공유 [✅ 준태]"
+          "text": "ㆍ본 방 정담당자 : 윤준태 선임@준태 / 부담당자: @규민\n\n• AI 서비스 운영 채널\n• 크리에이터 방송과 직접 연결되는 영역\n• 방송 연동 진행 상황 공유\n• 룸 생성 및 관리\n• 클립 관리\n• 운영 이슈 공유 [✅ 준태]",
+          "ts": "1772529418.788419"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 AI 서비스 운영 채널 담당자 지정 — 정담당 <span class=\"person\">윤준태</span>, 부담당 <span class=\"person\">규민</span></div><ul class=\"sum-bullets\"><li>방송 연동, 룸 생성/관리, 클립 관리 등 운영 이슈 담당</li></ul>",
@@ -69,7 +73,8 @@
         {
           "sender": "건희",
           "time": "18:25",
-          "text": "본 방은 자유로운 대화방 입니다~!"
+          "text": "본 방은 자유로운 대화방 입니다~!",
+          "ts": "1772529903.484589"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 #onf_주간회의 채널 안내 — 자유 대화방으로 운영</div>",
@@ -87,7 +92,8 @@
         {
           "sender": "건희",
           "time": "18:16",
-          "text": "• 담당: @성민 @foreversm6 \n-확정된 스펙 기반 개발\n-AI 연동 구조 구현\n-API / 인프라 / 배포\n-기술 이슈 공유"
+          "text": "• 담당: @성민 @foreversm6 \n-확정된 스펙 기반 개발\n-AI 연동 구조 구현\n-API / 인프라 / 배포\n-기술 이슈 공유",
+          "ts": "1772529398.669719"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 <span class=\"person\">성민</span>에게 AI 연동 구조 구현 및 API/인프라/배포 업무 배정</div><ul class=\"sum-bullets\"><li>확정된 스펙 기반 개발 진행</li><li>AI 연동 구조 구현</li><li>기술 이슈 공유 필요</li></ul>",
@@ -105,17 +111,20 @@
         {
           "sender": "건희",
           "time": "18:50",
-          "text": "@성민 팀장님, 금일 api 연동건들 내용 올려주시면 감사드리겠습니다 [👀 건희]"
+          "text": "@성민 팀장님, 금일 api 연동건들 내용 올려주시면 감사드리겠습니다 [👀 건희]",
+          "ts": "1772531446.326529"
         },
         {
           "sender": "Slackbot",
           "time": "19:17",
-          "text": "This message was deleted. [✅ 건희,수혁]"
+          "text": "This message was deleted. [✅ 건희,수혁]",
+          "ts": "1772533057.887079"
         },
         {
           "sender": "건희",
           "time": "19:18",
-          "text": "↳ 확인했습니다(대외비)"
+          "text": "↳ 확인했습니다(대외비)",
+          "ts": "1772533125.940829"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 <span class=\"person\">성민</span>에게 금일 API 연동건 내용 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">성민</span> 팀장 API 연동건 내용 공유 필요</li><li>삭제된 메시지 확인 완료(대외비)</li></ul>",
@@ -143,7 +152,8 @@
         {
           "sender": "건희",
           "time": "18:18",
-          "text": "• 담당: 디자인팀 (Figma 기반) @윤하 @지수 \n*단,  와 협의 하 업무가 이루어져야 합니다.\n• UX 플로우 설계\n• UI 화면 설계\n• 사용자 경험 개선"
+          "text": "• 담당: 디자인팀 (Figma 기반) @윤하 @지수 \n*단,  와 협의 하 업무가 이루어져야 합니다.\n• UX 플로우 설계\n• UI 화면 설계\n• 사용자 경험 개선",
+          "ts": "1772529507.607369"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 디자인팀(<span class=\"person\">윤하</span>, <span class=\"person\">지수</span>) 업무범위 공유 — Figma 기반 UX/UI 설계</div><ul class=\"sum-bullets\"><li>디자인팀 담당: UX 플로우 설계, UI 화면 설계, 사용자 경험 개선</li></ul>",
