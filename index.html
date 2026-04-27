@@ -1150,11 +1150,7 @@ function todoItemHTML(t, dateKey) {
   }
   let actions = '';
   if (chId) {
-    actions += `<button class="todo-jump-internal" data-channel="${chId}" data-ts="${t.source_ts || ''}" data-datekey="${dk}" title="대시보드 내 대화 보기">→ 이동</button>`;
-    if (t.source_ts) {
-      actions += `<a class="todo-jump-slack" href="${slackPermalink(chId, t.source_ts)}" target="_blank" rel="noopener" title="슬랙으로 이동">↗ 슬랙</a>`;
-    }
-    actions = `<div class="todo-actions">${actions}</div>`;
+    actions = `<div class="todo-actions"><button class="todo-jump-internal" data-channel="${chId}" data-ts="${t.source_ts || ''}" data-datekey="${dk}" title="대시보드 내 대화 보기">→ 이동</button></div>`;
   }
   return `
     <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}" data-datekey="${dk}">
