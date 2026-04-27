@@ -226,8 +226,9 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
 /* Compact summary (headline + bullets) */
 .sum-headline{font-weight:600;color:#1d1d1f;margin-bottom:6px;font-size:14px;line-height:1.6}
 .sum-headline .person{font-weight:700;color:#1d1d1f}
-.sum-bullets{margin:4px 0 0;padding-left:18px;color:#424245;font-size:13px;line-height:1.7}
-.sum-bullets li{margin-bottom:2px}
+.sum-bullets{margin:4px 0 0;padding-left:32px;color:#424245;font-size:13px;line-height:1.7}
+.sum-bullets li{margin-bottom:2px;padding-left:4px}
+.sum-bullets li::marker{color:#86868b;font-size:11px}
 .sum-bullets .person{font-weight:600;color:#1d1d1f}
 
 /* Todo jump buttons */
@@ -1141,12 +1142,17 @@ function todoItemHTML(t, dateKey) {
   }).join('');
   const evidence = t.evidence ? `<div class="todo-evidence">${t.evidence}</div>` : '';
   const dk = dateKey || t._dateKey || '';
-  // Jump 버튼: channel_id 있으면 내부 점프 표시, source_ts까지 있으면 슬랙 외부 링크도 표시
+  // Jump 버튼: channel_id 우선, 없으면 채널명으로 CHANNELS에서 매칭
+  let chId = t.channel_id;
+  if (!chId && t.channel) {
+    const m = CHANNELS.find(c => c.name === t.channel);
+    if (m) chId = m.id;
+  }
   let actions = '';
-  if (t.channel_id) {
-    actions += `<button class="todo-jump-internal" data-channel="${t.channel_id}" data-ts="${t.source_ts || ''}" data-datekey="${dk}" title="대시보드 내 대화 보기">💬 대화 보기</button>`;
+  if (chId) {
+    actions += `<button class="todo-jump-internal" data-channel="${chId}" data-ts="${t.source_ts || ''}" data-datekey="${dk}" title="대시보드 내 대화 보기">→ 이동</button>`;
     if (t.source_ts) {
-      actions += `<a class="todo-jump-slack" href="${slackPermalink(t.channel_id, t.source_ts)}" target="_blank" rel="noopener" title="슬랙으로 이동">↗ 슬랙</a>`;
+      actions += `<a class="todo-jump-slack" href="${slackPermalink(chId, t.source_ts)}" target="_blank" rel="noopener" title="슬랙으로 이동">↗ 슬랙</a>`;
     }
     actions = `<div class="todo-actions">${actions}</div>`;
   }
