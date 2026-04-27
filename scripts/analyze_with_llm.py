@@ -50,6 +50,7 @@ CHANNELS = {
 VALID_ASSIGNEES = ['건희', '규민', '준태', '윤하', '지수', '유민', '성민', '수혁']
 
 ANALYSIS_PROMPT = """다음은 슬랙 채널 #{channel_name}의 {date} 대화 전체 로그입니다.
+각 메시지는 [HH:MM | ts=타임스탬프] 발화자: 내용 형태로 주어집니다.
 
 대화:
 {conversation}
@@ -57,10 +58,9 @@ ANALYSIS_PROMPT = """다음은 슬랙 채널 #{channel_name}의 {date} 대화 �
 위 대화를 분석하여 아래 형식의 JSON으로 응답하세요. 다른 설명 없이 JSON만.
 
 {{
-  "summary": "HTML 형식 2~3문장 요약. 발화자는 <span class=\\"person\\">이름</span>으로 표시. 수치/날짜/금액/업체명/결정사항 반드시 포함. 핵심 결론 중심.",
+  "summary": "HTML 헤드라인+불릿 형식. 아래 규칙 엄수.",
   "messages": [
-    {{"sender": "이름", "time": "HH:MM", "text": "원문"}},
-    ...최대 5개 핵심 메시지...
+    {{"sender": "이름", "time": "HH:MM", "text": "원문"}}
   ],
   "todos": [
     {{
@@ -68,19 +68,33 @@ ANALYSIS_PROMPT = """다음은 슬랙 채널 #{channel_name}의 {date} 대화 �
       "channel": "{channel_name}",
       "project": "프로젝트명 (예: 마성의팍스, 삼성와펜, 차세린 등)",
       "text": "할일 내용 (마감일 포함)",
+      "source_ts": "이 todo의 근거가 된 메시지의 ts를 위 대화에서 그대로 복사 (없으면 빈 문자열)",
       "done": false
     }}
   ]
 }}
 
-규칙:
-- 담당자는 이 8명 중에서: 건희, 규민, 준태, 윤하, 지수, 유민, 성민, 수혁
+[summary HTML 규칙 — 매우 중요]
+- 형식: <div class="sum-headline">한줄 헤드라인</div><ul class="sum-bullets"><li>...</li></ul>
+- 헤드라인: 누가/무엇을 결정/언제 — 한 줄(100자 이내). 발화자 <span class="person">이름</span> 표기, 핵심 수치·날짜·업체명·금액 반드시 포함
+- 불릿: 액션·수치·결정사항만 0~3개. 각 불릿도 한 줄 짧게. 발화자는 <span class="person">이름</span>로 표시
+- 불릿이 0개면 <ul> 자체 생략 (헤드라인만)
+- 잡담/이모지만 있는 채널은 헤드라인 1줄로 끝
+- 서술형 미사여구·"~을 진행했고 ~에 대해 논의했습니다" 같은 길게 늘어진 문장 금지
+- HTML 외 \\n 줄바꿈 넣지 말 것
+
+[messages 규칙]
+- 최대 5개 핵심 메시지
+
+[todos 규칙]
+- 담당자는 8명 중: 건희, 규민, 준태, 윤하, 지수, 유민, 성민, 수혁
 - @here/@channel이면 8명 전부, 복수 멘션이면 array
 - "부탁드립니다/확인부탁/전달부탁/공유부탁" 등은 전부 todo
 - 마감 키워드("오늘까지","내일","ASAP","급함","X일까지")는 text에 포함
 - 완료된 사안(파일/링크 전달 확인)은 todos에 추가하지 말 것
-- 잡담/이모지만 있는 채널은 summary는 한 줄, todos는 [], messages는 1~2개만
-- 한국어
+- source_ts: 이 todo가 어느 메시지에서 나왔는지, 위 대화의 ts= 값을 그대로 한 개 복사. 추정·생성·변형 금지
+
+전체 한국어.
 """
 
 
@@ -88,9 +102,9 @@ def analyze_channel(channel_name, date, full_log):
     if not full_log:
         return None
 
-    # 대화 텍스트 만들기
+    # 대화 텍스트 만들기 (ts 포함 — todo 매핑용)
     conversation = "\n".join([
-        f"[{m['time']}] {m['sender']}: {m['text']}"
+        f"[{m['time']} | ts={m.get('ts','')}] {m['sender']}: {m['text']}"
         for m in full_log
     ])
 
@@ -180,12 +194,20 @@ def main():
                 continue
             final_assignee = assignee_list[0] if len(assignee_list) == 1 else assignee_list
 
+            # source_ts 검증: fullLog에 실제 존재하는 ts만 인정
+            src_ts = (todo.get('source_ts') or '').strip()
+            valid_ts_set = {m.get('ts','') for m in full_log if m.get('ts')}
+            if src_ts and src_ts not in valid_ts_set:
+                src_ts = ''
+
             new_todo = {
                 "id": next_id,
                 "assignee": final_assignee,
                 "channel": todo.get('channel', ch_name),
+                "channel_id": ch_id,
                 "project": todo.get('project', ''),
                 "text": todo['text'],
+                "source_ts": src_ts,
                 "done": False,
             }
             data['todos'].append(new_todo)

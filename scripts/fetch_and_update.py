@@ -129,7 +129,7 @@ def process_msg(msg):
     if not cleaned and not msg.get("files"):
         cleaned = "[이미지]"
 
-    return {"sender": sender, "time": time_str, "text": cleaned, "date": date, "_ts": float(ts)}
+    return {"sender": sender, "time": time_str, "text": cleaned, "date": date, "ts": ts, "_ts": float(ts)}
 
 
 def main():
