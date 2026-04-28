@@ -27,7 +27,7 @@
           "ts": "1777344786.704699"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">유민</span>, 금주 차세린 숏폼 영상 2개(25분 이내) 공유 완료</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>, <span class=\"person\">준태</span> 확인 완료 및 업로드 요청</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">유민</span>, 차세린 숏폼 영상 2건(260427, 260428) 공유 — 각 25분 이하, 금주 업로드 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>, <span class=\"person\">준태</span> 확인 완료</li><li><span class=\"person\">유민</span> 금주 업로드 진행</li></ul>",
       "messages": [
         {
           "sender": "유민",
@@ -175,7 +175,7 @@
           "ts": "1777366731.734369"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 렌티큘러 50매 공급가(820원) 확인 요청, <span class=\"person\">준태</span>가 옌룡·뢴트게늄 최종 프로젝트 정보 공유 (4/27~28)</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>가 패러블 계정 부여 (console@taeja.com)</li><li><span class=\"person\">윤하</span>가 민수달 액션건 마감일 정리: 제품 발주 디자인 5/6, 가챠·POP 디자인 4/29</li><li><span class=\"person\">준태</span>가 옌룡 랜덤tv 캔뱃지 소문자 tv 수정 요청</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 렌티큘러 50매 공급가 확인 요청, <span class=\"person\">준태</span>가 옌룡·뢴트게늄 최종 프로젝트 정보 공유 — 패러블 계정(console@taeja.com) 부여, 쿠션 세트/단품 각 150개 재고 세팅</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>: 민수달 작가에게 제품 발주 디자인 5/6까지, 가챠·POP 디자인 4/29까지 요청</li><li><span class=\"person\">건희</span>: 패러블 계정 console@taeja.com / Dlsrks123! 부여, test계정 삭제</li><li><span class=\"person\">준태</span>: 옌룡 랜덤tv 캔뱃지 소문자 tv로 수정 요청</li></ul>",
       "messages": [
         {
           "sender": "윤하",
@@ -195,12 +195,12 @@
         {
           "sender": "준태",
           "time": "15:47",
-          "text": "↳ @윤하\n윤하님 해당 프로젝트 정보를 최종으로 참고 부탁드립니다. [파일: (최종)20260427-옌룡_확정프로젝트정보-V1.xlsx] [파일: (최종)20260428-뢴트게늄_확정프로젝트정보-V1.xlsx]"
+          "text": "@윤하\n윤하님 해당 프로젝트 정보를 최종으로 참고 부탁드립니다."
         },
         {
           "sender": "준태",
           "time": "17:58",
-          "text": "↳ [옌룡] 랜덤tv 캔뱃지\n\n소문자 tv 부탁드립니다"
+          "text": "[옌룡] 랜덤tv 캔뱃지\n\n소문자 tv 부탁드립니다"
         }
       ],
       "hasNew": true
@@ -230,9 +230,21 @@
           "time": "10:51",
           "text": "↳ 넵 감사합니다",
           "ts": "1777341084.298769"
+        },
+        {
+          "sender": "건희",
+          "time": "18:33",
+          "text": "[쫀냐미 파자마 건 — 카카오엔터 미팅 공유]\n\n1. 상황\n- 쫀냐미 작가가 파자마 직접 만들고 싶어함\n- 매니저는 회의적이지만 작가 강한 의지로 진행 검토 중\n- 카카오엔터 측에서 태자에 시뮬레이션 + 어필 포인트 정리 요청\n\n2. 매니저 요청 사항\n- 잠옷 정말 불가한지? 에 관한 파이널 회신\n-MOQ × 판매가 × 로열티 시뮬레이션\n- 자사몰 BM 검토 (기 8월 선물하기 진행이었으나, 이번 부터 진행하는 걸로 틀어보겠다고 함)\n: 위탁수수료 10%(vat포) 제안 예정 - 로열티율 13%\n\n3. 시장 데이터 (참고)\n-마성의팍스 1천개set 판매\n- 가격 저항선: 약 4만원 (어린 타겟)\n\n4. 위험\n- 재고 1,500~2,000개 발생 시 부담 주체 불명확\n- 작가는 의지 있으나 책임은 X\n- 자사몰 BM은 별도 사업 검토 영역 (한 건에 끼워 넣으면 손해)\n\n5. 우리 검토 필요한 것\n- 1,500개 MOQ 가능한 제조처 풀 확인 (이건희)\n: 에드워드맥스에서 진행하는 게 나을듯?\n- 자사몰 BM은 별도 사업 자료로 분리할지 결정\n- 진행 시 재고 책임 구조 명확화 필요 (잔여 재고 카엔터 사입)",
+          "ts": "1777368811.136009"
+        },
+        {
+          "sender": "건희",
+          "time": "18:34",
+          "text": "↳ @윤하 나머지 품목의 경우 상당히 좋은 피드백 입니다만.. 잠옷 진행 여부가 조금 걸리는 상황입니다.\n\n다만, 진행하면 할 수는 있는데 지금 품목들이 헤비합니다. 바디필로우 외 진행 안해봤던 상품들이 있는 상황이라..\n다 쳐낼 수 있는지에 관한 판단이 필요합니다",
+          "ts": "1777368851.791189"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>, 그립톡 부자재 문제로 공장 모양 옵션 문의 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 소싱 필요시 중국소싱 담당자(우인 등)에게 요청 가능</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>, 쫀냐미 파자마 MOQ 1,500~2,000개·로열티 13%·위탁수수료 10% 조건 검토 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 1,500개 MOQ 가능 제조처 확인 필요, 에드워드맥스 진행 검토</li><li>재고 책임 구조 명확화 및 잔여 재고 카엔터 사입 조건 정리 필요</li><li>바디필로우 외 신규 품목 다수로 진행 가능 여부 판단 필요</li></ul>",
       "messages": [
         {
           "sender": "건희",
@@ -250,9 +262,14 @@
           "text": "↳ 아, 알겠습니다 혹시나 소싱이 필요하면 중국소싱하시는 분(ex우인)들한테 요청하면 되오니.. 말씀 부탁드립니다. 참고 부탁드립니다!"
         },
         {
-          "sender": "윤하",
-          "time": "10:51",
-          "text": "↳ 넵 감사합니다"
+          "sender": "건희",
+          "time": "18:33",
+          "text": "[쫀냐미 파자마 건 — 카카오엔터 미팅 공유]\n\n1. 상황\n- 쫀냐미 작가가 파자마 직접 만들고 싶어함\n- 매니저는 회의적이지만 작가 강한 의지로 진행 검토 중\n- 카카오엔터 측에서 태자에 시뮬레이션 + 어필 포인트 정리 요청\n\n2. 매니저 요청 사항\n- 잠옷 정말 불가한지? 에 관한 파이널 회신\n-MOQ × 판매가 × 로열티 시뮬레이션\n- 자사몰 BM 검토 (기 8월 선물하기 진행이었으나, 이번 부터 진행하는 걸로 틀어보겠다고 함)\n: 위탁수수료 10%(vat포) 제안 예정 - 로열티율 13%\n\n3. 시장 데이터 (참고)\n-마성의팍스 1천개set 판매\n- 가격 저항선: 약 4만원 (어린 타겟)\n\n4. 위험\n- 재고 1,500~2,000개 발생 시 부담 주체 불명확\n- 작가는 의지 있으나 책임은 X\n- 자사몰 BM은 별도 사업 검토 영역 (한 건에 끼워 넣으면 손해)\n\n5. 우리 검토 필요한 것\n- 1,500개 MOQ 가능한 제조처 풀 확인 (이건희)\n: 에드워드맥스에서 진행하는 게 나을듯?\n- 자사몰 BM은 별도 사업 자료로 분리할지 결정\n- 진행 시 재고 책임 구조 명확화 필요 (잔여 재고 카엔터 사입)"
+        },
+        {
+          "sender": "건희",
+          "time": "18:34",
+          "text": "↳ @윤하 나머지 품목의 경우 상당히 좋은 피드백 입니다만.. 잠옷 진행 여부가 조금 걸리는 상황입니다.\n\n다만, 진행하면 할 수는 있는데 지금 품목들이 헤비합니다. 바디필로우 외 진행 안해봤던 상품들이 있는 상황이라..\n다 쳐낼 수 있는지에 관한 판단이 필요합니다"
         }
       ],
       "hasNew": true
@@ -272,7 +289,7 @@
           "ts": "1777367387.741359"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 GPS 품목·자재·용어사전 V1 작성 후 사이트 추가 제안 (4/28)</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: 영업·크리에이터 응대용 용어사전 작성, 사이트 추가 문의</li><li><span class=\"person\">준태</span>+<span class=\"person\">윤하</span>: 검수 후 사이트 기준 용어만 남기기로 결정, 재작업 예정</li><li>대표 첨삭 검토 필요</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 GPS 품목·자재·용어사전 파일(20260428-GPS_품목·자재·용어사전-V1.xlsx)을 사이트 추가 제안 — 2026-04-28</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>와 <span class=\"person\">윤하</span> 검수 후 업계 용어 제외하고 사이트 기준 용어만 포함한 정리본 재작성 예정</li><li>대표님 검토 및 첨삭 필요시 추가 요청</li></ul>",
       "messages": [
         {
           "sender": "준태",
@@ -461,6 +478,109 @@
       "channel_id": "C0AJ38GC9HB",
       "project": "GPS",
       "text": "사이트 기준 용어사전 재작성 후 파일 다시 전달",
+      "source_ts": "1777367387.741359",
+      "done": false
+    },
+    {
+      "id": 18,
+      "assignee": "건희",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "옌룡",
+      "text": "렌티큘러 50매 공급가 확인 (제작 단가: 820원, 수량: 50매 특전용)",
+      "source_ts": "1777340059.107089",
+      "done": false
+    },
+    {
+      "id": 19,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "민수달",
+      "text": "작가에게 제품 발주 디자인 5/6까지, 가챠·POP등 디자인 소스 4/29까지 요청 및 인형·맥세이프 실물 즉시 발송 요청",
+      "source_ts": "1777353855.152619",
+      "done": false
+    },
+    {
+      "id": 20,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "민수달",
+      "text": "작가님에게 유리창 시트지 작업 가이드, 키캡 작업가이드 전달",
+      "source_ts": "1777353855.152619",
+      "done": false
+    },
+    {
+      "id": 21,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "옌룡",
+      "text": "[옌룡] 랜덤tv 캔뱃지 소문자 tv로 수정",
+      "source_ts": "1777366731.734369",
+      "done": false
+    },
+    {
+      "id": 22,
+      "assignee": "건희",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "쫀냐미",
+      "text": "1,500개 MOQ 가능한 제조처 풀 확인 (에드워드맥스 진행 검토)",
+      "source_ts": "1777368811.136009",
+      "done": false
+    },
+    {
+      "id": 23,
+      "assignee": "건희",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "쫀냐미",
+      "text": "파자마 MOQ × 판매가 × 로열티 시뮬레이션 작성 및 파이널 회신",
+      "source_ts": "1777368811.136009",
+      "done": false
+    },
+    {
+      "id": 24,
+      "assignee": "건희",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "쫀냐미",
+      "text": "자사몰 BM 별도 사업 자료로 분리할지 결정",
+      "source_ts": "1777368811.136009",
+      "done": false
+    },
+    {
+      "id": 25,
+      "assignee": "건희",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "쫀냐미",
+      "text": "파자마 진행 시 재고 책임 구조 명확화 (잔여 재고 카엔터 사입 조건)",
+      "source_ts": "1777368811.136009",
+      "done": false
+    },
+    {
+      "id": 26,
+      "assignee": [
+        "건희",
+        "윤하"
+      ],
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "쫀냐미",
+      "text": "바디필로우 외 신규 품목들 진행 가능 여부 판단",
+      "source_ts": "1777368851.791189",
+      "done": false
+    },
+    {
+      "id": 27,
+      "assignee": "준태",
+      "channel": "00-announcement",
+      "channel_id": "C0AJ38GC9HB",
+      "project": "GPS",
+      "text": "업계 용어 제외하고 사이트 기준 용어만 포함한 사전 파일 재작성하여 공유",
       "source_ts": "1777367387.741359",
       "done": false
     }
