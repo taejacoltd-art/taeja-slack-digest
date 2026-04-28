@@ -27,27 +27,27 @@
           "ts": "1777344786.704699"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">유민</span>, 차세린 숏폼 영상 2건(25분 이내) 공유 완료 — 금주 업로드 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>, <span class=\"person\">준태</span> 확인 완료</li><li><span class=\"person\">유민</span> 금주 업로드 진행</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">유민</span>, 금주 차세린 숏폼 영상 2개(25분 이내) 공유 완료</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>, <span class=\"person\">준태</span> 확인 완료 및 업로드 요청</li></ul>",
       "messages": [
         {
           "sender": "유민",
           "time": "10:24",
-          "text": "금주 차세린 숏폼 영상 공유드립니다. 각 영상은 25분을 초과하지 않도록 작업했습니다! [파일: 차세린 6-260428.mp4] [파일: 차세린5-260427.mp4] [✅ 건희,준태]"
+          "text": "금주 차세린 숏폼 영상 공유드립니다. 각 영상은 25분을 초과하지 않도록 작업했습니다! [파일: 차세린 6-260428.mp4] [파일: 차세린5-260427.mp4]"
         },
         {
           "sender": "건희",
           "time": "10:44",
-          "text": "↳ 확인했습니다!"
+          "text": "확인했습니다!"
         },
         {
           "sender": "준태",
           "time": "11:52",
-          "text": "↳ 확인했습니다! 금주도 업로드 잘 부탁드립니다!\n감사합니다!"
+          "text": "확인했습니다! 금주도 업로드 잘 부탁드립니다! 감사합니다!"
         },
         {
           "sender": "유민",
           "time": "11:53",
-          "text": "↳ 넵 감사합니다 -!"
+          "text": "넵 감사합니다 -!"
         }
       ],
       "hasNew": true
@@ -155,19 +155,32 @@
           "time": "16:02",
           "text": "↳ 확인했습니다!!!!",
           "ts": "1777359739.572069"
+        },
+        {
+          "sender": "준태",
+          "time": "17:18",
+          "text": "@유민\n\n유민님 뢴트게늄 확정 프로젝트 정보 공유드립니다. [파일: (최종)20260428-뢴트게늄_확정프로젝트정보-V1.xlsx]",
+          "ts": "1777364280.902239"
+        },
+        {
+          "sender": "준태",
+          "time": "17:58",
+          "text": " [파일: (최종)20260427-옌룡_확정프로젝트정보-V1.xlsx]",
+          "ts": "1777366716.460579"
+        },
+        {
+          "sender": "준태",
+          "time": "17:58",
+          "text": "↳ [옌룡] 랜덤tv 캔뱃지\n\n소문자 tv 부탁드립니다 [✅ 윤하]",
+          "ts": "1777366731.734369"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>, 렌티큘러 50매(820원) 공급가 확인 요청 / <span class=\"person\">건희</span>, 패러블 계정 부여 및 test계정 삭제 / 옌룡·뢴트게늄 프로젝트 정보 최종 확정</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>, 민수달 액션건 마감일 정리: 제품 발주 디자인 5/6, 가챠·POP 디자인 4/29</li><li><span class=\"person\">준태</span>, 쿠션 300개 한정 → 세트/쿠션 페이지 각 150개씩 재고 세팅</li><li>패러블 계정 console@taeja.com / Dlsrks123!</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 렌티큘러 50매 공급가(820원) 확인 요청, <span class=\"person\">준태</span>가 옌룡·뢴트게늄 최종 프로젝트 정보 공유 (4/27~28)</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>가 패러블 계정 부여 (console@taeja.com)</li><li><span class=\"person\">윤하</span>가 민수달 액션건 마감일 정리: 제품 발주 디자인 5/6, 가챠·POP 디자인 4/29</li><li><span class=\"person\">준태</span>가 옌룡 랜덤tv 캔뱃지 소문자 tv 수정 요청</li></ul>",
       "messages": [
         {
           "sender": "윤하",
           "time": "10:34",
           "text": "@건희\n대표님, 렌티큘러 50매 공급가 확인 부탁드립니다.\n\n제작 단가: 820원\n수량: 50매 기준 (특전용)"
-        },
-        {
-          "sender": "준태",
-          "time": "11:02",
-          "text": "↳ +쿠션이 300개한정인데, 세트 구성에도 쿠션이 들어감으로\n\n세트페이지 / 쿠션페이지 각각 150개씩 재고 세팅하기로 하였습니다."
         },
         {
           "sender": "윤하",
@@ -182,7 +195,12 @@
         {
           "sender": "준태",
           "time": "15:47",
-          "text": "↳ @윤하\n윤하님 해당 프로젝트 정보를 최종으로 참고 부탁드립니다."
+          "text": "↳ @윤하\n윤하님 해당 프로젝트 정보를 최종으로 참고 부탁드립니다. [파일: (최종)20260427-옌룡_확정프로젝트정보-V1.xlsx] [파일: (최종)20260428-뢴트게늄_확정프로젝트정보-V1.xlsx]"
+        },
+        {
+          "sender": "준태",
+          "time": "17:58",
+          "text": "↳ [옌룡] 랜덤tv 캔뱃지\n\n소문자 tv 부탁드립니다"
         }
       ],
       "hasNew": true
@@ -214,7 +232,7 @@
           "ts": "1777341084.298769"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>, 그립톡 부자재 문제로 공장 옵션 문의 예정 — <span class=\"person\">건희</span> 중국소싱 요청 가능 안내</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span> 그립톡 부자재 문제로 공장 모양 옵션 문의 예정</li><li><span class=\"person\">건희</span> 소싱 필요 시 중국소싱 담당자(우인 등)에게 요청 가능</li></ul>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>, 그립톡 부자재 문제로 공장 모양 옵션 문의 예정</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span>: 소싱 필요시 중국소싱 담당자(우인 등)에게 요청 가능</li></ul>",
       "messages": [
         {
           "sender": "건희",
@@ -235,6 +253,36 @@
           "sender": "윤하",
           "time": "10:51",
           "text": "↳ 넵 감사합니다"
+        }
+      ],
+      "hasNew": true
+    },
+    "C0AJ38GC9HB": {
+      "fullLog": [
+        {
+          "sender": "준태",
+          "time": "17:04",
+          "text": "↳ 대표님 !\n한가지 피드백 사항 공유드립니다!\n\n영업·크리에이터 응대에 활용할 수 있게 용어·자재 사전 정리해봤습니다.\n해당 사전을 사이트에 추가해두는 것은 어떨지 문의드립니다. [파일: 20260428-GPS_품목·자재·용어사전-V1.xlsx]",
+          "ts": "1777363477.308579"
+        },
+        {
+          "sender": "준태",
+          "time": "18:09",
+          "text": "↳ 우선 윤하님과 파일 같이 검수해보았는데,\n\n업계에서 쓰는단어를 추가하면 패러블도 저희도\n\n혼선이 생길 것 같아서 대표님 사이트 기준 용어에 대한 사전만 (추가 첨삭없이)\n만들면 좋은 참고용 정보가 될 것 같습니다 ㅎㅎ..\n\n해당 데이터 뺀 파일로 다시 드리겠습니다.\n\n대표님께서도 보시고 첨삭하는게 좋겠다 싶으시다면 추가 부탁드립니다.!",
+          "ts": "1777367387.741359"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 GPS 품목·자재·용어사전 V1 작성 후 사이트 추가 제안 (4/28)</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>: 영업·크리에이터 응대용 용어사전 작성, 사이트 추가 문의</li><li><span class=\"person\">준태</span>+<span class=\"person\">윤하</span>: 검수 후 사이트 기준 용어만 남기기로 결정, 재작업 예정</li><li>대표 첨삭 검토 필요</li></ul>",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "17:04",
+          "text": "↳ 대표님 !\n한가지 피드백 사항 공유드립니다!\n\n영업·크리에이터 응대에 활용할 수 있게 용어·자재 사전 정리해봤습니다.\n해당 사전을 사이트에 추가해두는 것은 어떨지 문의드립니다. [파일: 20260428-GPS_품목·자재·용어사전-V1.xlsx]"
+        },
+        {
+          "sender": "준태",
+          "time": "18:09",
+          "text": "↳ 우선 윤하님과 파일 같이 검수해보았는데,\n\n업계에서 쓰는단어를 추가하면 패러블도 저희도\n\n혼선이 생길 것 같아서 대표님 사이트 기준 용어에 대한 사전만 (추가 첨삭없이)\n만들면 좋은 참고용 정보가 될 것 같습니다 ㅎㅎ..\n\n해당 데이터 뺀 파일로 다시 드리겠습니다.\n\n대표님께서도 보시고 첨삭하는게 좋겠다 싶으시다면 추가 부탁드립니다.!"
         }
       ],
       "hasNew": true
@@ -280,7 +328,8 @@
       "project": "천양",
       "text": "천양 스냅작가 연락처 확인",
       "source_ts": "1777340573.995099",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 준태: <tel:+8210-4817-3082|+82 10-4817-3082> 사진작가 김지훈 입니다"
     },
     {
       "id": 5,
@@ -330,7 +379,8 @@
       "project": "옌룡",
       "text": "옌룡 확정 프로젝트 정보 최종 참고",
       "source_ts": "1777358868.979709",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 준태: 해당 프로젝트 정보를 최종으로 참고 부탁드립니다 [파일: (최종)20260427-옌룡_확정프로젝트정보-V1.xlsx] + 윤하: 확인했습니다!!!"
     },
     {
       "id": 10,
@@ -340,7 +390,8 @@
       "project": "뢴트게늄",
       "text": "뢴트게늄 확정 프로젝트 정보 최종 참고",
       "source_ts": "1777358868.979709",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 준태: 뢴트게늄 확정 프로젝트 정보 파일 공유 + 윤하: 확인했습니다!!!!"
     },
     {
       "id": 11,
@@ -360,6 +411,57 @@
       "project": "카카오엔터 웹툰 쫀냐미 고라니",
       "text": "소싱 필요 시 중국소싱 담당자(우인 등)에게 요청",
       "source_ts": "1777341067.535579",
+      "done": false
+    },
+    {
+      "id": 13,
+      "assignee": "건희",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "",
+      "text": "렌티큘러 50매 공급가 확인 (제작 단가: 820원, 수량: 50매 기준 특전용)",
+      "source_ts": "1777340059.107089",
+      "done": false
+    },
+    {
+      "id": 14,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "민수달",
+      "text": "작가님께 유리창 시트지 작업 가이드, 키캡 작업가이드 전달",
+      "source_ts": "1777353855.152619",
+      "done": false
+    },
+    {
+      "id": 15,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "옌룡",
+      "text": "랜덤tv 캔뱃지 소문자 tv로 수정",
+      "source_ts": "1777366731.734369",
+      "done": false,
+      "evidence": "[자동] 준태: [옌룡] 랜덤tv 캔뱃지 소문자 tv 부탁드립니다 [✅ 윤하]"
+    },
+    {
+      "id": 16,
+      "assignee": "윤하",
+      "channel": "03-카카오엔터_웹툰_쫀냐미_고라니",
+      "channel_id": "C0ALWG29TB7",
+      "project": "카카오엔터_웹툰_쫀냐미_고라니",
+      "text": "그립톡 부자재 문제 - 공장에 있는 모양 옵션 문의",
+      "source_ts": "1777340867.608349",
+      "done": false
+    },
+    {
+      "id": 17,
+      "assignee": "준태",
+      "channel": "00-announcement",
+      "channel_id": "C0AJ38GC9HB",
+      "project": "GPS",
+      "text": "사이트 기준 용어사전 재작성 후 파일 다시 전달",
+      "source_ts": "1777367387.741359",
       "done": false
     }
   ]
