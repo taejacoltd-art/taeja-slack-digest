@@ -825,7 +825,8 @@
       "channel": "onf_01_태자llm",
       "project": "태자llm",
       "text": "3채널 검색 결과를 RRF(Reciprocal Rank Fusion)로 합산해 최종 top-K 반환",
-      "done": false
+      "done": false,
+      "evidence": "[자동] 2026-04-22 12:37 성민: '3채널 검색 결과를 RRF(Reciprocal Rank Fusion)로 합산해 최종 top-K 반환 [✅ 건희,수혁]' - 체크마크로 완료 표시"
     },
     {
       "id": 8,
