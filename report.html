@@ -142,6 +142,15 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
 .person-chip:hover{border-color:#d1d1d6;background:#f0f0f2}
 .person-chip.active{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
 
+/* Todo bulk action bar */
+.todo-bulk-bar{display:flex;gap:6px;padding:8px 12px 0}
+.todo-bulk-bar button{flex:1;font-size:11px;font-weight:600;padding:7px;border:1px solid #d1d1d6;background:#f9f9fb;border-radius:7px;cursor:pointer;color:#424245;transition:all .15s}
+.todo-bulk-bar button:hover{background:#eef0ff;border-color:#c7c7cc;color:#1d1d1f}
+.todo-bulk-bar button.primary{background:#34c759;border-color:#34c759;color:#fff}
+.todo-bulk-bar button.primary:hover{background:#28a745;border-color:#28a745;color:#fff}
+.todo-select{width:14px;height:14px;flex-shrink:0;margin-top:4px;cursor:pointer;accent-color:#34c759}
+.todo-item.done .todo-select{visibility:hidden}
+
 /* Todo Items */
 .todo-list{flex:1;overflow-y:auto;padding:8px 12px}
 .todo-list::-webkit-scrollbar{width:4px}
@@ -289,6 +298,10 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
       <button class="view-btn" data-view="done">전체 완료</button>
     </div>
     <div class="person-filter" id="personFilter"></div>
+    <div class="todo-bulk-bar">
+      <button id="bulkDoneSelected" title="체크박스로 선택한 할일을 일괄 완료처리">선택 완료</button>
+      <button id="bulkDoneAll" class="primary" title="현재 보이는 모든 미완료 할일을 일괄 완료처리">전체 완료</button>
+    </div>
     <div class="todo-list" id="todoList"></div>
   </div>
 
@@ -564,7 +577,33 @@ async function init() {
     renderTodos();
   };
 
+  // Bulk done — 선택 완료 / 전체 완료
+  document.getElementById('bulkDoneSelected').onclick = () => bulkDone('selected');
+  document.getElementById('bulkDoneAll').onclick = () => bulkDone('all');
+
   appReady = true;
+}
+
+async function bulkDone(mode) {
+  const list = document.getElementById('todoList');
+  let items;
+  if (mode === 'selected') {
+    items = Array.from(list.querySelectorAll('.todo-select:checked'))
+      .map(cb => cb.closest('.todo-item'))
+      .filter(it => it && !it.classList.contains('done'));
+    if (items.length === 0) { alert('선택된 할일이 없습니다. 좌측 체크박스로 먼저 선택해주세요.'); return; }
+    if (!confirm(`선택된 ${items.length}건을 완료처리할까요?`)) return;
+  } else {
+    items = Array.from(list.querySelectorAll('.todo-item:not(.done)'));
+    if (items.length === 0) { alert('미완료 할일이 없습니다.'); return; }
+    if (!confirm(`현재 보이는 미완료 ${items.length}건을 전부 완료처리할까요?`)) return;
+  }
+  items.forEach(item => {
+    const id = parseInt(item.dataset.id);
+    const dateKey = item.dataset.datekey || findTodoDate(id);
+    if (dateKey) fbSetDone(dateKey, id, true);
+  });
+  await renderTodos();
 }
 
 // ── Channel List ──
@@ -1150,6 +1189,7 @@ function todoItemHTML(t, dateKey) {
   }
   return `
     <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}" data-datekey="${dk}">
+      <input type="checkbox" class="todo-select" title="선택 (선택 완료 버튼으로 일괄 처리)" />
       <div class="todo-check"></div>
       <div class="todo-content">
         <div>
