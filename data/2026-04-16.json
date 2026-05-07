@@ -1182,14 +1182,6 @@
       "done": false
     },
     {
-      "id": 11,
-      "assignee": "규민",
-      "channel": "onf_01_태자llm",
-      "project": "차세린",
-      "text": "확정된 RAG md 작성가이드 참고하여 캐릭터 RAG md 작성",
-      "done": false
-    },
-    {
       "id": 12,
       "assignee": "성민",
       "channel": "onf_01_태자llm",

@@ -469,14 +469,6 @@
       "project": "KE삼성",
       "text": "임가공 완료 후 로지팩토리→CJ대구창고 박스갈이+발송, 운송장 공유",
       "done": false
-    },
-    {
-      "id": 222,
-      "assignee": "규민",
-      "channel": "onf_01_태자llm",
-      "project": "온더팬덤",
-      "text": "CHR RAG 서사(방송내용) 작성",
-      "done": false
     }
   ]
 }
