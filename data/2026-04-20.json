@@ -249,15 +249,6 @@
   },
   "todos": [
     {
-      "id": 1,
-      "assignee": "규민",
-      "channel": "contents_2_차세린",
-      "project": "차세린",
-      "text": "차주에 진행할 숏츠화 구간 2건 공유",
-      "done": false,
-      "evidence": "[자동] 규민(담당자)이 준태를 통해 [1] [2] 두 건의 숏츠화 구간을 구체적 내용(시간, 포인트, 편집방향, 레퍼런스)과 함께 공유"
-    },
-    {
       "id": 2,
       "assignee": "유민",
       "channel": "contents_2_차세린",
@@ -322,14 +313,6 @@
       "channel": "08-주간회의history",
       "project": "옌룡",
       "text": "이 외 샘플 완료 (금주 내)",
-      "done": false
-    },
-    {
-      "id": 10,
-      "assignee": "규민",
-      "channel": "contents_2_차세린",
-      "project": "차세린",
-      "text": "숏츠화 구간 2건 공유 (~21일까지)",
       "done": false
     },
     {
@@ -483,7 +466,6 @@
       "id": 28,
       "assignee": [
         "건희",
-        "규민",
         "준태",
         "윤하",
         "지수",
@@ -551,7 +533,6 @@
       "id": 35,
       "assignee": [
         "건희",
-        "규민",
         "준태",
         "윤하",
         "지수",
