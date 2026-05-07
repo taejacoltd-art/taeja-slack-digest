@@ -24,7 +24,6 @@ KST = timezone(timedelta(hours=9))
 USER_MAP = {
     "U0AJ4HXGG9L": "건희", "U0AJKJBRNP3": "준태",
     "U0AK0UW8XG8": "윤하", "U0AJA945KE0": "지수", "U0AMWE87M0B": "유민",
-    "U0AJ6LWHQKU": "성민", "U0AJKNTNBJM": "수혁",
 }
 
 CHANNELS = {
