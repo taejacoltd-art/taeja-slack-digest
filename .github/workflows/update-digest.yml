@@ -25,22 +25,15 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests anthropic
+        run: pip install requests
 
       - name: Fetch Slack data + update JSON
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         run: python scripts/fetch_and_update.py
 
-      - name: Generate summaries + extract todos
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/analyze_with_llm.py
-
-      - name: Auto-check completed todos (past 7 days)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/auto_check_done.py
+      - name: Generate summaries + extract todos (rule-based, no API cost)
+        run: python scripts/analyze_rules.py
 
       - name: Copy report.html to index.html
         run: cp report.html index.html
