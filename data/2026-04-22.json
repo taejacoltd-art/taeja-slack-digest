@@ -812,14 +812,6 @@
       "done": false
     },
     {
-      "id": 6,
-      "assignee": "성민",
-      "channel": "onf_01_태자llm",
-      "project": "태자llm",
-      "text": "API 서버에 RAG DB 1채널(pgvectorscale) 구현",
-      "done": false
-    },
-    {
       "id": 7,
       "assignee": "건희",
       "channel": "onf_01_태자llm",

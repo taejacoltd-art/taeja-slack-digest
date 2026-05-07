@@ -790,15 +790,5 @@
       "hasNew": true
     }
   },
-  "todos": [
-    {
-      "id": 106,
-      "assignee": "성민",
-      "channel": "contents_2_차세린",
-      "project": "차세린",
-      "text": "프롬프트 정리",
-      "done": true,
-      "evidence": "3/24 성민 \"프롬프트 정리했습니다. 참고해주세요!\" 파일 공유"
-    }
-  ]
+  "todos": []
 }

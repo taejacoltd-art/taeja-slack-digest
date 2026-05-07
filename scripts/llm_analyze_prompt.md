@@ -38,9 +38,9 @@ C0AJ087F3B5 → onf_uiux
 C0AN5UAE2EN → TAEJA DM
 ```
 
-## 담당자 (7명, 다른 이름은 todo 대상 X)
+## 담당자 (5명, 다른 이름은 todo 대상 X)
 
-건희, 준태, 윤하, 지수, 유민, 성민, 수혁
+건희, 준태, 윤하, 지수, 유민
 
 ## summary HTML 규칙 (매우 중요)
 
@@ -59,7 +59,7 @@ C0AN5UAE2EN → TAEJA DM
 
 ## todos 규칙
 
-- assignee: 위 7명 중 한 명(string) 또는 복수(array). `@here`/`@channel`이면 7명 전부 array
+- assignee: 위 5명 중 한 명(string) 또는 복수(array). `@here`/`@channel`이면 5명 전부 array
 - "부탁드립니다/확인부탁/전달부탁/공유부탁" 등 명시적 요청 → todo
 - 마감 키워드("오늘까지","내일","ASAP","급함","X일까지")는 text에 포함
 - 완료된 사안(파일/링크 전달 확인)은 todos에 추가 X
