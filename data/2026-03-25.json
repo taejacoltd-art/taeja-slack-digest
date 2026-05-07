@@ -17,15 +17,15 @@
       "hasNew": true,
       "fullLog": [
         {
-          "sender": "수혁",
+          "sender": "Soo",
           "time": "10:13",
-          "text": "온더팬덤 As-is와 Midterm관점 공유들비니다 향후 Longterm 아직 생각중 입니다 [파일: ONF_System Layer_오수혁(안).pptx] [✅ 건희,성민]",
+          "text": "온더팬덤 As-is와 Midterm관점 공유들비니다 향후 Longterm 아직 생각중 입니다 [파일: ONF_System Layer_오수혁(안).pptx] [✅ 건희,김성민]",
           "ts": "1774401229.895999"
         },
         {
           "sender": "건희",
           "time": "10:42",
-          "text": "Short+midterm\nDB 스키마 ㅡ 팀장님 아키텍쳐 기반/ 파인튜닝, 각 디비별 매칭 중심으로 아이디어 설계했습니다\n-MVP때부터 적용 필\n• 유저\n• 캐릭터\n• 실시간브로드캐스팅 [파일: IMG_7456.jpg] [파일: IMG_7455.jpg] [👀 성민,수혁]",
+          "text": "Short+midterm\nDB 스키마 ㅡ 팀장님 아키텍쳐 기반/ 파인튜닝, 각 디비별 매칭 중심으로 아이디어 설계했습니다\n-MVP때부터 적용 필\n• 유저\n• 캐릭터\n• 실시간브로드캐스팅 [파일: IMG_7456.jpg] [파일: IMG_7455.jpg] [👀 김성민,Soo]",
           "ts": "1774402957.190119"
         },
         {
@@ -76,7 +76,7 @@
     "C0AJ6NYLKT4": {
       "fullLog": [
         {
-          "sender": "수혁",
+          "sender": "Soo",
           "time": "10:14",
           "text": "↳ 이게 온톨로지로 구축되어야 하는겁니다 [✅ 준태]",
           "ts": "1774401282.295759"

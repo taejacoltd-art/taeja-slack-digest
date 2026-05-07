@@ -157,7 +157,7 @@
     "C0AQ0V3H4JV": {
       "fullLog": [
         {
-          "sender": "성민",
+          "sender": "김성민",
           "time": "17:00",
           "text": "@건희 엔티티 타입, 관계 문서 공유드립니다! [파일: entity_type_and_relation.md] [✅ 건희]",
           "ts": "1777449614.734009"
@@ -165,7 +165,7 @@
         {
           "sender": "건희",
           "time": "19:14",
-          "text": "↳ 전달드립니다!\n욕망 관련한 것만 1개 추가하였습니다.\n근거: 만약 ~하고싶어 라는 듯한 발화의 경우 related나 기타 라벨 로 애매하게 될 것 같아서? 입니다.\nex) 나 세린이 보고싶어 -\n\n-유저A 대화에선 - LIKES\n-유저B 대화에선 KNOWS\n-유저C 대화에선 RELATED_TO [파일: 추가1_Related_entity_type_and_relation.md] [✅ 성민]",
+          "text": "↳ 전달드립니다!\n욕망 관련한 것만 1개 추가하였습니다.\n근거: 만약 ~하고싶어 라는 듯한 발화의 경우 related나 기타 라벨 로 애매하게 될 것 같아서? 입니다.\nex) 나 세린이 보고싶어 -\n\n-유저A 대화에선 - LIKES\n-유저B 대화에선 KNOWS\n-유저C 대화에선 RELATED_TO [파일: 추가1_Related_entity_type_and_relation.md] [✅ 김성민]",
           "ts": "1777457679.514569"
         }
       ],
