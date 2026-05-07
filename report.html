@@ -148,10 +148,13 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f5f5f7;color:
 .todo-bulk-bar button:hover{background:#eef0ff;border-color:#c7c7cc;color:#1d1d1f}
 .todo-bulk-bar button.primary{background:#34c759;border-color:#34c759;color:#fff}
 .todo-bulk-bar button.primary:hover{background:#28a745;border-color:#28a745;color:#fff}
-.todo-select{width:14px;height:14px;flex-shrink:0;margin-top:4px;cursor:pointer;accent-color:#34c759}
+.todo-select{width:16px;height:16px;flex-shrink:0;margin-top:3px;border:1.5px solid #d1d1d6;border-radius:4px;background:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .15s;user-select:none;-webkit-user-select:none}
+.todo-select:hover{border-color:#86868b;background:#f9f9fb}
+.todo-select.checked{background:#34c759;border-color:#34c759}
+.todo-select.checked::after{content:'✓';color:#fff;font-size:11px;font-weight:700;line-height:1}
 .todo-item.done .todo-select{visibility:hidden}
 .todo-list.dragging,.todo-list.dragging *{user-select:none;-webkit-user-select:none}
-.todo-list.dragging .todo-item{cursor:cell}
+.todo-list.dragging{cursor:cell}
 
 /* Todo Items */
 .todo-list{flex:1;overflow-y:auto;padding:8px 12px}
@@ -594,15 +597,24 @@ function bindDragSelect() {
   let dragMode = null; // 'check' | 'uncheck'
   const touched = new Set();
 
+  function setChecked(cb, val) {
+    cb.classList.toggle('checked', val);
+    cb.setAttribute('aria-checked', val ? 'true' : 'false');
+  }
+  function isChecked(cb) {
+    return cb.classList.contains('checked');
+  }
+
   list.addEventListener('mousedown', (e) => {
     if (e.button !== 0) return;
-    const cb = e.target;
-    if (!cb.classList || !cb.classList.contains('todo-select')) return;
+    const cb = e.target.closest('.todo-select');
+    if (!cb) return;
     const item = cb.closest('.todo-item');
     if (!item || item.classList.contains('done')) return;
     e.preventDefault();
-    cb.checked = !cb.checked;
-    dragMode = cb.checked ? 'check' : 'uncheck';
+    const newVal = !isChecked(cb);
+    setChecked(cb, newVal);
+    dragMode = newVal ? 'check' : 'uncheck';
     touched.clear();
     touched.add(item.dataset.id);
     list.classList.add('dragging');
@@ -616,7 +628,7 @@ function bindDragSelect() {
     if (touched.has(item.dataset.id)) return;
     const cb = item.querySelector('.todo-select');
     if (cb) {
-      cb.checked = (dragMode === 'check');
+      setChecked(cb, dragMode === 'check');
       touched.add(item.dataset.id);
     }
   });
@@ -626,17 +638,17 @@ function bindDragSelect() {
     dragMode = null;
   };
   document.addEventListener('mouseup', endDrag);
-  document.addEventListener('mouseleave', endDrag);
+  window.addEventListener('blur', endDrag);
 }
 
 async function bulkDone(mode) {
   const list = document.getElementById('todoList');
   let items;
   if (mode === 'selected') {
-    items = Array.from(list.querySelectorAll('.todo-select:checked'))
+    items = Array.from(list.querySelectorAll('.todo-select.checked'))
       .map(cb => cb.closest('.todo-item'))
       .filter(it => it && !it.classList.contains('done'));
-    if (items.length === 0) { alert('선택된 할일이 없습니다. 좌측 체크박스로 먼저 선택해주세요.'); return; }
+    if (items.length === 0) { alert('선택된 할일이 없습니다. 좌측 체크박스(드래그 가능) 로 먼저 선택해주세요.'); return; }
     if (!confirm(`선택된 ${items.length}건을 완료처리할까요?`)) return;
   } else {
     items = Array.from(list.querySelectorAll('.todo-item:not(.done)'));
@@ -1234,7 +1246,7 @@ function todoItemHTML(t, dateKey) {
   }
   return `
     <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}" data-datekey="${dk}">
-      <input type="checkbox" class="todo-select" title="선택 (선택 완료 버튼으로 일괄 처리)" />
+      <div class="todo-select" role="checkbox" aria-checked="false" title="선택 (드래그·클릭 → 선택 완료 버튼으로 일괄 처리)"></div>
       <div class="todo-check"></div>
       <div class="todo-content">
         <div>
