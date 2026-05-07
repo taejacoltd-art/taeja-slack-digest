@@ -25,22 +25,19 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests anthropic
+        run: pip install requests
 
       - name: Fetch Slack data + update JSON
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         run: python scripts/fetch_and_update.py
 
-      - name: Generate summaries + extract todos
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/analyze_with_llm.py
-
-      - name: Auto-check completed todos (past 7 days)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/auto_check_done.py
+      - name: Generate summaries + extract todos (Claude Code Action)
+        uses: anthropics/claude-code-base-action@beta
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_tools: "Read,Edit,Write,Glob"
+          prompt_file: scripts/llm_analyze_prompt.md
 
       - name: Copy report.html to index.html
         run: cp report.html index.html
