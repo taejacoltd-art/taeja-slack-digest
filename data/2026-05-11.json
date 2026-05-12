@@ -657,7 +657,10 @@
     },
     {
       "id": 6,
-      "assignee": ["윤하", "지수"],
+      "assignee": [
+        "윤하",
+        "지수"
+      ],
       "channel": "01-pb_마성의팍스",
       "channel_id": "C0AM3GBFPGU",
       "project": "마성의팍스",
@@ -677,7 +680,11 @@
     },
     {
       "id": 8,
-      "assignee": ["윤하", "지수", "유민"],
+      "assignee": [
+        "윤하",
+        "지수",
+        "유민"
+      ],
       "channel": "01-pb_마성의팍스",
       "channel_id": "C0AM3GBFPGU",
       "project": "마성의팍스",
@@ -697,7 +704,10 @@
     },
     {
       "id": 10,
-      "assignee": ["건희", "준태"],
+      "assignee": [
+        "건희",
+        "준태"
+      ],
       "channel": "contents_민수달",
       "channel_id": "C0AJU22MXMJ",
       "project": "민수달",
@@ -707,7 +717,10 @@
     },
     {
       "id": 11,
-      "assignee": ["준태", "유민"],
+      "assignee": [
+        "준태",
+        "유민"
+      ],
       "channel": "TAEJA DM",
       "channel_id": "C0AN5UAE2EN",
       "project": "패러블",
