@@ -70,7 +70,7 @@
         {
           "sender": "유민",
           "time": "12:32",
-          "text": "↳ 차세린 영상 전달드립니다! [파일: 차세린10 -260513.mp4] [파일: 차세린9-260513.mp4] [✅ 준태]",
+          "text": "↳ 차세린 영상 전달드립니다! [파일: 차세린10 -260513.mp4] [파일: 차세린9-260513.mp4] [✅ 준태]",
           "ts": "1778643154.845459"
         },
         {
@@ -82,7 +82,7 @@
         {
           "sender": "유민",
           "time": "14:19",
-          "text": "↳ 빨간코 수정 영상 공유드립니다! [파일: 차세린9 -260513.mp4] [✅ 준태]",
+          "text": "↳ 빨간코 수정 영상 공유드립니다! [파일: 차세린9 -260513.mp4] [✅ 준태]",
           "ts": "1778649580.946559"
         },
         {
@@ -193,6 +193,18 @@
           "time": "14:07",
           "text": "↳ <tel:4108-6991-5190|4108-6991-5190> 롯데택배\n\n@윤하 윤하님\n담당자분께 전달 부탁드립니다 ! [:bow: 윤하]",
           "ts": "1778648867.500319"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:09",
+          "text": "@건희\n옌룡 캔뱃지 업데이트드립니다.\n\n*패러블 공급가*\n2차 샘플비: 60,000원\n공급가: 1,700원\n\n*실제 매입단가 (VAT별도)*\n샘플비: X\n인쇄비: 4만원\n조립비: 1,000원",
+          "ts": "1778666980.377779"
+        },
+        {
+          "sender": "윤하",
+          "time": "19:09",
+          "text": "↳ @건희\n옌룡 캔뱃지 업데이트드립니다.\n\n*패러블 공급가*\n2차 샘플비: 60,000원\n공급가: 1,700원\n\n*실제 매입단가 (VAT별도)*\n샘플비: X\n인쇄비: 4만원\n조립비: 1,000원",
+          "ts": "1778666980.377779"
         }
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 꼬리쿠션 제작 지연 및 월요일 14시 완료 예정 공지</div><ul class=\"sum-bullets\"><li>재단 오류로 미니 인형 키링 자재 재작업 필요</li><li><span class=\"person\">준태</span>: 증지·캔뱃지·스티커 택배 포장 완료, 업체 주소 요청</li><li>물류 발송: 한진택배 462354948941 (마다옴 키캡), AGH 주소 전달</li></ul>",
@@ -240,7 +252,21 @@
           "text": "↳ 이 파일만 확인됩니다!",
           "ts": "1778665129.380779"
         }
-      ]
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 <span class=\"person\">윤하</span>에게 마우스장패드 스티커파일 제공 내역 문의</div>",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "18:15",
+          "text": "↳ @윤하 마우스장패드 스티커파일 줬다고하는데 일전에 내역이 있나요?"
+        },
+        {
+          "sender": "윤하",
+          "time": "18:38",
+          "text": "↳ 이 파일만 확인됩니다!"
+        }
+      ],
+      "hasNew": true
     },
     "C0AN5UAE2EN": {
       "fullLog": [
@@ -295,7 +321,7 @@
         {
           "sender": "윤하",
           "time": "18:37",
-          "text": "↳  [파일: image.png]",
+          "text": "↳  [파일: image.png] [👀 윤하]",
           "ts": "1778665024.802819"
         },
         {
@@ -310,51 +336,117 @@
           "text": "↳ 준태님 이 파일로 업로드 테스트만 부탁드려요! [파일: 2---260513-0-ezgif.com-optimize (1).gif]",
           "ts": "1778665447.089369"
         }
-      ]
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">준태</span>가 패러블 닌닌 상세페이지 GIF 삽입 작업 요청</div><ul class=\"sum-bullets\"><li><span class=\"person\">윤하</span>: <span class=\"person\">유민</span>에게 GIF 제작 작업 지시</li><li><span class=\"person\">지수</span>: 마다옴 키캡 고정 스펀지 착불 발송</li><li><span class=\"person\">윤하</span>: 닌닌 상세페이지 이미지 고객사 컨펌 요청</li></ul>",
+      "messages": [
+        {
+          "sender": "준태",
+          "time": "14:32",
+          "text": "@윤하 @지수\n@유민\n&lt;패러블 요청사항&gt;\n• 닌닌 상세페이지 GIF 삽입요청\n• (혹시 닌닌 레이아웃에 맞춰서 영상 및 TEXT 삽입 후 GIF 제작이 가능할까요?) [파일: 닌닌 GIF 삽입 요청.zip] [파일: image.png]"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:33",
+          "text": "↳ @유민 유민님, 해당건 진행 부탁드립니다!"
+        },
+        {
+          "sender": "지수",
+          "time": "14:47",
+          "text": "마다옴 키캡 고정 스펀지 금일 착불로 발송되었습니다! [파일: image.png] [파일: image.png] [✅ 준태]"
+        },
+        {
+          "sender": "윤하",
+          "time": "17:50",
+          "text": "↳ 준태님, 해당 이미지로 고객사 컨펌 우선 가능할까요? [파일: [상세페이지]-닌닌-상세페이지.png] [파일: [상세페이지]-닌닌-상세페이지2.png] [✅ 준태]"
+        },
+        {
+          "sender": "윤하",
+          "time": "18:44",
+          "text": "↳ 준태님 이 파일로 업로드 테스트만 부탁드려요! [파일: 2---260513-0-ezgif.com-optimize (1).gif]"
+        }
+      ],
+      "hasNew": true
     }
   },
   "todos": [
     {
-      "id": 1,
+      "id": 5,
       "assignee": "건희",
       "channel": "01-pb_마성의팍스",
       "channel_id": "C0AM3GBFPGU",
       "project": "마성의팍스",
-      "text": "킬러카드 이미지 수정 전 → 수정 후 반영 상태 확인",
-      "source_ts": "1778640855.703299",
+      "text": "팍스 작가님 샘플 퀵 서비스 회수 진행",
+      "source_ts": "1778640326.733299",
       "done": false
     },
     {
-      "id": 2,
-      "assignee": "유민",
-      "channel": "contents_2_차세린",
-      "channel_id": "C0AJ6NYLKT4",
-      "project": "차세린",
-      "text": "차세린 영상 빨간코 수정 작업",
-      "source_ts": "1778643907.492439",
-      "done": false
-    },
-    {
-      "id": 3,
+      "id": 6,
       "assignee": "건희",
       "channel": "02-카카오엔터_삼성",
       "channel_id": "C0ALWFZQMTP",
       "project": "삼성와펜",
-      "text": "신규 리유저블백 카톤박스 상품 코드, 모델명, 바코드 유무 확인",
+      "text": "신규 리유저블백 카톤박스 상품 코드, 모델명, 바코드 유무 확인 부탁드립니다",
       "source_ts": "1778641283.029759",
       "done": false
     },
     {
-      "id": 4,
-      "assignee": [
-        "건희",
-        "준태"
-      ],
+      "id": 7,
+      "assignee": "준태",
       "channel": "07-발주-임가공",
       "channel_id": "C0APK7RF82J",
       "project": "발주",
-      "text": "꼬리쿠션 납기 지연 - 월요일 14시 완료 예정 일정 확인",
-      "source_ts": "1778637655.932139",
+      "text": "증지, 캔뱃지, 스티커 택배 발송 업체 주소 필요",
+      "source_ts": "1778639064.606739",
+      "done": false
+    },
+    {
+      "id": 8,
+      "assignee": "윤하",
+      "channel": "07-발주-임가공",
+      "channel_id": "C0APK7RF82J",
+      "project": "발주",
+      "text": "롯데택배 4108-6991-5190 담당자분께 전달 부탁드립니다",
+      "source_ts": "1778648867.500319",
+      "done": false
+    },
+    {
+      "id": 9,
+      "assignee": "유민",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "닌닌 상세페이지 GIF 삽입 작업 진행 부탁드립니다",
+      "source_ts": "1778650395.318029",
+      "done": false
+    },
+    {
+      "id": 10,
+      "assignee": "준태",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "윤하님 닌닌 상세페이지 이미지로 고객사 컨펌 우선 가능할까요?",
+      "source_ts": "1778662226.645989",
+      "done": false
+    },
+    {
+      "id": 11,
+      "assignee": "준태",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "세트 페이지 업로드 문제 없는지 확인 부탁드릴게요",
+      "source_ts": "1778665035.301769",
+      "done": false
+    },
+    {
+      "id": 12,
+      "assignee": "준태",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "2---260513-0-ezgif.com-optimize (1).gif 파일로 업로드 테스트만 부탁드려요",
+      "source_ts": "1778665447.089369",
       "done": false
     }
   ]
