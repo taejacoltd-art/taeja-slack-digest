@@ -1246,8 +1246,6 @@ function todoItemHTML(t, dateKey) {
   }
   return `
     <div class="todo-item${t.done ? ' done' : ''}" data-id="${t.id}" data-datekey="${dk}">
-      <div class="todo-select" role="checkbox" aria-checked="false" title="선택 (드래그·클릭 → 선택 완료 버튼으로 일괄 처리)"></div>
-      <div class="todo-check"></div>
       <div class="todo-content">
         <div>
           <span class="todo-channel">#${t.channel}</span>
@@ -1259,6 +1257,8 @@ function todoItemHTML(t, dateKey) {
         ${actions}
       </div>
       <button class="todo-edit" data-edit="${t.id}" title="수정">&#9998;</button>
+      <div class="todo-select" role="checkbox" aria-checked="false" title="선택 (드래그·클릭 → 선택 완료 버튼으로 일괄 처리)"></div>
+      <div class="todo-check"></div>
     </div>`;
 }
 
