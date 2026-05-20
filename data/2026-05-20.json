@@ -7,11 +7,107 @@
           "time": "11:12",
           "text": "안녕하세요. 모니터링 검수해야한다고 해서, 혹시나 상품 되는대로 전달주시면 업로드 하겠습니다 [✅ 지수]",
           "ts": "1779243132.555899"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:57",
+          "text": " [파일: image.png]",
+          "ts": "1779256651.193279"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:58",
+          "text": "@건희\n대표님, 이미지 수정 필요한 품목들 공유폴더에 업로드하였습니다.\n\n4,6,7번 상세페이지 수정 부탁드립니다!",
+          "ts": "1779256687.999029"
+        },
+        {
+          "sender": "건희",
+          "time": "16:10",
+          "text": "↳ 오 최종인가요? 작가님 4시에 보내주셨던 상품도 있어서..",
+          "ts": "1779261046.056899"
+        },
+        {
+          "sender": "윤하",
+          "time": "16:11",
+          "text": "↳ 대표님, 혹시 상세페이지 확인 가능한 링크가 있을까요?\n\n작가님께서 시안 확인 후 피드백 사항이 추가로 있을 수 있어\n피드백 확인 후 일괄 업로드하려고합니다!",
+          "ts": "1779261096.675559"
+        },
+        {
+          "sender": "건희",
+          "time": "16:12",
+          "text": "↳ https://gift.kakao.com/product/13595158",
+          "ts": "1779261135.340459"
+        },
+        {
+          "sender": "건희",
+          "time": "16:12",
+          "text": "↳ 이거보이시나요??",
+          "ts": "1779261138.376069"
+        },
+        {
+          "sender": "윤하",
+          "time": "16:16",
+          "text": "↳ 넵 보입니다!",
+          "ts": "1779261419.986079"
+        },
+        {
+          "sender": "건희",
+          "time": "16:18",
+          "text": "↳ 1.팍스&amp;여부 담요 https://gift.kakao.com/product/13595158\n2. 팍스인형볼펜+키캡SET https://gift.kakao.com/product/13595213https://gift.kakao.com/product/13595213\n3. 팍스&amp;여부 쿠션 담요 세트 https://gift.kakao.com/product/13595191\n4. 꼬질 팍스 인형 볼펜 https://gift.kakao.com/product/13595180\n5. [마성의팍스] 꼬질 팍스쿠션 https://gift.kakao.com/product/13595173\n6. [마성의팍스] 팍스&amp;여부 키캡 https://gift.kakao.com/product/13595089\n7. [마성의팍스] 돈버는 노트+스티커 세트 https://gift.kakao.com/product/13594768 [✅ 지수,유민]",
+          "ts": "1779261537.474619"
+        },
+        {
+          "sender": "건희",
+          "time": "16:19",
+          "text": "↳ @윤하 @지수 @유민",
+          "ts": "1779261545.364049"
+        },
+        {
+          "sender": "지수",
+          "time": "18:30",
+          "text": "↳ @건희 대표님, 작가님 보정본 수정 페이지도 올려두었습니다. 3,5번 상세페이지도 수정 부탁드립니다!",
+          "ts": "1779269405.833969"
+        },
+        {
+          "sender": "지수",
+          "time": "19:04",
+          "text": "↳ 대표님, 1p(공통) 판매일정이 잘못 표기되어 수정하였습니다 수정 부탁드립니다 번거롭게 해드려 죄송합니다 ㅠㅠ!! @건희 [파일: image.png]",
+          "ts": "1779271487.434909"
+        },
+        {
+          "sender": "지수",
+          "time": "19:06",
+          "text": "@건희 기획전 페이지도 판매 일정(요일)이 잘못 표기되어 수정하여 전달드립니다 :smiling_face_with_tear: [파일: [카카오]-마성의팍스-기획전페이지-260518-0.png]",
+          "ts": "1779271605.575879"
         }
       ],
-      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 모니터링 검수용 상품 전달 요청 — 업로드 준비 완료</div>",
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 상품 이미지 수정 요청 — 4,6,7번 상세페이지 수정 필요</div><ul class=\"sum-bullets\"><li><span class=\"person\">건희</span> 7개 상품 링크 공유</li><li><span class=\"person\">지수</span> 3,5번 보정본 추가 및 판매일정 수정 요청</li></ul>",
       "messages": [
-        {"sender": "건희", "time": "11:12", "text": "안녕하세요. 모니터링 검수해야한다고 해서, 혹시나 상품 되는대로 전달주시면 업로드 하겠습니다 [✅ 지수]"}
+        {
+          "sender": "건희",
+          "time": "11:12",
+          "text": "안녕하세요. 모니터링 검수해야한다고 해서, 혹시나 상품 되는대로 전달주시면 업로드 하겠습니다 [✅ 지수]"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:58",
+          "text": "@건희\n대표님, 이미지 수정 필요한 품목들 공유폴더에 업로드하였습니다.\n\n4,6,7번 상세페이지 수정 부탁드립니다!"
+        },
+        {
+          "sender": "건희",
+          "time": "16:18",
+          "text": "↳ 1.팍스&여부 담요 https://gift.kakao.com/product/13595158\n2. 팍스인형볼펜+키캡SET https://gift.kakao.com/product/13595213https://gift.kakao.com/product/13595213\n3. 팍스&여부 쿠션 담요 세트 https://gift.kakao.com/product/13595191\n4. 꼬질 팍스 인형 볼펜 https://gift.kakao.com/product/13595180\n5. [마성의팍스] 꼬질 팍스쿠션 https://gift.kakao.com/product/13595173\n6. [마성의팍스] 팍스&여부 키캡 https://gift.kakao.com/product/13595089\n7. [마성의팍스] 돈버는 노트+스티커 세트 https://gift.kakao.com/product/13594768 [✅ 지수,유민]"
+        },
+        {
+          "sender": "지수",
+          "time": "18:30",
+          "text": "↳ @건희 대표님, 작가님 보정본 수정 페이지도 올려두었습니다. 3,5번 상세페이지도 수정 부탁드립니다!"
+        },
+        {
+          "sender": "지수",
+          "time": "19:04",
+          "text": "↳ 대표님, 1p(공통) 판매일정이 잘못 표기되어 수정하였습니다 수정 부탁드립니다 번거롭게 해드려 죄송합니다 ㅠㅠ!! @건희 [파일: image.png]"
+        }
       ],
       "hasNew": true
     },
@@ -26,7 +122,49 @@
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 차세린 2주간 방송내역 전달 — 5.4일부터 정규방송 정리</div>",
       "messages": [
-        {"sender": "건희", "time": "09:36", "text": "5.4~부터 2주간 - 방송내역입니다 (유투브 참고) [파일: 스트리머 차세린 정규방송 정리_김형진.docx] [✅ 유민]"}
+        {
+          "sender": "건희",
+          "time": "09:36",
+          "text": "5.4~부터 2주간 - 방송내역입니다 (유투브 참고) [파일: 스트리머 차세린 정규방송 정리_김형진.docx] [✅ 유민]"
+        }
+      ],
+      "hasNew": true
+    },
+    "C0APK7RF82J": {
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "17:45",
+          "text": "↳ @건희\n위에 뢴트게늄 단가 올려드렸습니다!",
+          "ts": "1779266737.336129"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 뢴트게늄 단가 자료 전달 완료</div>",
+      "messages": [
+        {
+          "sender": "윤하",
+          "time": "17:45",
+          "text": "↳ @건희\n위에 뢴트게늄 단가 올려드렸습니다!"
+        }
+      ],
+      "hasNew": true
+    },
+    "C0AN5UAE2EN": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "17:37",
+          "text": " [파일: image.png]",
+          "ts": "1779266277.408459"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 이미지 파일 공유</div>",
+      "messages": [
+        {
+          "sender": "건희",
+          "time": "17:37",
+          "text": " [파일: image.png]"
+        }
       ],
       "hasNew": true
     }
@@ -40,6 +178,36 @@
       "project": "마성의팍스",
       "text": "모니터링 검수용 상품 전달 요청",
       "source_ts": "1779243132.555899",
+      "done": false
+    },
+    {
+      "id": 2,
+      "assignee": "건희",
+      "channel": "01-pb_마성의팍스",
+      "channel_id": "C0AM3GBFPGU",
+      "project": "마성의팍스",
+      "text": "4,6,7번 상세페이지 수정 부탁드립니다",
+      "source_ts": "1779256687.999029",
+      "done": false
+    },
+    {
+      "id": 3,
+      "assignee": "건희",
+      "channel": "01-pb_마성의팍스",
+      "channel_id": "C0AM3GBFPGU",
+      "project": "마성의팍스",
+      "text": "3,5번 상세페이지도 수정 부탁드립니다",
+      "source_ts": "1779269405.833969",
+      "done": false
+    },
+    {
+      "id": 4,
+      "assignee": "건희",
+      "channel": "01-pb_마성의팍스",
+      "channel_id": "C0AM3GBFPGU",
+      "project": "마성의팍스",
+      "text": "1p(공통) 판매일정 수정 부탁드립니다",
+      "source_ts": "1779271487.434909",
       "done": false
     }
   ]
