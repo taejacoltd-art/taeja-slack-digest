@@ -1,0 +1,46 @@
+{
+  "channels": {
+    "C0AM3GBFPGU": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "11:12",
+          "text": "안녕하세요. 모니터링 검수해야한다고 해서, 혹시나 상품 되는대로 전달주시면 업로드 하겠습니다 [✅ 지수]",
+          "ts": "1779243132.555899"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 모니터링 검수용 상품 전달 요청 — 업로드 준비 완료</div>",
+      "messages": [
+        {"sender": "건희", "time": "11:12", "text": "안녕하세요. 모니터링 검수해야한다고 해서, 혹시나 상품 되는대로 전달주시면 업로드 하겠습니다 [✅ 지수]"}
+      ],
+      "hasNew": true
+    },
+    "C0AJ6NYLKT4": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "09:36",
+          "text": "5.4~부터 2주간 - 방송내역입니다 (유투브 참고) [파일: 스트리머 차세린 정규방송 정리_김형진.docx] [✅ 유민]",
+          "ts": "1779237360.355249"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 차세린 2주간 방송내역 전달 — 5.4일부터 정규방송 정리</div>",
+      "messages": [
+        {"sender": "건희", "time": "09:36", "text": "5.4~부터 2주간 - 방송내역입니다 (유투브 참고) [파일: 스트리머 차세린 정규방송 정리_김형진.docx] [✅ 유민]"}
+      ],
+      "hasNew": true
+    }
+  },
+  "todos": [
+    {
+      "id": 1,
+      "assignee": "지수",
+      "channel": "01-pb_마성의팍스",
+      "channel_id": "C0AM3GBFPGU",
+      "project": "마성의팍스",
+      "text": "모니터링 검수용 상품 전달 요청",
+      "source_ts": "1779243132.555899",
+      "done": false
+    }
+  ]
+}
