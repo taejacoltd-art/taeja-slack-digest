@@ -713,6 +713,46 @@
       "text": "옌룡 캔뱃지 샘플 금일 업데이트",
       "source_ts": "1779343314.231739",
       "done": false
+    },
+    {
+      "id": 7,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "옌룡 렌티큘러 특전 컨펌 요청",
+      "source_ts": "1779343314.231739",
+      "done": false
+    },
+    {
+      "id": 8,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "뢴트게늄 페이스쿠션 컬러 및 자수 진행 단가 확인",
+      "source_ts": "1779343314.231739",
+      "done": false
+    },
+    {
+      "id": 9,
+      "assignee": "윤하",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "유키라 아크릴 품목 국내 샘플 진행 여부 확인",
+      "source_ts": "1779343314.231739",
+      "done": false
+    },
+    {
+      "id": 10,
+      "assignee": "건희",
+      "channel": "TAEJA DM",
+      "channel_id": "C0AN5UAE2EN",
+      "project": "패러블",
+      "text": "패러블 전용 채널 생성 검토",
+      "source_ts": "1779343371.194319",
+      "done": false
     }
   ]
 }
