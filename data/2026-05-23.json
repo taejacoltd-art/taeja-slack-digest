@@ -11,7 +11,11 @@
       ],
       "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 민수달 채널에 이미지 4개 공유</div>",
       "messages": [
-        {"sender": "건희", "time": "06:36", "text": " [파일: IMG_8133.jpg] [파일: IMG_8129.jpg] [파일: IMG_8132.jpg] [파일: IMG_8127.jpg]"}
+        {
+          "sender": "건희",
+          "time": "06:36",
+          "text": " [파일: IMG_8133.jpg] [파일: IMG_8129.jpg] [파일: IMG_8132.jpg] [파일: IMG_8127.jpg]"
+        }
       ],
       "hasNew": true
     }
