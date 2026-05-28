@@ -434,7 +434,10 @@
     },
     {
       "id": 4,
-      "assignee": ["준태", "유민"],
+      "assignee": [
+        "준태",
+        "유민"
+      ],
       "channel": "contents_민수달",
       "channel_id": "C0AJU22MXMJ",
       "project": "민수달",

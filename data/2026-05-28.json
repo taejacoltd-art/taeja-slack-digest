@@ -1,0 +1,111 @@
+{
+  "channels": {
+    "C0AM3GBFPGU": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "14:07",
+          "text": " [파일: bc2d3c0a21af9356beb77a7d63fa72c6.jpg]",
+          "ts": "1779944872.832259"
+        },
+        {
+          "sender": "건희",
+          "time": "14:07",
+          "text": "이쁘게생긴듯.. 다 반영된거죠? :slightly_smiling_face: ㅋ [🙌 윤하]",
+          "ts": "1779944874.917389"
+        },
+        {
+          "sender": "윤하",
+          "time": "14:08",
+          "text": "↳ 넵 모든 수정사항 반영된 최종 제품입니다!",
+          "ts": "1779944909.347959"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 마성의팍스 최종 제품 반영 완료</div>",
+      "messages": [
+        {"sender": "건희", "time": "14:07", "text": "이쁘게생긴듯.. 다 반영된거죠? :slightly_smiling_face: ㅋ"},
+        {"sender": "윤하", "time": "14:08", "text": "↳ 넵 모든 수정사항 반영된 최종 제품입니다!"}
+      ],
+      "hasNew": true
+    },
+    "C0APK7RF82J": {
+      "fullLog": [
+        {
+          "sender": "윤하",
+          "time": "14:05",
+          "text": "↳ 캔뱃지 본품 협의단가\nvat 제외 1,700원입니다.",
+          "ts": "1779944716.411609"
+        },
+        {
+          "sender": "준태",
+          "time": "14:06",
+          "text": "↳ 대표님 과거 오마이 진행 시, opp 포장 : 개당 550원 받았기 때문에\n\n디앤피가 더 저렴한 것 같습니다 ! [파일: image.png]",
+          "ts": "1779944766.224879"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">윤하</span>가 캔뱃지 단가 1,700원(VAT제외) 협의, <span class=\"person\">준태</span>가 디앤피 업체 550원으로 더 저렴하다고 분석</div>",
+      "messages": [
+        {"sender": "윤하", "time": "14:05", "text": "↳ 캔뱃지 본품 협의단가\nvat 제외 1,700원입니다."},
+        {"sender": "준태", "time": "14:06", "text": "↳ 대표님 과거 오마이 진행 시, opp 포장 : 개당 550원 받았기 때문에\n\n디앤피가 더 저렴한 것 같습니다 !"}
+      ],
+      "hasNew": true
+    },
+    "C0AJ0DKH22F": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "10:50",
+          "text": "이 메시지는 상호작용 요소가 포함되어 있습니다.",
+          "ts": "1779933002.296039"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 상호작용 요소 메시지 전송</div>",
+      "messages": [
+        {"sender": "건희", "time": "10:50", "text": "이 메시지는 상호작용 요소가 포함되어 있습니다."}
+      ],
+      "hasNew": true
+    },
+    "C0AN5UAE2EN": {
+      "fullLog": [
+        {
+          "sender": "건희",
+          "time": "13:45",
+          "text": "@유민 하디아 쿠션/파우치는 자수가 있나요? 뢴트대비",
+          "ts": "1779943529.770829"
+        },
+        {
+          "sender": "유민",
+          "time": "13:50",
+          "text": "↳ 이목구비 자수로 들어가며 뢴트게늄과 유사해 보입니다!",
+          "ts": "1779943818.585249"
+        },
+        {
+          "sender": "건희",
+          "time": "13:50",
+          "text": "↳ 파우치도 동일이죠?!",
+          "ts": "1779943839.415359"
+        },
+        {
+          "sender": "유민",
+          "time": "13:51",
+          "text": "↳ 넵 !",
+          "ts": "1779943863.973369"
+        },
+        {
+          "sender": "준태",
+          "time": "14:08",
+          "text": "↳ @건희\n민호님에게 해당 내용 전달했습니다 ㅠ [파일: image.png] [✅ 건희]",
+          "ts": "1779944911.285049"
+        }
+      ],
+      "summary": "<div class=\"sum-headline\"><span class=\"person\">건희</span>가 하디아 쿠션/파우치 자수 문의, <span class=\"person\">유민</span>이 뢴트게늄과 유사하게 이목구비 자수 확인</div><ul class=\"sum-bullets\"><li><span class=\"person\">준태</span>가 민호님에게 내용 전달 완료</li></ul>",
+      "messages": [
+        {"sender": "건희", "time": "13:45", "text": "@유민 하디아 쿠션/파우치는 자수가 있나요? 뢴트대비"},
+        {"sender": "유민", "time": "13:50", "text": "↳ 이목구비 자수로 들어가며 뢴트게늄과 유사해 보입니다!"},
+        {"sender": "준태", "time": "14:08", "text": "↳ @건희\n민호님에게 해당 내용 전달했습니다 ㅠ"}
+      ],
+      "hasNew": true
+    }
+  },
+  "todos": []
+}
