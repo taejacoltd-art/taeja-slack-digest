@@ -47,6 +47,8 @@ CHANNELS = {
     "C0AHRGP7CVD": "onf_archiving",
     "C0AJ087F3B5": "onf_uiux",
     "C0AN5UAE2EN": "TAEJA DM",
+    "C0ALJEPNQ6B": "못리-상품",
+    "C0ALZU1NDMG": "team1-팬덤상품",
 }
 
 EMOJI_MAP = {
