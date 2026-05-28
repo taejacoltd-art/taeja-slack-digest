@@ -1,0 +1,49 @@
+name: Regenerate Empty Summaries
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Find empty summaries + generate dynamic prompt
+        run: python scripts/find_empty_summaries.py
+
+      - name: Show targets
+        run: cat empty_targets.json
+
+      - name: Regenerate via Claude Code Action
+        uses: anthropics/claude-code-base-action@beta
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_tools: "Read,Edit,Write,Glob"
+          prompt_file: scripts/_regenerate_prompt.md
+
+      - name: Copy report.html to index.html
+        run: cp report.html index.html
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f scripts/_regenerate_prompt.md empty_targets.json
+          git add data/ index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(TZ=Asia/Seoul date +"%Y-%m-%d %H:%M")
+            git commit -m "빈 summary 백필: $DATE KST"
+            git push
+          fi
